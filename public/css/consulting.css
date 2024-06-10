@@ -1,0 +1,101 @@
+.consulting-page .section-h1{
+    margin-bottom: 30px;
+}
+
+.consulting-page .container .consulting-list{
+    margin-left: 5px;
+}
+
+.consulting-page .container .consulting-list li::marker{
+    color: #C0A7E7;
+}
+
+.consulting-page .container .consulting-text img{
+    width: 100%;
+    max-width: 460px;
+}
+
+.consulting-page .container .consulting-text{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.consulting-page .container .consulting-text:last-child{
+    margin-bottom: 100px;
+}
+
+.consulting-page .container .consulting-text .left-column{
+    width: 100%;
+    min-width: 550px;
+}
+
+.consulting-page .container .consulting-text .right-column{
+    width: 100%;
+}
+
+.consulting-page .container .consulting-text .section-span{
+    margin-left: 50px;
+}
+
+.consulting-page .container .consulting-text .left-column .consulting-items .consulting-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.consulting-page .container .consulting-text .left-column .consulting-h1{
+    font-size: 40px;
+    background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.consulting-page .container .consulting-text .left-column .consulting-items .consulting-item h1{
+    font-size: 40px;
+    background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-right: 25px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.consulting-page .container .consulting-list li{
+    margin-bottom: 10px;
+}
+
+.consulting-list{
+    list-style: none;
+    padding: 0;
+}
+
+
+.consulting-list li{
+    display: flex;
+    align-items: center;
+}
+
+
+.consulting-list span{
+    margin-top: 12px;
+}
+
+.consulting-list li:before {
+    content: "•";
+    font-size: 400%; /* or whatever */
+    color: #C0A7E7;
+ }
+
+@media (max-width:855px){
+    .consulting-page .container .consulting-text .left-column .consulting-items .consulting-item{
+        align-items: flex-start;
+
+    }
+
+    .consulting-page .container .consulting-text .left-column .consulting-items .consulting-item span{
+        color: #696969;
+    }
+}

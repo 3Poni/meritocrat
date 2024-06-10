@@ -1,0 +1,105 @@
+.discussion{
+    position: relative;
+    background-color: #181924;
+    min-height: 400px;
+}
+
+.discussion .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 400px;
+}
+
+.discussion .container .discussion-items{
+    display: flex;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.discussion .container .discussion-items .discussion-item{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 400px;
+    justify-content: center;
+}
+
+.discussion .container .discussion-items .second-item{
+    border-left: 1px solid #181924;
+    border-right: 1px solid #181924;
+    padding: 0px 50px;
+}
+
+/* .discussion .container .discussion-items .discussion-item:first-child::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: calc(100% - 20px);
+    background: #ccc;
+} */
+
+.discussion .container .discussion-items .discussion-item h1{
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+
+.discussion .container .discussion-items .discussion-item span{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.discussion .graph-discussian{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.discussion .gradient-orange{
+    position: absolute;
+    border-radius: 517px;
+    background: #B79695;
+    filter: blur(190px);
+    width: 517px;
+    height: 423px;
+    right: 30%;
+    bottom: -30%;
+    z-index: 1;
+}
+
+.discussion .gradient-blue{
+    position: absolute;
+    border-radius: 517px;
+    background: #557391;
+    filter: blur(190px);
+    width: 517px;
+    height: 423px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.contacts{
+    z-index: 11;
+}
+
+.discussion-items-mobile{
+    display: none;
+    padding: 50px 30px;
+}
+
+.container-mobile .discussion-items-mobile .discussion-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+}

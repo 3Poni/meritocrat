@@ -1,0 +1,16 @@
+.types-motivation{
+    display: flex;
+    flex-direction: column;
+    background-color: #191A25;
+}
+
+.types-motivation .first-row-items{
+    display: flex;
+}
+
+.types-motivation .first-row-items, .second-row-items .item{
+    width: 100%;
+    max-width: 530px;
+    background-color: #fff;
+    border-radius: 10px;
+}

@@ -1,0 +1,89 @@
+.about-numbers{
+    position: relative;
+}
+
+.about-numbers .graph-about-numbers{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about-numbers .graph-about{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about-numbers .container{
+    display: flex;
+    justify-content: center;
+}
+
+.about-numbers .container .about-numbers_items{
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.about-numbers .container .about-numbers_items .about-numbers_items-row{
+    display: flex;
+    width: 100%;
+    max-width: 950px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-numbers .container .about-numbers_items .about-numbers_items-row:not(:last-child){
+    margin-bottom: 60px;
+}
+
+.about-numbers .container .about-numbers_items .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-numbers .container .about-numbers_items .item h1{
+    margin: 0;
+    display: inline;
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.about-numbers .container .about-numbers_items .item span{
+    font-size: 20px;
+}
+
+.about-numbers .container .about-numbers_items .last-item h1{
+    background: linear-gradient(74deg, #C0A7E7 8.19%, #9CBEDE 78.01%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.industries{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.industries .container .industries-h1{
+    background: linear-gradient(74deg, #C0A7E7 8.19%, #9CBEDE 78.01%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+}
+
+.industries .container .industries_img{
+    margin-bottom: 100px;
+}
+
+.industries .container .industries_img img{
+    width: 100%;
+}

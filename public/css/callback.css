@@ -1,0 +1,93 @@
+.callback-forms{
+    position: relative;
+    background-color: #181924;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+
+.callback-forms .container .callback-items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.callback-forms .container h1{
+    color: #fff;
+}
+
+.callback-forms .container .callback-items .left-column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 640px;
+}
+
+.callback-forms .container .callback-items .left-column input{
+    border: none;
+    background-color: #fff;
+    opacity: 0.30;
+    border-radius: 100px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    color: #80818C;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.callback-forms .container .callback-items .left-column input:focus{
+    background-color: #fff;
+    color: #000;
+    opacity: 1;
+    outline: none;
+}
+
+.callback-forms .container .callback-items .left-column input::placeholder{
+    color: #80818C;
+}
+
+.callback-forms .gradient-orange{
+    position: absolute;
+    border-radius: 517px;
+    background: #B79695;
+    filter: blur(190px);
+    width: 517px;
+    height: 423px;
+    right: 30%;
+    top:30%;
+    z-index: 1;
+}
+
+.callback-forms .gradient-blue{
+    position: absolute;
+    border-radius: 517px;
+    background: #557391;
+    filter: blur(190px);
+    width: 517px;
+    height: 423px;
+    right: 0;
+    bottom:30%;
+    z-index: 1;
+}
+
+.callback-forms .container .callback-items .right-column{
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.callback-forms .container .callback-items .right-column input{
+    width: 100%;
+    margin-top: auto;
+}
+
+
+@media (max-width:630px) {
+    .offer-partners .offer-slider-item img {
+        width: 100%;
+    }
+}

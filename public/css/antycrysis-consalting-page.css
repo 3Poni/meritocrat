@@ -1,0 +1,128 @@
+.antycrysis-consalting-page, .block{
+    position: relative;
+}
+
+.antycrysis-consalting-page .antycrysis-wave{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.block .ant-wave-second{
+    position: absolute;
+    left: 0%;
+}
+
+.block .ant-wave-second img{
+    height: 300px;
+}
+
+.antycrysis-consalting-page .container .artiqule{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.antycrysis-consalting-page .container .artiqule span{
+    font-size: 24px;
+    color: #20303C;
+    text-align: center;
+    max-width: 1020px;
+    display: inline-block;
+}
+
+.antycrysis-consalting-page .container .artiqule .artiqule-left-top{
+    position: absolute;
+    left: 0px;
+    top:-30px;
+    opacity: 0.1;
+}
+
+.antycrysis-consalting-page .container .artiqule .artiqule-right-bottom{
+    position: absolute;
+    right: 0px;
+    bottom: -30px;
+    opacity: 0.1;
+}
+
+.block{
+    position: relative;
+    z-index: 1;
+}
+
+.block .graph-block{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.block .container .more-block{
+    position: relative;
+    background-color: #181924;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 0px 65px 0px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.block .container .more-block img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.block .container .more-block span{
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    max-width: 580px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 5;
+}
+
+.block .container .more-block .button-white{
+    max-width: 230px;
+}
+
+.block .container .more-block .gradient-blue{
+    position: absolute;
+    border-radius: 517px;
+    background: #557391;
+    filter: blur(104px);
+    width: 448px;
+    height: 388px;
+    left: 50%;
+}
+
+.section-text {
+    padding-top: 100px;
+    position: relative;
+    z-index: 11;
+    background-color: #fff;
+}
+
+.section-text .container .page-text{
+    display: flex;
+    position: relative;
+    z-index: 11;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.section-text .container .page-text .right-column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+}

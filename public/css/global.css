@@ -1,0 +1,109 @@
+/*Глобальные переменные*/
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-logo{
+    font-family: 'Ledger', serif;
+    font-size: 24px;
+    background: linear-gradient(to right,#FEF8F2,#A2C2DC );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-white{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #000;
+    border-radius: 25px;
+    background: linear-gradient(to right,#BCD2E5 ,#FFF  );
+    padding: 15px 45px;
+    border: 0px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    z-index: 10;
+}
+.button-white:hover {
+    box-shadow: 0 0 8px 0 white;
+    transition: ease-out 0.4s;
+    color: gray;
+}
+
+.button-with-border{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 25px;
+    padding: 15px 35px;
+    border: 2px solid #FFF;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    background: none;
+    z-index: 10;
+}
+.button-with-border:hover {
+    box-shadow: 0 0 10px 2px white;
+    transition: ease-out 0.4s;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #696969;
+}
+
+.links img{
+    width: 15px;
+}
+
+.section-h1{
+    font-size: 80px;
+    background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.section-span{
+    font-size: 18px;
+    color: #696969;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.section-small-h1{
+    font-size: 40px;
+    background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.active-link{
+    background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.links a, .links img{
+    margin-right: 10px;
+}

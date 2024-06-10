@@ -1,0 +1,111 @@
+.text-center {
+	text-align: center;
+}
+*, *:before, *:after {
+	-webkit-border-sizing: border-box;
+	-moz-border-sizing: border-box;
+	border-sizing: border-box;
+}
+.container-drop {
+	width: 100%;
+    max-width: 800px;
+	margin: 50px auto;
+    z-index: 100;
+}
+.container-drop > ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+.title {
+	font-family: 'Pacifico';
+	font-weight: norma;
+	font-size: 40px;
+	text-align: center;
+	line-height: 1.4;
+	color: #2980B9;
+}
+.dropdown a {
+	text-decoration: none;
+}
+.dropdown [data-toggle="dropdown"] {
+	position: relative;
+	display: flex;
+    align-items: center;
+	color: black;
+	padding: 10px;
+}
+.dropdown [data-toggle="dropdown"]:hover {
+	background: url(../img/backdrop.png);
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: left left;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.container-drop .dropdown{
+	border-bottom: 1px solid #E3E3E3;
+}
+.dropdown .icon-arrow {
+	position: absolute;
+	display: block;
+	font-size: 0.7em;
+	color: #000;
+	top: 14px;
+	right: 10px;
+}
+
+.dropdown [data-toggle="dropdown"]:hover .icon-arrow{
+	color: #fff;
+}
+
+.dropdown .icon-arrow:before {
+	content: url(../img/icons/Arrow1.png);
+}
+.dropdown .dropdown-menu {
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.dropdown .dropdown-menu li {
+    padding: 10px 10px;
+}
+
+.dropdown .dropdown-menu li a {
+	display: block;
+	color:  #20303C;
+	padding: 10px 10px;
+    text-decoration: center;
+    border-radius: 10px;
+	font-size: 16px;
+}
+.dropdown .dropdown-menu li a:hover {
+	border-radius: 10px;
+	box-shadow: 0px 12px 15px -3px rgba(0,0,0,0.1),0px 0px 1px -3px rgba(0,0,0,0.1);
+}
+.dropdown .show {
+	display: block;
+	max-height: 9999px;
+}
+
+.dropdown-h1{
+    background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    margin-right: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.dropdown-span{
+    font-weight: bold;
+}
+
+.dropdown-menu li:first-child{
+	margin-top: 20px;
+}

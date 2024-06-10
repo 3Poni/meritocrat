@@ -1,0 +1,163 @@
+.contacts{
+    position: relative;
+    background-color: #181924;
+    padding-top: 30px;
+}
+
+.contacts .container{
+    position: relative;
+    z-index: 10;
+}
+
+.contacts .container .contacts-h1{
+    font-size: 80px;
+    background: linear-gradient(to right,#FEF8F2,#A2C2DC );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0;
+}
+
+.contacts .container .contacts-items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacts .container .contacts-items .left-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts .container .contacts-items span{
+    color: #fff;
+}
+
+.contacts .container .contacts-items .right-column span{
+    color: #ABABAB;
+    display: block;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.contacts .container .contacts-items .left-column .conctacts-phone{
+    font-size: 48px;
+}
+
+.contacts .container .contacts-items .left-column .conctacts-email{
+    font-size: 28px;
+    margin-bottom: 45px;
+}
+
+.contacts .container .contacts-items .left-column .social-items .social{
+    display: flex;
+    align-items: center;
+}
+
+.contacts .container .contacts-items .left-column .social-items .social img{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 42px;
+    height: 43px;
+}
+
+.contacts .container .contacts-items .right-column{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    z-index: 10;
+}
+
+.contacts .container .contacts-items .right-column .contacts-forms{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts .container .contacts-items .right-column .contacts-forms .contacts-form{
+    border: none;
+    background-color: #fff;
+    opacity: 0.20;
+    border-radius: 15px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.contacts .container .contacts-items .right-column .contacts-forms .contacts-comments{
+    opacity: 0.20;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 16px;
+    padding-left: 16px; 
+}
+
+.contacts .container .contacts-items .right-column .right-column_h1{
+    margin-top: 0px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.contacts .gradient-orange{
+    position: absolute;
+    border-radius: 517px;
+    background: #B79695;
+    filter: blur(190px);
+    width: 517px;
+    height: 423px;
+    right: 30%;
+    bottom: -30%;
+    z-index: 1;
+}
+
+.contacts .gradient-blue{
+    position: absolute;
+    border-radius: 517px;
+    background: #557391;
+    filter: blur(190px);
+    width: 517px;
+    height: 423px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.contacts .container .contacts-items .right-column .contacts-forms .row-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+.contacts .container .contacts-items .right-column .contacts-forms .text-data{
+    font-size: 12px;
+    color: #ABABAB;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.contacts .container .contacts-items .right-column .contacts-forms .text-data a{
+    color: #fff;
+}
+
+.contacts .container .contacts-items .right-column .contacts-forms .contacts-form:focus{
+    background-color: #fff;
+    color: #000;
+    opacity: 1;
+}
+
+.contacts .container .contacts-items .right-column .contacts-forms .contacts-comments:focus{
+    background-color: #fff;
+    color: #000;
+    opacity: 1;
+    outline: none;
+}
+
+.contacts .container .contacts-items .right-column .contacts-forms .button-white{
+    margin-top: 10px;
+}

@@ -1,0 +1,791 @@
+@media (max-width:1035px) {
+    footer .container .footer-row{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:1758px){
+    .schems-work .container .schems-work_items-circles .first-line {
+        left: 28%;
+        top: 35%;
+    }
+
+    .schems-work .container .schems-work_items-circles .second-line {
+        left: 60%;
+        top: 35%;
+    }
+}
+
+@media (max-width:1505px){
+    .schems-work .container .schems-work_items-circles .first-line {
+        left: 25%;
+        top: 35%;
+    }
+}
+
+@media (max-width:1319px){
+    .schems-work .container .schems-work_items-circles .first-line {
+        left: 21%;
+        top: 35%;
+    }
+    .schems-work .container .schems-work_items-circles .circle-line img{
+        width: 162px;
+    }
+}
+
+@media (max-width:1140px){
+    .partners-page .partners-graph_2{
+        display: none;
+    }
+
+    .partners-page .container .partners-items img{
+        max-width: 100%;
+    }
+
+    .partners-page .container .partners-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partners-page .container .partners-items img{
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width:955px){
+    .schems-work .container .scheme-work_forms{
+        flex-wrap: wrap;
+    }
+    .schems-work .container .scheme-work_forms .right-side input {
+        width: 100%;
+        width: 420px;
+    }
+}
+
+@media (min-width:855px){
+    .projects .container .project-slider{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projects .container .project-slider-item{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:635px){
+    .audit-columns, .result-columns{
+        flex-wrap: wrap;
+    }
+
+    .section-small-h1{
+        font-size: 26px;
+    }
+}
+
+
+@media (max-width:855px) {
+    header .container .menu .burger-button{
+        display: block;
+    }
+    header .container .menu-list, .menu-phone{
+        display: none;
+    }
+    
+    main .container .main-title .main-underlogo_text{
+        font-size: 30px;
+    }
+    main .container .main-title .main-logo{
+        font-size: 70px;
+        margin-top: 200px;
+    }
+
+    .partners-page .container .partners-buttons{
+        display: none;
+    }
+
+    .project-page .container .projects-items .project-slider-item .project-slider-item_img img{
+        max-width: 100%;
+    }
+
+    .partners .container .partners-sliders{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .partners .container .partners-sliders img{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: top 0.3s ease;
+        transition: 1s;
+      }
+      
+    .header_hidden {
+        transform: translateY(-100%);
+    }
+    main .container .main-vector img{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .about-company .container .about-items-second{
+        display: block;
+    }
+
+    .about-company .container .about-items-second .right-block .right-block_button{
+        display: none;
+    }
+
+    .about-company .container .about-items .left-block,.right-block{
+        display: none;
+    }
+
+    .about-company .container .about-items .about-items-slider-mobile{
+        display: block;
+    }
+    .about-company .container .about-items-slider-mobile{
+        display: block;
+        color: #fff;
+    }
+    .principes .left-contur img {
+        display: none;
+    }
+    .services .topographic_for_services img{
+        display: none;
+    }
+    .services .topographic_for_services_bottom img{
+        display: none;
+    }
+
+    .services .container{
+        flex-direction: column;
+    }
+
+    .principes .container{
+        align-items: flex-start;
+        position: relative;
+        z-index: 10;
+    }
+
+    .partners .img-top-right img{
+        width: 300px;
+    }
+    .contacts .container .contacts-items .left-column .conctacts-email{
+        font-size: 20px;
+    }
+
+    .contacts .container .contacts-items .left-column .conctacts-phone {
+        font-size: 39px;
+    }
+    
+    .contacts .container .contacts-h1{
+        font-size: 32px;
+    }
+
+    .reviews-docs .reviews-docs-slider .reviews-docs-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reviews-docs .reviews-docs-slider .reviews-docs-item .reviews-docs-item_text{
+        margin-top: 115px;
+    }
+
+    .reviews-docs .reviews-docs-slider .reviews-docs-item img{
+        width: 180px;
+    }
+
+    .reviews-docs .reviews-docs-slider .reviews-docs-item .reviews-docs_img-bottom{
+        display: none;
+    }
+
+    .reviews .container .reviews-sliders .reviews-slider_items .reviews-slider_item-text .reviews-name{
+        margin-top: 20px;
+    }
+    .reviews .container .reviews-sliders .reviews-slider_items .reviews-slider_item-text .reviews-position{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .reviews .container .reviews-sliders .reviews-slider_items .reviews-slider_item-text .reviews-under-text{
+        margin-bottom: 20px;
+    }
+
+    .reviews .container .reviews-h1{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .schems-work .container .schems-work_h1{
+        font-size: 32px;
+    }
+
+    .services .container .services-h1{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .container-drop{
+        margin: 0;
+    }
+
+    .principes .container .princepes-h1{
+        text-align: left;
+        font-size: 32px;
+    }
+
+    .schems-work_items-circles{
+        display: none !important;
+    }
+
+    .about-company .graph-about img{
+        display: none;
+    }
+
+    .about-company .container .about-text-items .about-h1{
+        font-size: 32px;
+    }
+
+    .about-company .container .about-text-items .about-button{
+        width: 100%;
+    }
+
+    .about-numbers .graph-about-numbers{
+        display: none;
+    }
+
+    .about-numbers .container .about-numbers_items .last-item h1 {
+        background: #000;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .about-numbers .container .about-numbers_items .active{
+        background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        font-size: 80px !important;
+    }
+
+    .industries .container .industries-h1{
+        font-size: 32px;
+    }
+
+    .industries .container .industries_img img{
+        display: none;
+    }
+
+    .about-company .container .about-items .right-block img{
+        display: none;
+    }
+
+    .about-company .container .about-items-second .left-block img{
+        display: none;
+    }
+
+    .schems-work .container .scheme-work_forms .right-side {
+        width: 100%;
+    }
+
+    .schems-work .container .scheme-work_forms .right-side .button-white{
+        width: 100%;
+    }
+
+    .schems-work .container .schems-work_items-circles-mobile{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: #fff;
+        width: 100%;
+    }
+
+    .section-text .container .page-text .left-column img{
+        display: none;
+    }
+
+    .section-text .container .page-text{
+        justify-content: flex-start;
+    }
+
+    .section-h1{
+        font-size: 27px;
+        margin: 20px auto;
+    }
+
+    .block .container .more-block .gradient-blue {
+        filter: blur(20px);
+        width: 93px;
+        height: 156px;
+    }   
+
+    .consulting-page .container .consulting-text img{
+        display: none;
+    }
+
+    .consulting-page .container .consulting-text .left-column{
+        display: none;
+    }
+
+    .consulting-page .container .second-block .left-column{
+        display: block;
+        min-width: auto;
+    }
+
+    .consulting-page .container .consulting-text .right-column span{
+        margin-left: 0px;
+    }  
+
+    .consulting-page .container .consulting-text .left-column .consulting-h1{
+        margin-top: 0px;
+        font-size: 26px;
+    }
+
+    .consulting-page .container .consulting-text .left-column .consulting-items .consulting-item h1{
+        font-size: 26px;
+    }
+
+    .links{
+        display: none;
+    }
+
+    .due-diligence .due-graph{
+        display: none;
+    }
+
+    .due-columns img{
+        display: none;
+    }
+
+    .due-expertise .expertise-items-mobile-slider{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /* .due-expertise .expertise-items{
+        display: none;
+    } */
+
+    .effectivity-page .effect-graph{
+        display: none;
+    }
+
+    .effectivity-stats .effect-stats-graph, .effect-stats-graph-2{
+        display: none;
+    }
+
+    .effectivity-stats .container .section-small-h1{
+        text-align: left;
+    }
+
+    .effectivity-stats .container img{
+        display: none;
+    }
+
+    .effectivity-stats .container .visible{
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .hr-audit .stages .graph-stages{
+        opacity: 0.3;
+    }
+
+    .hr-audit .container .audit-img{
+        display: none;
+    }
+
+    .hr-audit .hr-graph{
+        display: none;
+    }
+
+    .stages .container .stages-items-row{
+        justify-content: center;
+    }
+
+    .stages .container .stages-items-row .stages-item{
+        
+        min-height: 170px;
+        padding-bottom: 40px;
+    }
+
+    .stages .container .stages-items-row .empty{
+        display: none;
+    }
+
+    .offer-partners .slick-initialized .slick-slide{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .outsourcing-page .container .outsourcing-text img{
+        display: none;
+    }
+
+    .outsourcing-page .container .outsourcing-text{
+        justify-content: flex-start;
+    }
+
+    footer .container .footer-row .footer-column:nth-child(1){
+        display: none;
+    }
+
+    footer .container .footer-row .footer-column:nth-child(2){
+        display: none;
+    }
+
+    footer .container .footer-row-last .row-social{
+        display: none;
+    }
+
+    footer .container .footer-row-last{
+        flex-wrap: wrap;
+    }
+
+    footer .container .footer-row-last span{
+        margin-top: 10px;
+    }
+
+    footer .container .footer-row .footer-column span{
+        margin-top: 30px;
+    }
+
+    footer .container .footer-row .footer-column .footer-form{
+        max-width: 100%;
+    }
+
+    footer .container .footer-row .footer-column .button-white{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer{
+        padding-top: 50px;
+    }
+
+    .contacts .container .contacts-items .left-column .social-items{
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .contacts .container .contacts-items .left-column .social-items .social-items_text{
+        display: none;
+    }
+
+    .accounting-support-columns img{
+        display: none;
+    }
+
+    .accounting-support .container .accounting-support-columns{
+        padding-top: 0px;
+    }
+
+    .accounting-support .container .accounting-support-columns .right-column{
+        margin-left: 0px;
+    }
+
+    .partners-page .partners-graph{
+        display: none;
+    }
+
+    .project-page .projects-topgraph, .projecrts-topgraph_2{
+        display: none;
+    }
+
+    .project-page .container .projects-items {
+        flex-direction: column;
+    }
+    .result .graph-result-2{
+        display: none;
+    }
+
+    .result .result-items{
+        flex-direction: column;
+    }
+    .result .result-items .result-item{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .result .result-items .result-item img{
+        max-width: 180px;
+        max-height: 180px;
+    }
+
+    .result .result-items .result-item{
+        margin-bottom: 50px;
+    }
+
+    .result .result-items .result-item span{
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .strategic-icons-mobile{
+        display: block;
+    }
+
+    .result .graph-result{
+        display: none;
+    }
+
+    .favorites-columns img{
+        display: none;
+    }
+    .government-support .container .government-items{
+        display: block;
+    }
+
+    .government-support .container .government-items .government-item{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .government-columns img{
+        display: none;
+    }
+
+    .taxes-page .taxes-graph, .taxes-graph_1 img{
+        display: none;
+    }
+
+    .taxes-page .taxes-graph_2 img{
+        opacity: 0.5;
+    }
+
+    .taxes-page .container .taxes-items{
+        flex-direction: row;
+    }
+
+
+    .taxes-page .container .taxes-items{
+        flex-direction: row;
+    }
+    .taxes-page .container .taxes-items a{
+        width: 100%;
+        display: block !important;
+    }
+    .taxes-page .container .taxes-items .taxes-button{
+        border-radius: 15px;
+    }
+
+    .taxes-page .container .taxes-items .taxes-button .taxes-svg{
+        display: none;
+    }
+
+    .audit-area{
+        display: block;
+    }
+
+    .audit-area .area-items .area-item-text{
+        border-radius: 20px;
+        padding: 30px;
+        font-weight: bold;
+        color: #696969;
+        margin-bottom: 10px;
+        width: 70%;
+    }
+
+    .audit-area .area-items .area-item ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .audit-area .area-items .item-blue{
+        background-color: #AED5FD;
+    }
+
+    .audit-area .area-items .item-purple{
+        background-color: #C0A7E7;
+        color: #fff;
+    }
+
+    .audit-area .area-items .item-black{
+        background-color: #696969;
+        color: #fff;
+    }
+
+    .audit-area .area-items .item-orange{
+        background-color: #FCD2C0;
+        color: #696969;
+    }
+
+    .industries-mobile-list{
+        display: block;
+    }
+
+    .industries-slider-item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .industries-slider-item span{
+        margin-top: 20px;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    .discussion .container{
+        display: none;
+    }
+
+    .discussion .container .discussion-items{
+        display: none;
+    }
+
+    .discussion .container-mobile{
+        position: relative;
+        z-index: 10;
+    }
+
+    .discussion .container-mobile{
+        font-size: 28px;
+        color: #fff;
+    }
+
+    .discussion .container-mobile .discussion-items-mobile{
+        display: block;
+        z-index: 10;
+    }
+
+    .discussion .container-mobile .discussion-items-mobile .button-white{
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+/* 
+    .due-expertise .expertise-items-mobile-slider{
+        display: block;
+    } */
+
+    .schems-work .container .scheme-work_forms {
+        flex-wrap: wrap;
+    }
+
+    .outsourcing-resource .resource-text .right-column img{
+        display: none;
+    }
+
+    
+}
+
+@media (max-width:590px) {
+    
+    main .container .main-title{
+        align-items: flex-start;
+    }
+
+    main .container .main-title .main-logo{
+        font-size: 35px;
+        text-align: left;
+    }
+
+    main .container .main-title .main-underlogo_text{
+        font-size: 18px;
+        text-align: left;
+    }
+
+    main .container .main-title .main-row_button{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .container .main-title .main-row_button input{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: top 0.3s ease;
+        transition: 1s;
+      }
+      
+      .header_hidden {
+        transform: translateY(-100%);
+      }
+      .about-company .container .about-items .about-items_headtext{
+        font-size: 45px;
+      }
+      .reviews .container .reviews-sliders .reviews-slider_items{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .principes .container img{
+        display: none;
+      }
+
+      .principes .container .principes-items-mobile{
+        display: block;
+      }
+      
+    .partners .container .partners-h1{
+        font-size: 32px;
+    }
+
+    main .container .main-title .main-row_button{
+        width: 100%;
+    }
+
+    .hr-audit .container .result .result-row {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .projects .container .projects_h1{
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .hr-audit .container .result .result-row .result-item{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hr-audit .container .result .result-row .result-item img{
+        width: 80px;
+        margin-right: 90px;
+    }
+
+    .hr-audit .container .result .result-row .result-item .section-span{
+        text-align: left;
+    }
+
+    .projects .container .projects-row_items_categories{
+        display: none;
+    }
+
+    .projects-row_items_categories-mobile{
+        display: block;
+    }   
+
+    .strategic-page .container .strategic-icons .item{
+        margin-right: 0px;
+    }
+
+    .contacts .container .contacts-items .left-column .conctacts-phone{
+        font-size: 30px;
+    }
+}

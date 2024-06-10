@@ -1,0 +1,102 @@
+.COn {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+
+.COff {
+	-webkit-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+	
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+
+.CBody {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.CNavigation {
+	display: inline-block;
+	width: 50px;
+	height: 180px;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	line-height: 180px;
+	font-weight: bold;
+}
+
+.SlideContainer {
+	width: 250px;
+	height: 180px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.CarouselContainer {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.CarouselSlides {
+	width: 750px;
+	display: flex;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.SlideImg {
+	width: 100%;
+}
+
+
+.dotsContainer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: #717171;
+}
+
+.dot.activeDot {
+	background-color: #DAA520; /* для активной точки */
+}
+
+
+@media screen and (max-width: 599px) {
+	.CarouselSlides {
+		width: 250px;
+	}
+
+	.SlideImg {
+		width: 190px;
+		height: 125px;
+	}
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 849px) {
+	.CarouselSlides {
+		width: 500px;
+	}
+}

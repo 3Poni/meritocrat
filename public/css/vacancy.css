@@ -1,0 +1,155 @@
+.vacancy{
+    background-color: #181924;
+}
+
+.vacancy .container .section-h1{
+    margin-top: 0;
+}
+
+.vacancy .container .links{
+    margin-top: 0;
+}
+
+.vacancy .container .links a{
+    color: #fff;
+}
+
+.vacancy .container .links img{
+    width: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.vacancy .container-drop{
+    max-width: 100%;
+    color: #fff;
+}
+
+.vacancy .container-drop .dropdown a span{
+    color: #fff;
+}
+
+.vacancy .container-drop .dropdown .dropdown-menu{
+    display: flex;
+}
+
+.vacancy .container-drop .dropdown .dropdown-menu span{
+    color: #fff;
+}
+
+.dropdown-menu-vacancy {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+.container-drop .dropdown{
+    border-top: 2px solid #000;
+    height: 150px;
+}
+
+.vacancy ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vacancy .container{
+    max-width: 100%;
+}
+
+.vacancy .container .dropdown-span{
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+}
+
+.container-drop .dropdown{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu-vacancy .first-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dropdown-menu-vacancy .first-row .row-text{
+    margin-right: 100px;
+}
+
+.dropdown-menu-vacancy .second-row .row-text{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.dropdown-menu-vacancy .second-row .row-text .left-column{
+    width: 305px;
+}
+
+.dropdown-menu-vacancy .second-row .row-text .right-column{
+    max-width: 500px;
+    margin-left: 200px;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown img{
+    width: 40px;
+    margin-left: auto;
+    height: 40px;
+}
+
+.dropdown .button-white{
+    margin-top: 100px;
+}
+
+.block-not-vacancy{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.block-not-vacancy .text{
+    color: #fff;
+    font-size: 48px;
+}
+
+@media (max-width: 950px){
+    .block-not-vacancy .text{
+        color: #fff;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 575px){
+    .dropdown-menu-vacancy .second-row .row-text .right-column{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 500px){
+    .dropdown-menu-vacancy .second-row .row-text .right-column{
+        margin-left: 50px;
+    }
+
+    .block-not-vacancy .text{
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .dropdown-menu-vacancy .second-row .row-text{
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
+
+    .dropdown-menu-vacancy .second-row .row-text .right-column{
+        margin-left: 0;
+    }
+}

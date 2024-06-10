@@ -1,0 +1,113 @@
+footer{
+    padding-top: 200px;
+    background-color: #181924;
+    padding-bottom: 50px;
+}
+
+footer .container .footer-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .footer-row .footer-column{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container .footer-row .footer-column:not(:last-child){
+    margin-right: 50px;
+}
+
+footer .container .footer-row .footer-column .footer-phone{
+    color: #FCF4EA;
+    font-size: 30px;
+}
+
+footer .container .footer-row .footer-column span{
+    color: #fff;
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+
+footer .container .footer-row .footer-column .footer-under-text{
+    margin-bottom: 20px;
+}
+
+footer .container .footer-row .footer-column ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-width: 120px;
+}
+
+footer .container .footer-row .footer-column ul li{
+    text-decoration: none;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+footer .container .footer-row .footer-column ul li a{
+    text-decoration: none;
+    color: #FCF4EA;
+}
+
+footer .container .footer-row .footer-column .footer-form{
+    border: none;
+    background-color: #fff;
+    opacity: 0.20;
+    border-radius: 100px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    color: #fff;
+    z-index: 10;
+    margin-bottom: 10px;
+    max-width: 300px;
+}
+
+footer .container .footer-row .footer-column input[type="text"]:focus{
+    opacity: 1;
+    color: #000;
+}
+
+footer .container .footer-row .footer-column .button-white{
+    position: relative;
+    text-align: center;
+    color: #000;
+    z-index: 10;
+    font-weight: bold;
+    max-width: 300px;
+    padding: 15px 10px;
+    max-width: 320px;
+}
+
+footer .container .footer-row-last{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+footer .container .footer-row-last .row-social .img{
+    margin-right: 10px;
+}
+
+.footer .container .footer-row-last .row-social img{
+    width: 43px;
+    height: 42px;
+}
+
+.row-social img{
+    width: 43px;
+    height: 42px;
+}
+
+.footer-row-last span:first-child{
+    margin-top: 20px;
+}
+
+.footer-row-last .row-social img{
+    margin-right: 20px;
+}

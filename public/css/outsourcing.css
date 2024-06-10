@@ -1,0 +1,223 @@
+.outsourcing-page{
+    position: relative;
+}
+
+.outsourcing-page .container .outsourcing-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.outsourcing-page .container .outsourcing-text .right-column .text-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.outsourcing-page .container .outsourcing-text .right-column .text-item h1{
+    font-size: 40px;
+    background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.outsourcing-page .container .outsourcing-text .right-column .text-item .head-span{
+    font-size: 26px;
+    color: #696969;
+    font-size: 500;
+}
+
+.outsourcing-page .container .outsourcing-text .left-column .text-item h1{
+    font-size: 40px;
+    background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.outsourcing-page .container .outsourcing-text .left-column img{
+    width: 100%;
+    max-width: 450px;
+}
+
+.outsourcing-page .container .outsourcing-items h1{
+    font-size: 40px;
+    background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.outsourcing-page .container .outsourcing-items .outsourcing-items-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.outsourcing-page .container .outsourcing-items .outsourcing-items-row .outsourcing-item{
+    border: 1px solid #C0A7E7;
+    border-radius: 20px;
+    max-width: 350px;
+    text-align: center;
+    position: relative;
+    padding: 85px 20px;
+    margin-right: 20px;
+    width: 360px;
+    margin-bottom: 50px;
+}
+
+.outsourcing-page .container .outsourcing-items .outsourcing-items-row .outsourcing-item .item-number{
+    position: absolute;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 40px;
+    top: -40px;
+    left: 43%;
+    width: 85px;
+    height: 85px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+}
+
+.outsourcing-resource{
+    margin-bottom: 100px;
+}
+
+.outsourcing-resource h1{
+    font-size: 40px;
+    background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 20px;
+}
+
+.outsourcing-resource .resource-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.outsourcing-resource .resource-text .left-column{
+    width: 100%;
+    max-width: 640px;
+}
+
+.outsourcing-resource .resource-text .left-column .outsource-item{
+    display: flex;
+    align-items: center;
+}
+
+.outsourcing-resource .resource-text .left-column .outsource-item .item-text .head-span{
+    font-weight: 500;
+    font-size: 24px;
+    color: #696969;
+    display: block;
+}
+
+.outsourcing-resource .resource-text .left-column .outsource-item .item-text .under-text{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.offer-partners{
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.offer-partners .container .section-h1{
+    text-align: center;
+}
+
+.offer-partners .graph-outsource img{ 
+    position: absolute;
+    left: 0;
+}
+
+.offer-partners .container .offer-partners{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.slick-initialized .slick-slide{
+    display: flex;
+    justify-content: center;
+}
+
+.outsourcing-text .left-column .text-item ul{
+    padding: 0 20px;
+}
+
+.outsourcing-text .left-column .text-item ul li{
+    margin-bottom: 10px;
+
+}
+
+.outsourcing-text .left-column .text-item ul li::marker{
+    color: #C0A7E7;
+}
+
+.outsourcing-page .outsourcing-list{
+    position: relative;
+    background-color: #191A25;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.outsourcing-page .outsourcing-list .container h1{
+    text-align: center;
+    background: linear-gradient(to right,#FEF8F2,#A2C2DC );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+}
+
+.outsourcing-page .outsourcing-list .container .outsourcing-items .outsourcing-items-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.outsourcing-page .outsourcing-list .container .outsourcing-items .outsourcing-items-row .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+}
+
+.outsourcing-page .outsourcing-list .container .outsourcing-items .outsourcing-items-row .item img{
+    width: 78px;
+}
+
+.outsourcing-page .outsourcing-list .container .outsourcing-items .outsourcing-items-row .item span{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media (max-width:855px) {
+    .offer-partners .graph-outsource img{
+        display: none;
+    }
+
+    .outsourcing-page .outsourcing-list .container .outsourcing-items .outsourcing-items-row .item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .outsourcing-page .outsourcing-list .container .outsourcing-items .outsourcing-items-row .item img{
+        margin-right: 20px;
+    }
+    .outsourcing-page .container .outsourcing-items .outsourcing-items-row .outsourcing-item .item-number{
+        margin-right: 0px;
+        left: 38%;
+    }
+
+    .outsourcing-page .container .outsourcing-items .outsourcing-items-row .outsourcing-item{
+        margin-right: 0px;
+    }
+}

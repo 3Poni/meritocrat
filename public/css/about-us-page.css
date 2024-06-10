@@ -1,0 +1,54 @@
+.about-company{
+    position: relative;
+    padding-top: 30px;
+}
+
+.about-company .graph-about{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.about-company .container .about-h1{
+    font-size: 80px;
+    background: linear-gradient(74deg, #C0A7E7 8.19%, #9CBEDE 78.01%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-company .container .about-text-items{
+    width: 100%;
+    max-width: 850px;
+}
+
+.about-company .container .about-text-items .about-button{
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 80px;
+    border-radius: 25px;
+    background:linear-gradient(74deg, #C0A7E7 8.19%, #9CBEDE 78.01%);
+    padding: 20px 40px;
+}
+
+.discussion-items-mobile{
+    display: none;
+}
+
+.projects .container .project-slider{
+    margin-bottom: 20px;
+}
+
+.projects .container{
+    padding-bottom: 20px;
+}
+
+.projects .container .projects-button{
+    cursor: pointer;
+}
+
+.industries-mobile-list{
+    display: none;
+}

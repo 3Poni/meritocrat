@@ -1,0 +1,48 @@
+/*Стили для услуг*/
+
+.services{
+    position: relative;
+    z-index: 10;
+}
+
+.services .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.services .container .services-h1{
+    background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 6.25vw;
+}
+
+.services .topographic_for_services img{
+    width: 400px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.services .topographic_for_services_bottom img{
+    width: 560px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.services .container .services-items .item:hover{
+    background-color: #191B26;
+    transition: 0.3s;
+}
+
+.services .container .section-h1{
+    margin-top: 30px;
+    font-size: 80px;
+}
+
+.services .container .right-side{
+    width: 100%;
+}

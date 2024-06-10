@@ -1,0 +1,95 @@
+/*Стили для блока под хэдером - main*/
+main {
+    background-color: #181924;
+    color: #fff;
+    height: 100vh;
+    background-size: cover;
+}
+
+main .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+main .container .gradient-orange{
+    position: absolute;
+    border-radius: 517px;
+    background: #B79695;
+    filter: blur(190px);
+    width: 100%;
+    max-width: 517px;
+    height: 423px;
+    right: 0;
+    top:30%;
+    z-index: 1;
+}
+
+main .container .gradient-blue{
+    position: absolute;
+    border-radius: 517px;
+    background: #557391;
+    filter: blur(190px);
+    width: 100%;
+    max-width: 517px;
+    height: 423px;
+    left: 0;
+    bottom:30%;
+    z-index: 1;
+}
+
+main .container .main-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    animation: fadeInUp;
+    animation-duration: 3s;
+}
+
+main .container .main-title .main-logo{
+    font-family: 'Ledger', serif;
+    font-size: 80px;
+    background: linear-gradient(to right,#FEF8F2,#A2C2DC );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main .container .main-title .main-underlogo_text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: normal;
+    text-align: center;
+}
+
+main .container .main-title .main-row_button{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+main .container .main-vector{
+    position: absolute;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.rotate{
+    animation: spinner 35.5s linear infinite;
+}
+@keyframes spinner {
+    to { transform: rotate(360deg); }
+}
+
+main .container .main-vector img{
+    max-width: 900px;
+    height: auto;
+    opacity: 0.6;
+}

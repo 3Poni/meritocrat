@@ -1,0 +1,41 @@
+.partners{
+    position: relative;
+    padding-top: 100px;
+    min-height: 600px;
+}
+
+.partners .container .partners-h1{
+    font-size: 80px;
+    background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.partners .container .partners-sliders{
+    margin-top: 100px;
+}
+
+.partners .container .partners-sliders div img{
+    width: 200px;
+}
+
+.partners .img-top-right img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 700px;
+}
+
+.partners .slick-prev{
+    transform: rotate(180deg);
+}
+
+.partners .slick-prev:before {
+    content: url(../img/icons/right-arrow.png);
+}
+
+.partners .partners-sliders{
+    text-align: center;
+
+}

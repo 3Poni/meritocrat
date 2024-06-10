@@ -1,0 +1,99 @@
+  .burger-menu {
+    display: none;
+    background: #191C24;
+    transition: 0.2s;
+  }
+  .burger-menu.-open {
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* height: 100vh; */
+    width: 100vw;
+    overflow-y: scroll!important;
+  }
+  .burger-menu ul {
+    list-style: none;
+  }
+  .burger-menu li {
+    margin: 20px 0;
+  }
+
+  .burger-menu ul{
+    margin: 0;
+  }
+  
+  .burger-button {
+    height: 36px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .burger-button svg {
+    stroke: #fff;
+    transition: 0.2s;
+  }
+  .burger-button svg g:first-child {
+    opacity: 1;
+    transition: opacity 0s 0.2s;
+  }
+  .burger-button svg g:first-child line {
+    transition: transform 0.2s 0.2s;
+    transform: translateY(0px);
+  }
+  .burger-button svg g:last-child {
+    opacity: 0;
+    transition: opacity 0s 0.2s;
+  }
+  .burger-button svg g:last-child line {
+    transition: transform 0.2s;
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+  .burger-button.-menu-open svg {
+    stroke: #fff;
+  }
+  .burger-button.-menu-open svg g:first-child {
+    opacity: 0;
+  }
+  .burger-button.-menu-open svg g:first-child line {
+    transition: transform 0.2s;
+  }
+  .burger-button.-menu-open svg g:first-child line:first-child {
+    transform: translateY(7px);
+  }
+  .burger-button.-menu-open svg g:first-child line:last-child {
+    transform: translateY(-7px);
+  }
+  .burger-button.-menu-open svg g:last-child {
+    opacity: 1;
+  }
+  .burger-button.-menu-open svg g:last-child line {
+    transition: transform 0.2s 0.2s;
+  }
+  .burger-button.-menu-open svg g:last-child line:first-child {
+    transform: rotate(45deg);
+  }
+  .burger-button.-menu-open svg g:last-child line:last-child {
+    transform: rotate(-45deg);
+  }
+
+  .burger-menu ul li .burger-contact{
+    font-size: 18px;
+    color: #fff;
+  }
+  .burger-menu ul li a{
+    color: #DEDEDE;
+  }
+  .burger-menu ul li .header-logo{
+    margin-top: 30px;
+  }
+
+  .burger-menu .row-social{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }

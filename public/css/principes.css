@@ -1,0 +1,57 @@
+.principes{
+    position: relative;
+    z-index: 10;
+}
+
+.principes .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principes .container .princepes-h1{
+    background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+}
+
+.principes .left-contur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 750px;
+}
+
+.principes .left-contur img{
+    width: 510px;
+}
+
+.principes .right-contur{
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 750px;
+    z-index: 1;
+}
+
+
+.principes .right-contur img{
+    width: 510px;
+    z-index: 1;
+    position: relative;
+    opacity: 0.3;
+}
+
+.principes .container img{
+    width: 100%;
+    max-width: 1060px;
+}
+
+/*стили для адаптива телефона*/
+
+.principes-items-mobile{
+    display: none;
+}

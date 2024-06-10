@@ -1,0 +1,79 @@
+/*Стили для блока о компании на главном экране*/
+
+.about-company{
+    background-color: #181924;
+    padding-bottom: 70px;
+}
+
+.about-company .container{
+    max-width: 1140px;
+}
+
+.about-company .container .about-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-company .container .about-items .about-items_headtext{
+    background: linear-gradient(to right,#FEF8F2,#A2C2DC );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.about-company .container .about-items .left-block .about-items_undertext .about-items_undertext-bold{
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.about-company .container .about-items .left-block .about-items_paragraph{
+    color: #fff;
+    display: block;
+    max-width: 580px;
+}
+
+.about-company .container .about-items .right-block img{
+    max-width: 350px;
+}
+
+
+.about-company .container .about-items-second{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.about-company .container .about-items-second .left-block img{
+    max-width: 350px;
+}
+
+.about-company .container .about-items-second .right-block .about-items_paragraph{
+    color: #fff;
+    display: block;
+    max-width: 580px;
+}
+
+.about-company .container .about-items-second .right-block .right-block_button{
+    float: right;
+    margin-top: 20px;
+}
+
+.about-company .container .about-items-slider-mobile{
+    display: none;
+}
+
+.about-company .container .about-items .left-block .about-items_undertext .header-logo{
+    font-size: 32px;
+}
+
+.item-slider-mobile{
+    padding-left: 10px;
+    padding-right: 10px;
+}

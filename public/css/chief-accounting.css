@@ -1,0 +1,30 @@
+.table-benefits{
+    display: flex;
+
+}
+
+.table-benefits .item .column{
+    display: flex;
+    flex-direction: column;
+}
+
+.table-benefits .item .column .row{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.table-benefits .item .column .row:first-child, .row:last-child{
+    font-weight: bold;
+}
+
+.table-benefits .item .column .row:nth-child(2n){
+    background-color: #E2D6F3;
+}
+
+.table-ecomomy{
+    text-align: center;
+    border-top: 2px solid #9C4D97;
+    border-bottom: 2px solid #9C4D97;
+}

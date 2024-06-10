@@ -1,0 +1,265 @@
+.hr-audit .container .audit-under-text{
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 100px;
+}
+
+.hr-audit{
+    padding-top: 20px;
+    position: relative;
+}
+
+.hr-audit .hr-graph{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hr-audit .container .links{
+    margin-top: 0;
+}
+
+.audit-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.audit-columns .left-column .audit-item{
+    display: flex;
+}
+
+.audit-columns .left-column .audit-item h1{
+    margin-right: 20px;
+    margin-top: 0;
+}
+
+.audit-columns .right-column .audit-item{
+    display: flex;
+}
+
+.audit-columns .right-column .audit-item h1{
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+.audit-columns .right-column, .left-column{
+    width: 100%;
+    max-width: 450px;
+}
+
+.audit-img{
+    text-align: center;
+}
+
+.audit-img img{
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+.hr-audit .stages{
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.hr-audit .stages .graph-stages{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+.hr-audit .stages .container{
+    position: relative;
+    z-index: 10;
+}
+
+.hr-audit .stages .container h1{
+    font-size: 40px;
+    background: linear-gradient(74deg, #C0A7E7 8.19%, #9CBEDE 78.01%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hr-audit .stages .stages-items-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hr-audit .stages-item{
+    background-color: #fff;
+    width: 100%;
+    max-width: 340px;
+    min-height: 450px;
+    position: relative;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    border-radius: 30px;
+    border: 1px solid #C0A7E7;
+}
+
+.hr-audit .stages-item .item-span ul li{
+    text-align: left;
+}
+
+.hr-audit .stages-item .item-span ul li::marker{
+    color: #373737;
+}
+
+.hr-audit .stages .stages-item .item-number{
+    background: linear-gradient(74deg, #C0A7E7 8.19%, #9CBEDE 78.01%);
+    border: 100px;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 18px;
+    position: absolute;
+    top: -20px;
+    left: 40%;
+}
+
+.hr-audit .stages .stages-item .item-span{
+    display: flex;
+    flex-direction: column;
+}
+
+.hr-audit .stages .stages-item .item-span span{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.hr-audit .stages .stages-item .item-span .head-text{
+    font-weight: bold;
+    font-size: 20px;
+    color: #373737;
+    text-align: center;
+}
+
+.hr-audit .stages .stages-items-row .empty{
+    background: #fff;
+    filter: blur(-3px);
+    border: 1px solid #D0D0D0;
+    border-radius: 30px;
+}
+
+.hr-audit .container .result .result-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hr-audit .container .result .result-row .result-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 181px;
+    margin-right: 100px;
+}
+
+.hr-audit .container .result .result-row .result-item img{
+    width: 60px;
+}
+
+.hr-audit .container .result .result-row .result-item span{
+    text-align: center;
+}
+
+.result-columns{
+    display: flex;
+}
+
+.result-columns .left-column, .right-column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 540px;
+}
+
+.result-columns .result-column-item h1{
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+.result-columns .result-column-item{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.offer-partners{
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.offer-partners .container .section-h1{
+    text-align: center;
+}
+
+.offer-partners .graph-outsource img{ 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.offer-partners .container .offer-partners{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.slick-initialized .slick-slide{
+    display: flex;
+    justify-content: center;
+}
+
+.audit-area{
+    display: none;
+}
+
+.audit-item .section-small-h1{
+    margin-bottom: 0;
+}
+
+.hr-audit .container .result .section-small-h1{
+    text-align: center;
+}
+
+.audit-area .area-items .area-item{
+    position: relative;
+}
+
+.audit-area .area-items .side-text{
+    transform: rotate(90deg);
+    position: absolute;
+    font-size: 14px;
+    right: -10%;
+    text-align: center;
+    min-width: 160px;
+}
+
+.audit-area .area-items .side-text:first-child{
+    top: 22.5%;
+}
+
+.audit-area .area-items .side-text:not(:first-child){
+    top: 50%;
+}
+
+@media (max-width:855px){
+    .stages .graph-stages{
+        position: absolute;
+        display: none;
+    }
+}
+
+@media (max-width:425px){
+    .audit-area .area-items .side-text{
+        
+        right: -20%;
+    }
+}

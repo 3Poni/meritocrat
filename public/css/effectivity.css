@@ -1,0 +1,81 @@
+.effectivity-stats{
+    position: relative;
+}
+
+.effectivity-stats .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.effectivity-page{
+    padding-top: 10px;
+    position: relative;
+}
+
+.effectivity-page .effect-graph{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.effectivity-stats .container .section-small-h1{
+    text-align: center;
+}
+
+.effectivity-stats .container img{
+    width: 100%;
+    max-width: 700px;
+}
+
+.effectivity-page .container .links{
+    margin-top: 0px;
+}
+
+.effectivity-stats .effect-stats-graph{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.effectivity-stats .effect-stats-graph-2{
+    position: absolute;
+    bottom: -160px;
+    right: 0;
+}
+
+.effect-text{
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 15;
+}
+
+.effect-text .text-items{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.effect-text .text-items .left-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.effect-text .text-items .effect-item{
+    display: flex;
+    width: 100%;
+    max-width: 540px;
+    margin-bottom: 35px;
+}
+
+.effect-text .text-items .effect-item h1{
+    margin-right: 20px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.effectivity-stats .container .visible{
+    display: none;
+}
