@@ -199,8 +199,9 @@
                         Анализируем заказ
                     </span>
                 </div>
-                <div class="circle-line first-line">
-                    <img src="img/circle-line.png" alt="">
+                <div class="circle-line first-line" style="padding-top: 10px;">
+                    <span></span>
+                    <img  class="circ-img" src="img/circle-line.png" alt="">
                 </div>
                 <div class="circle-items">
                     <div class="circle fixe-circle">
@@ -213,6 +214,7 @@
                       </span>
                 </div>
                 <div class="circle-line second-line">
+                    <span></span>
                     <img src="img/circle-line.png" alt="">
                 </div>
                 <div class="circle-items">
