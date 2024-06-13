@@ -83,11 +83,29 @@
                 <div class="container-drop">
                     <ul>
                         <li class="dropdown">
-                            <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">01</h1><span class="dropdown-span">Бухгалтерский учет</span><i class="icon-arrow"></i></a>
+                            <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">01</h1><span class="dropdown-span">Бухгалтерский учет</span><i class="icon-arrow open"></i></a>
+                            <ul class="dropdown-menu hide show">
+                                <li><a href="#">Налоговое консультирование</a></li>
+                                <li><a href="#">Сокращение налоговых штрафов</a></li>
+                                <li><a href="#">Разработка правовых и налоговых схем деятельности</a></li>
+                                <li><a href="#">Составление и сдача налоговой отчетности</a></li>
+                                <li><a href="#">Налоговое планирование</a></li>
+                                <li><a href="#">Налоговая оптимизация</a></li>
+                                <li><a href="#">Возмещение НДС</a></li>
+                                <li><a href="#">Разработка методологии налогового учета</a></li>
+                                <li><a href="#">Постановка налогового учета</a></li>
+                                <li><a href="#">Функция "внутренний ревизор"</a></li>
+                                <li><a href="#">Представительство в контролирующих органах</a></li>
+                                <li><a href="#">Консультационно-методологическое сопровождение операций</a></li>
+                                <li><a href="#">Налоговые споры</a></li>
+                                <li><a href="#">Экспертиза текущей системы налогового учета</a></li>
+                                <li><a href="#">Досудебное урегулирование налоговых споров</a></li>
+                                <li><a href="#">Консультационно-обучающие мероприятия для сотрудников</a></li>
+                            </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">02</h1><span class="dropdown-span">Налогообложение</span><i class="icon-arrow"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu hide">
                                 <li><a href="#">Налоговое консультирование</a></li>
                                 <li><a href="#">Сокращение налоговых штрафов</a></li>
                                 <li><a href="#">Разработка правовых и налоговых схем деятельности</a></li>
@@ -108,73 +126,73 @@
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">03</h1><span class="dropdown-span">Юридический консалтинг</span><i class="icon-arrow"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu hide">
                                 <!-- <li><a href="#">Налоговое консультирование</a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">04</h1><span class="dropdown-span">Стратегический консалтинг</span><i class="icon-arrow"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu hide">
                                 <!-- <li><a href="#">Налоговое консультирование</a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">05</h1><span class="dropdown-span">Операционный консалтинг</span><i class="icon-arrow"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu hide">
                                 <!-- <li><a href="#">Налоговое консультирование</a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">06</h1><span class="dropdown-span">Инвестиционный консалтинг</span><i class="icon-arrow"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu hide">
                                 <!-- <li><a href="#">Налоговое консультирование</a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">07</h1><span class="dropdown-span">Финансовый консалтинг</span><i class="icon-arrow"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu hide">
                                 <!-- <li><a href="#">Налоговое консультирование</a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">08</h1><span class="dropdown-span">Кадровый консалтинг</span><i class="icon-arrow"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu hide">
                                 <!-- <li><a href="#">Налоговое консультирование</a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">09</h1><span class="dropdown-span">Внешние связи и GR</span><i class="icon-arrow"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu hide">
                                 <!-- <li><a href="#">Налоговое консультирование</a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">10</h1><span class="dropdown-span">Маркетинг и реклама</span><i class="icon-arrow"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu hide">
                                 <!-- <li><a href="#">Налоговое консультирование</a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">11</h1><span class="dropdown-span">Digital-услуги</span><i class="icon-arrow"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu hide">
                                 <!-- <li><a href="#">Налоговое консультирование</a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">12</h1><span class="dropdown-span">Политический консалтинг</span><i class="icon-arrow"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu hide">
                                 <!-- <li><a href="#">Налоговое консультирование</a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">13</h1><span class="dropdown-span">Международный консалтинг</span><i class="icon-arrow"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu hide">
                                 <!-- <li><a href="#">Налоговое консультирование</a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">14</h1><span class="dropdown-span">Лингвистический консалтинг</span><i class="icon-arrow"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu hide">
                                 <!-- <li><a href="#">Налоговое консультирование</a></li> -->
                             </ul>
                         </li>
