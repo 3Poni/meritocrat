@@ -33,6 +33,47 @@
     }
 }
 
+.circle-line span{
+    position: relative;
+    opacity: 1;
+    box-shadow: 0 0 10px 4px white;
+    top: 14px;
+    width: 1px;
+    display: block;
+    height: 4px;
+    border: 0 transparent;
+    border-radius: 50%;
+    background-color: white;
+    background-size: 500% 100%;
+    background-clip: text;
+    animation: shine 1s infinite ease-in-out, delay-animation 2s infinite ease-in-out;
+
+}
+
+@keyframes shine {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(206px, 0px);
+    }
+}
+
+@keyframes delay-animation {
+    0%{
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
 @media (max-width:1140px){
     .partners-page .partners-graph_2{
         display: none;
@@ -91,7 +132,7 @@
     header .container .menu-list, .menu-phone{
         display: none;
     }
-    
+
     main .container .main-title .main-underlogo_text{
         font-size: 30px;
     }
@@ -127,7 +168,7 @@
         transition: top 0.3s ease;
         transition: 1s;
       }
-      
+
     .header_hidden {
         transform: translateY(-100%);
     }
@@ -185,7 +226,7 @@
     .contacts .container .contacts-items .left-column .conctacts-phone {
         font-size: 39px;
     }
-    
+
     .contacts .container .contacts-h1{
         font-size: 32px;
     }
@@ -216,7 +257,7 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    
+
     .reviews .container .reviews-sliders .reviews-slider_items .reviews-slider_item-text .reviews-under-text{
         margin-bottom: 20px;
     }
@@ -328,7 +369,7 @@
         filter: blur(20px);
         width: 93px;
         height: 156px;
-    }   
+    }
 
     .consulting-page .container .consulting-text img{
         display: none;
@@ -345,7 +386,7 @@
 
     .consulting-page .container .consulting-text .right-column span{
         margin-left: 0px;
-    }  
+    }
 
     .consulting-page .container .consulting-text .left-column .consulting-h1{
         margin-top: 0px;
@@ -416,7 +457,7 @@
     }
 
     .stages .container .stages-items-row .stages-item{
-        
+
         min-height: 170px;
         padding-bottom: 40px;
     }
@@ -667,7 +708,7 @@
         margin: 0 auto;
     }
 
-/* 
+/*
     .due-expertise .expertise-items-mobile-slider{
         display: block;
     } */
@@ -680,11 +721,11 @@
         display: none;
     }
 
-    
+
 }
 
 @media (max-width:590px) {
-    
+
     main .container .main-title{
         align-items: flex-start;
     }
@@ -717,7 +758,7 @@
         transition: top 0.3s ease;
         transition: 1s;
       }
-      
+
       .header_hidden {
         transform: translateY(-100%);
       }
@@ -737,7 +778,7 @@
       .principes .container .principes-items-mobile{
         display: block;
       }
-      
+
     .partners .container .partners-h1{
         font-size: 32px;
     }
@@ -779,7 +820,7 @@
 
     .projects-row_items_categories-mobile{
         display: block;
-    }   
+    }
 
     .strategic-page .container .strategic-icons .item{
         margin-right: 0px;

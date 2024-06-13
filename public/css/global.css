@@ -33,6 +33,7 @@ body{
     font-weight: 500;
     letter-spacing: 0.8px;
     z-index: 10;
+    transition: ease-out 0.8s;
 }
 .button-white:hover {
     box-shadow: 0 0 8px 0 white;
@@ -52,6 +53,7 @@ body{
     letter-spacing: 0.8px;
     background: none;
     z-index: 10;
+    transition: ease-out 0.8s;
 }
 .button-with-border:hover {
     box-shadow: 0 0 10px 2px white;
