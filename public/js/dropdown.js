@@ -1,10 +1,10 @@
 // Dropdown Menu
-var dropdown = document.querySelectorAll('.dropdown');
-var dropdownArray = Array.prototype.slice.call(dropdown,0);
-dropdownArray.forEach(function(el){
-	var button = el.querySelector('a[data-toggle="dropdown"]'),
+var dropdown = document.querySelectorAll('li.dropdown');
+
+Array.from(dropdown).forEach(function(el){
+	var button = el.querySelector('a[data-toggle]'),
 			menu = el.querySelector('.dropdown-menu'),
-			arrow = button.querySelector('i.icon-arrow');
+			arrow = el.querySelector('.icon-arrow');
 
 	button.onclick = function(event) {
 		if(!menu.hasClass('show')) {
