@@ -18,6 +18,11 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/page/{url}', function () {
+//    TODO PageController
+    return redirect('/');
+})->name('page');
+
 Route::get('/about', function () {
     return view('about');
 })->name('about');
