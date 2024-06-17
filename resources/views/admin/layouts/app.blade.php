@@ -58,9 +58,9 @@
         <div class="sidebar">
             <ul class="pt-3 nav nav-pills nav-sidebar flex-column" data-widget="treeview">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('admin.application.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-th-list"></i>
-                        <p>Страницы</p>
+                        <p>Заявки</p>
                     </a>
                 </li>
                 <li class="nav-item">

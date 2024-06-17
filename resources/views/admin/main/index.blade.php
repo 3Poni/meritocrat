@@ -21,13 +21,13 @@
                         <!-- small box -->
                         <div class="small-box bg-info">
                             <div class="inner">
-                                <h3>3</h3>
-                                <p>Категории</p>
+                                <h3>{{ $data['applicationsCount'] }}</h3>
+                                <p>Заявки</p>
                             </div>
                             <div class="icon">
                                 <i class="nav-icon fas fa-th-list"></i>
                             </div>
-                            <a href="#" class="small-box-footer">Подробнее<i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{ route('admin.application.index') }}" class="small-box-footer">Подробнее<i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
