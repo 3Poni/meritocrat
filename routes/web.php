@@ -33,9 +33,14 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin\Users', 'prefix' => 'ad
     Route::delete('/{user}', DeleteController::class)->name('admin.user.delete');
 });
 
-Route::get('/home', function () {
-//    return view('welcome');
-    return redirect('/admin');
+Route::group(['namespace' => 'App\Http\Controllers\Admin\Pages', 'prefix' => 'admin/pages'], function (){
+    Route::get('/', IndexController::class)->name('admin.page.index');
+    Route::get('/create', CreateController::class)->name('admin.page.create');
+    Route::post('/', StoreController::class)->name('admin.page.store');
+    Route::get('/{page}', ShowController::class)->name('admin.page.show');
+    Route::get('/{page}/edit', EditController::class)->name('admin.page.edit');
+    Route::patch('/{page}', UpdateController::class)->name('admin.page.update');
+    Route::delete('/{page}', DeleteController::class)->name('admin.page.delete');
 });
 
 Route::get('/page/{url}', function () {

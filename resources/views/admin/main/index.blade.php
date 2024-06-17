@@ -49,13 +49,13 @@
                         <!-- small box -->
                         <div class="small-box bg-warning">
                             <div class="inner">
-                                <h3>5</h3>
-                                <p>Статьи</p>
+                                <h3>{{ $data['pagesCount'] }}</h3>
+                                <p>Шаблонные страницы</p>
                             </div>
                             <div class="icon">
                                 <i class="nav-icon fas fa-list-alt"></i>
                             </div>
-                            <a href="#" class="small-box-footer">Подробнее<i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{ route('admin.page.index') }}" class="small-box-footer">Подробнее<i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->

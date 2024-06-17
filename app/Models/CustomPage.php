@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class CustomPage extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'title',
+        'description',
+        'keywords',
+        'header',
+        'url',
+        'content',
+    ];
 }
