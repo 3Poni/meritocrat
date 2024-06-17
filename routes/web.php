@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\Main\IndexController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +18,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 //    return view('welcome');
     return view('index');
+});
+
+Route::group(['namespace' => 'App\Http\Controllers\Admin\Main', 'prefix' => 'admin', 'middleware' => ['auth', 'admin', 'verified'] ], function (){
+    Route::get('/', IndexController::class)->name('admin.main.index');
+});
+
+Route::get('/home', function () {
+//    return view('welcome');
+    return redirect('/admin');
 });
 
 Route::get('/page/{url}', function () {
@@ -91,4 +102,4 @@ Route::get('/vacancy', function () {
     return view('vacancy');
 })->name('vacancy');
 
-
+Auth::routes(['verify' => true]);

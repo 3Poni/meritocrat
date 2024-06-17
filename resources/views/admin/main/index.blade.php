@@ -21,13 +21,13 @@
                         <!-- small box -->
                         <div class="small-box bg-info">
                             <div class="inner">
-                                <h3>{{ $data['categoriesCount'] }}</h3>
+                                <h3>3</h3>
                                 <p>Категории</p>
                             </div>
                             <div class="icon">
                                 <i class="nav-icon fas fa-th-list"></i>
                             </div>
-                            <a href="{{ route('admin.category.index') }}" class="small-box-footer">Подробнее<i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="#" class="small-box-footer">Подробнее<i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -35,13 +35,13 @@
                         <!-- small box -->
                         <div class="small-box bg-success">
                             <div class="inner">
-                                <h3>{{ $data['tagsCount'] }}</h3>
+                                <h3>4</h3>
                                 <p>Тэги</p>
                             </div>
                             <div class="icon">
                                 <i class="nav-icon fas fa-tags"></i>
                             </div>
-                            <a href="{{ route('admin.tag.index') }}" class="small-box-footer">Подробнее <i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="#" class="small-box-footer">Подробнее <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -49,13 +49,13 @@
                         <!-- small box -->
                         <div class="small-box bg-warning">
                             <div class="inner">
-                                <h3>{{ $data['articlesCount'] }}</h3>
+                                <h3>5</h3>
                                 <p>Статьи</p>
                             </div>
                             <div class="icon">
                                 <i class="nav-icon fas fa-list-alt"></i>
                             </div>
-                            <a href="{{ route('admin.article.index') }}" class="small-box-footer">Подробнее<i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="#" class="small-box-footer">Подробнее<i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -69,7 +69,7 @@
                             <div class="icon">
                                 <i class="nav-icon fas fa-users"></i>
                             </div>
-                            <a href="{{ route('admin.user.index') }}" class="small-box-footer">Подробнее<i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="#" class="small-box-footer">Подробнее<i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
