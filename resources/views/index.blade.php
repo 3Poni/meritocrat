@@ -278,19 +278,22 @@
                 </span>
                 </div>
             </div>
-            <div class="scheme-work_forms">
+            <form action="{{ route('application.store') }}" method="POST"  class="scheme-work_forms">
+                @csrf
+                @method('POST')
                 <div class="left-side">
                     <h1 class="section-small-h1">Мы готовы приступить к работе. А вы?</h1>
                     <div class="forms-items">
-                        <input type="name" placeholder="Имя" class="scheme-work_form">
-                        <input type="phone" placeholder="Номер телефона" class="scheme-work_form">
-                        <input type="email" placeholder="Email" class="scheme-work_form">
+                        <input type="text" name="name" placeholder="Имя" class="scheme-work_form">
+                        <input type="text" name="phone" placeholder="Номер телефона" class="scheme-work_form">
+                        <input type="email" name="email" placeholder="Email" class="scheme-work_form">
+                        <input type="hidden" name="source" value="main">
                     </div>
                 </div>
                 <div class="right-side">
-                    <input type="button" value="Оформить заявку" class="button-white">
+                    <input type="submit" value="Оформить заявку" class="button-white">
                 </div>
-            </div>
+            </form>
         </div>
     </section>
     <section class="partners">
