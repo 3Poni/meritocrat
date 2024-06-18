@@ -7,7 +7,6 @@
 @endpush
 @section('title'){{$page->title}}@endsection
 @section('content')
-
 <section class="accounting-support">
     <div class="container">
         <div class="links">
