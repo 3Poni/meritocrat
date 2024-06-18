@@ -42,7 +42,8 @@
             gap: 10px;
         }
         .auth-field input {
-            padding: 10px;
+            background: transparent;
+            padding: 15px;
             border: 1px solid gray;
             border-radius: 12px;
         }
@@ -58,9 +59,39 @@
             background: white;
         }
         .auth-input {
+            box-shadow: #00000026 0 6px 20px;
+            min-width: 270px;
             display: flex;
             flex-direction: column;
             gap: 5px;
+            border-radius: 12px;
+        }
+        .auth-error {
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+            color: #ff3d3d;
+        }
+        .auth-action button {
+            transition: linear 0.4s;
+            min-width: 170px;
+            padding: 15px;
+            font-weight: 700;
+            color: #3c3c3cde;
+            letter-spacing: 4px;
+            text-shadow: 0 1px 20px #2300ffbf;
+            box-shadow: #2000fa69 0 5px 63px;
+            border: none;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border-radius: 12px;
+            background: #783dff30;
+        }
+        .auth-action button:hover {
+            cursor: pointer;
+            color: white;
+            transition: linear 0.3s;
+            background: gainsboro;
         }
     </style>
 </head>

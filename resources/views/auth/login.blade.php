@@ -8,30 +8,24 @@
                 @csrf
 
                 <div class="auth-field">
-                    <label for="email">{{ __('Login') }}</label>
+                    <label for="email">{{ __('Логин') }}</label>
 
                     <div class="auth-input">
                         <input id="email" type="email" name="email" value="{{ old('email') }}" required
                                autocomplete="email" autofocus>
-
-                        @error('email')
-                        <span role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                        @enderror
                     </div>
                 </div>
 
                 <div class="auth-field">
-                    <label for="password">{{ __('Password') }}</label>
+                    <label for="password">{{ __('Пароль') }}</label>
 
-                    <div>
+                    <div class="auth-input">
                         <input id="password" type="password" name="password" required autocomplete="current-password">
 
-                        @error('password')
-                        <span role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                        @error('email')
+                        <span class="auth-error" role="alert">
+                            Неверный логин или пароль
+                        </span>
                         @enderror
                     </div>
                 </div>
@@ -51,14 +45,8 @@
                 <div class="auth-field">
                     <div class="auth-action">
                         <button type="submit">
-                            {{ __('Войти') }}
+                            {{ __('Вход') }}
                         </button>
-
-                        @if (Route::has('password.request'))
-                            <a href="{{ route('password.request') }}">
-                                {{ __('Забыли пароль?') }}
-                            </a>
-                        @endif
                     </div>
                 </div>
             </form>
