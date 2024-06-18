@@ -36,6 +36,7 @@
                                                 <tr>
                                                     <th>ID</th>
                                                     <th>Название</th>
+                                                    <th>Ссылка</th>
                                                     <th colspan="3">Действие</th>
                                                 </tr>
                                                 </thead>
@@ -44,6 +45,7 @@
                                                 <tr>
                                                     <td>{{ $page->id  }}</td>
                                                     <td>{{ $page->title  }}</td>
+                                                    <td><a href="{{ route('page', $page->url) }}" target="_blank">{{ $page->url  }}</a></td>
                                                     <td><a href="{{ route('admin.page.show', $page->id) }}"><i class="far fa-eye"></i></a></td>
                                                     <td><a href="{{ route('admin.page.edit', $page->id) }}"><i class="fas fa-pencil-alt text-success"></i></a></td>
                                                     <td>

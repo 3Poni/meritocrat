@@ -44,6 +44,26 @@
                                                     <td>Название</td>
                                                     <td>{{ $page->title  }}</td>
                                                 </tr>
+                                                <tr>
+                                                    <td>Ссылка</td>
+                                                    <td><a href="{{ route('page', $page->url) }}" target="_blank">{{ $page->url  }}</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Keywords</td>
+                                                    <td>{{ $page->keywords  }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Заголовок</td>
+                                                    <td>{{ $page->header  }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Описание</td>
+                                                    <td>{{ $page->description  }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Контент</td>
+                                                    <td>{{ $page->content  }}</td>
+                                                </tr>
                                                 </tbody>
                                             </table>
                                         </div>
