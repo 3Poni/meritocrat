@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 //    return view('welcome');
     return view('index');
-});
+})->name('index');
 
 Route::group(['namespace' => 'App\Http\Controllers\Admin\Main', 'prefix' => 'admin', 'middleware' => ['auth', 'admin', 'verified'] ], function (){
     Route::get('/', IndexController::class)->name('admin.main.index');
@@ -56,6 +56,8 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin\Applications', 'prefix'
 Route::get('/download/{file}', 'App\Http\Controllers\DownloadController')->name('download')->middleware( ['auth', 'admin', 'verified']);
 
 Route::get('/page/{url}', 'App\Http\Controllers\PageController')->name('page');
+
+Route::post('/application', ['App\Http\Controllers\ApplicationController', 'store'])->name('application.store');
 
 Route::get('/about', function () {
     return view('about');
