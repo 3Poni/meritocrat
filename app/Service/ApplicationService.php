@@ -12,7 +12,7 @@ class ApplicationService
     {
         try {
             DB::beginTransaction();
-            $data['file'] = Storage::disk('public')->put('/files', $data['file']);
+            $data['file'] = explode('/',Storage::disk('public')->put('/files', $data['file']))[1];
             Application::firstOrcreate($data);
             DB::commit();
         } catch (\Exception $exception) {
@@ -27,7 +27,7 @@ class ApplicationService
         try {
             DB::beginTransaction();
             if (isset($data['file'])){
-                $data['file'] = Storage::disk('public')->put('/files', $data['file']);
+                $data['file'] = explode('/',Storage::disk('public')->put('/files', $data['file']))[1];
             }
             $page->update($data);
             DB::commit();

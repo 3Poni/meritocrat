@@ -56,6 +56,12 @@
                                                     <td>Источник</td>
                                                     <td>{{ $application->source  }}</td>
                                                 </tr>
+                                                @if(!empty($application->file))
+                                                    <tr>
+                                                        <td>Прикрепленный файл</td>
+                                                        <td><a href="{{ route('download', $application->file) }}">{{ $application->file  }}</a></td>
+                                                    </tr>
+                                                @endif
                                                 </tbody>
                                             </table>
                                         </div>

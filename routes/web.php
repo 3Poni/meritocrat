@@ -53,6 +53,8 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin\Applications', 'prefix'
     Route::delete('/{application}', DeleteController::class)->name('admin.application.delete');
 });
 
+Route::get('/download/{file}', 'App\Http\Controllers\DownloadController')->name('download')->middleware( ['auth', 'admin', 'verified']);
+
 Route::get('/page/{url}', function () {
 //    TODO PageController
     return redirect('/');
