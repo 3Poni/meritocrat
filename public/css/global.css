@@ -55,6 +55,9 @@ body{
     z-index: 10;
     transition: ease-out 0.8s;
 }
+input[type=file]::file-selector-button {
+    display: none !important;
+}
 .button-with-border:hover {
     box-shadow: 0 0 10px 2px white;
     transition: ease-out 0.4s;

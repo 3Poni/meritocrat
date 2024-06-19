@@ -17,7 +17,6 @@ class ApplicationController extends Controller
     public function store(StoreRequest $request)
     {
         $data = $request->validated();
-
         $this->service->store($data);
 
         return view('index', compact('data'));

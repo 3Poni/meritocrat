@@ -78,7 +78,7 @@
                                     @enderror
                                 </div>
                                 <div class="form-group col-4">
-                                    <label for="image">Добавить файл</label>
+                                    <label for="file">Добавить файл</label>
                                     <div class="input-group">
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="file" name="file">

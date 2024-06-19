@@ -27,9 +27,9 @@ class StoreRequest extends FormRequest
             'name' => 'required|string',
             'phone' => 'required|string',
             'email' => 'required|string',
-            'comment' => 'string',
-            'source' => 'required|string',
-            'file' => 'file|mimes:txt,docx,doc,pdf,xlsx',
+            'comment' => 'nullable|string',
+            'source' => 'nullable|string',
+            'file' => 'nullable',
         ];
     }
     public function messages()
@@ -39,7 +39,6 @@ class StoreRequest extends FormRequest
             'name.string' => 'Данные должны соответствовать строчному типу',
             'phone.required' => 'Необходимо заполнить телефон',
             'email.required' => 'Необходимо заполнить Email',
-            'source.required' => 'Необходимо указать источник заявки',
         ];
     }
 }

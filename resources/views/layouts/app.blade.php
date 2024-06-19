@@ -188,21 +188,24 @@
 
                     </div>
                 </div>
-                <div class="right-column">
+                <form action="{{ route('application.store') }}" method="POST" class="right-column" enctype="multipart/form-data">
+                    @csrf
+                    @method('POST')
                     <h1 class="right-column_h1">Оставьте заявку</h1>
                     <span>Рассчитать стоимость услуг</span>
                     <div class="contacts-forms">
-                        <input type="text" placeholder="Имя" class="contacts-form">
-                        <input type="text" placeholder="Телефон" class="contacts-form">
-                        <input type="text" placeholder="Email" class="contacts-form">
-                        <textarea name="" id="" cols="30" rows="10" class="contacts-comments" placeholder="Комментарии"></textarea>
+                        <input type="text" name="name" placeholder="Имя" class="contacts-form">
+                        <input type="text" name="phone" placeholder="Телефон" class="contacts-form">
+                        <input type="email" name="email" placeholder="Email" class="contacts-form">
+                        <input type="hidden" name="source" value="contacts">
+                        <textarea name="comment" id="comment" cols="30" rows="10" class="contacts-comments" placeholder="Комментарии"></textarea>
                         <span class="text-data">*Нажимая кнопку «Отправить», я даю согласие на обработку <a>персональных данных</a></span>
                         <div class="row-buttons">
-                            <input type="button" class="button-with-border" value="Прикрепить файлы">
-                            <input type="button" class="button-white" value="Отправить">
+                            <input type="file" class="button-with-border" name="file" value="Прикрепить файлы">
+                            <input type="submit" class="button-white" value="Отправить">
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>
