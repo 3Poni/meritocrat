@@ -288,10 +288,11 @@
                         <input type="text" name="phone" placeholder="Номер телефона" class="scheme-work_form">
                         <input type="email" name="email" placeholder="Email" class="scheme-work_form">
                         <input type="hidden" name="source" value="main">
+                        <input type="submit" value="Оформить заявку" class="button-white">
                     </div>
                 </div>
                 <div class="right-side">
-                    <input type="submit" value="Оформить заявку" class="button-white">
+
                 </div>
             </form>
         </div>
