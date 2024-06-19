@@ -226,14 +226,14 @@
           </div>
           <div class="footer-column">
             <ul>
-              <li><a href="">Главная</a></li>
-              <li><a href="">О компании</a></li>
-              <li><a href="">Услуги</a></li>
+              <li><a href="{{ route('index') }}">Главная</a></li>
+              <li><a href="{{ route('about') }}">О компании</a></li>
+              <li><a href="{{ route('services') }}">Услуги</a></li>
               <li><a href="">Аналитика</a></li>
-              <li><a href="">Проекты</a></li>
-              <li><a href="">Партнеры</a></li>
-              <li><a href="">Вакансии</a></li>
-              <li><a href="">Контакты</a></li>
+              <li><a href="{{ route('projects') }}">Проекты</a></li>
+              <li><a href="{{ route('partners') }}">Партнеры</a></li>
+              <li><a href="{{ route('vacancy') }}">Вакансии</a></li>
+              <li><a href="#contacts">Контакты</a></li>
             </ul>
           </div>
           <div class="footer-column">
