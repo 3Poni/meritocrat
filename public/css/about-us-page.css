@@ -1,4 +1,5 @@
 .about-company{
+    background: transparent !important;
     position: relative;
     padding-top: 30px;
 }

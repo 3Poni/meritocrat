@@ -8,7 +8,7 @@
 @endpush
 @section('title')О компании@endsection
 @section('content')
-<section class="about-company">
+<section class="about-company about-company-main">
     <div class="graph-about"><img src="../img/graph-about.png" alt=""></div>
     <div class="container">
         <div class="links">
