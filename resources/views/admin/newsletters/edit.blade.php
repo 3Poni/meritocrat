@@ -19,7 +19,7 @@
                     <!-- Small boxes (Stat box) -->
                     <div class="row">
                         <div class="col-12">
-                            <form action="{{ route('admin.email.update', $newsletter->id) }}" method="POST">
+                            <form action="{{ route('admin.newsletter.update', $newsletter->id) }}" method="POST">
                                 @csrf
                                 @method('PATCH')
                                 <div class="form-group w-25">

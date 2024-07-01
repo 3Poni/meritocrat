@@ -7,12 +7,10 @@ use App\Service\NewsletterService;
 
 class BaseController extends Controller
 {
-    public $Newsletter;
+    public $newsletter;
 
-    public function __construct(NewsletterService $Newsletter)
+    public function __construct(NewsletterService $newsletter)
     {
-        $this->Newsletter = $Newsletter;
+        $this->newsletter = $newsletter;
     }
-
-
 }

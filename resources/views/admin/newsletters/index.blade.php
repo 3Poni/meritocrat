@@ -19,7 +19,7 @@
                     <!-- Small boxes (Stat box) -->
                     <div class="row">
                         <div class="col-1 mb-3">
-                            <a href="{{ route('admin.email.create') }}" type="button" class="btn btn-block btn-default">Добавить</a>
+                            <a href="{{ route('admin.newsletter.create') }}" type="button" class="btn btn-block btn-default">Добавить</a>
                         </div>
                     </div>
                     <div class="row">
@@ -43,8 +43,9 @@
                                                 @foreach ($newsletters as $newsletter)
                                                 <tr>
                                                     <td>{{ $newsletter->email  }}</td>
+                                                    <td>{{ $newsletter->id  }}</td>
                                                     <td>
-                                                        <form action="{{ route('admin.email.delete', $newsletter->id)}}" method="POST">
+                                                        <form action="{{ route('admin.newsletter.delete', $newsletter->id)}}" method="POST">
                                                             @csrf
                                                             @method('DELETE')
                                                             <button type="submit" class="border-0 bg-transparent">
