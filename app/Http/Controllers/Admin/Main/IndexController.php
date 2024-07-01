@@ -8,6 +8,7 @@ use App\Models\CustomPage;
 use App\Models\Newsletter;
 use App\Models\Service;
 use App\Models\User;
+use App\Models\Vacancy;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -20,6 +21,7 @@ class IndexController extends Controller
         $data ['pagesCount'] = CustomPage::all()->count();
         $data ['serviceCount'] = Service::all()->count();
         $data ['newsletterCount'] = Newsletter::all()->count();
+        $data ['vacancyCount'] = Vacancy::all()->count();
         $data ['applicationsCount'] = Application::all()->count();
         return view('admin.main.index', compact('data'));
     }

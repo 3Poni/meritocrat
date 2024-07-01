@@ -82,6 +82,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="{{ route('admin.vacancy.index') }}" class="nav-link">
+                        <i class="nav-icon fas fa-list-alt"></i>
+                        <p>Вакансии</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="{{ route('admin.page.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-list-alt"></i>
                         <p>Шаблонные страницы</p>
