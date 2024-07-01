@@ -53,6 +53,16 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin\Services', 'prefix' => 
     Route::delete('/{service}', DeleteController::class)->name('admin.service.delete');
 });
 
+Route::group(['namespace' => 'App\Http\Controllers\Admin\Newsletters', 'prefix' => 'admin/newsletters'], function (){
+    Route::get('/', IndexController::class)->name('admin.newsletter.index');
+    Route::get('/create', CreateController::class)->name('admin.newsletter.create');
+    Route::post('/', StoreController::class)->name('admin.newsletter.store');
+    Route::get('/{newsletter}', ShowController::class)->name('admin.newsletter.show');
+    Route::get('/{newsletter}/edit', EditController::class)->name('admin.newsletter.edit');
+    Route::patch('/{newsletter}', UpdateController::class)->name('admin.newsletter.update');
+    Route::delete('/{newsletter}', DeleteController::class)->name('admin.newsletter.delete');
+});
+
 Route::group(['namespace' => 'App\Http\Controllers\Admin\Applications', 'prefix' => 'admin/applications'], function (){
     Route::get('/', IndexController::class)->name('admin.application.index');
     Route::get('/create', CreateController::class)->name('admin.application.create');

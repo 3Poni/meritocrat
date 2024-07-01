@@ -71,6 +71,19 @@
                             <a href="{{ route('admin.service.index') }}" class="small-box-footer">Подробнее<i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
+                    <div class="col-lg-3 col-6">
+                        <!-- small box -->
+                        <div class="small-box bg-warning">
+                            <div class="inner">
+                                <h3>{{ $data['newslettersCount'] }}</h3>
+                                <p>E-mail для рассылки</p>
+                            </div>
+                            <div class="icon">
+                                <i class="nav-icon fas fa-list-alt"></i>
+                            </div>
+                            <a href="{{ route('admin.newsletter.index') }}" class="small-box-footer">Подробнее<i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
                     <!-- ./col -->
                     <div class="col-lg-3 col-6">
                         <!-- small box -->
