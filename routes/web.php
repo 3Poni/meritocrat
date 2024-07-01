@@ -43,6 +43,16 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin\Pages', 'prefix' => 'ad
     Route::delete('/{page}', DeleteController::class)->name('admin.page.delete');
 });
 
+Route::group(['namespace' => 'App\Http\Controllers\Admin\Services', 'prefix' => 'admin/services'], function (){
+    Route::get('/', IndexController::class)->name('admin.service.index');
+    Route::get('/create', CreateController::class)->name('admin.service.create');
+    Route::post('/', StoreController::class)->name('admin.service.store');
+    Route::get('/{service}', ShowController::class)->name('admin.service.show');
+    Route::get('/{service}/edit', EditController::class)->name('admin.service.edit');
+    Route::patch('/{service}', UpdateController::class)->name('admin.service.update');
+    Route::delete('/{service}', DeleteController::class)->name('admin.service.delete');
+});
+
 Route::group(['namespace' => 'App\Http\Controllers\Admin\Applications', 'prefix' => 'admin/applications'], function (){
     Route::get('/', IndexController::class)->name('admin.application.index');
     Route::get('/create', CreateController::class)->name('admin.application.create');
