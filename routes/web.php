@@ -66,6 +66,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin\Applications', 'prefix'
 Route::get('/download/{file}', 'App\Http\Controllers\DownloadController')->name('download')->middleware( ['auth', 'admin', 'verified']);
 
 Route::get('/page/{url}', 'App\Http\Controllers\PageController')->name('page');
+Route::get('/service/{url}', 'App\Http\Controllers\ServiceController')->name('service');
 
 Route::post('/application', ['App\Http\Controllers\ApplicationController', 'store'])->name('application.store');
 

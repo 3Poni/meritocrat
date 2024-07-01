@@ -2,7 +2,7 @@
 
 namespace App\Service;
 
-use App\Models\Application;
+use App\Models\Service;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
@@ -13,9 +13,9 @@ class ServiceService
         try {
             DB::beginTransaction();
             if (isset($data['img'])) {
-                $data['img'] = explode('/', Storage::disk('public')->put('/img/service', $data['img']))[1];
+                $data['img'] = explode('/', Storage::disk('public')->put('/img/service', $data['img']))[2];
             }
-            Application::firstOrcreate($data);
+            Service::firstOrcreate($data);
             DB::commit();
         } catch (\Exception $exception) {
             DB::rollBack();
@@ -24,19 +24,19 @@ class ServiceService
 
     }
 
-    public function update($data, $page)
+    public function update($data, $service)
     {
         try {
             DB::beginTransaction();
             if (isset($data['img'])){
-                $data['img'] = explode('/',Storage::disk('public')->put('/img/service', $data['img']))[1];
+                $data['img'] = explode('/',Storage::disk('public')->put('/img/service', $data['img']))[2];
             }
-            $page->update($data);
+            $service->update($data);
             DB::commit();
         } catch (\Exception $exception) {
             DB::rollBack();
             abort(500);
         }
-        return $page;
+        return $service;
     }
 }
