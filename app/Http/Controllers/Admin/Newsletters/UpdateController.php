@@ -11,7 +11,7 @@ class UpdateController extends BaseController
     public function __invoke(UpdateRequest $request, Newsletter $newsletter)
     {
             $data = $request->validated();
-            $newsletter = $this->newsletter->update($data, $newsletter);
+            $newsletter = $this->service->update($data, $newsletter);
 
             return view ('admin.newsletters.show', compact('newsletter'));
     }

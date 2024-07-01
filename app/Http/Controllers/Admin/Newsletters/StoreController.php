@@ -12,7 +12,7 @@ class StoreController extends BaseController
     {
 
         $data = $request->validated();
-        $this->newsletter->store($data);
+        $this->service->store($data);
 
         return redirect()->route('admin.newsletter.index');
     }
