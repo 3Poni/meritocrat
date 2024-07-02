@@ -73,6 +73,16 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin\Vacancies', 'prefix' =>
     Route::delete('/{vacancy}', DeleteController::class)->name('admin.vacancy.delete');
 });
 
+Route::group(['namespace' => 'App\Http\Controllers\Admin\Reviews', 'prefix' => 'admin/reviews'], function (){
+    Route::get('/', IndexController::class)->name('admin.review.index');
+    Route::get('/create', CreateController::class)->name('admin.review.create');
+    Route::post('/', StoreController::class)->name('admin.review.store');
+    Route::get('/{review}', ShowController::class)->name('admin.review.show');
+    Route::get('/{review}/edit', EditController::class)->name('admin.review.edit');
+    Route::patch('/{review}', UpdateController::class)->name('admin.review.update');
+    Route::delete('/{review}', DeleteController::class)->name('admin.review.delete');
+});
+
 Route::group(['namespace' => 'App\Http\Controllers\Admin\Applications', 'prefix' => 'admin/applications'], function (){
     Route::get('/', IndexController::class)->name('admin.application.index');
     Route::get('/create', CreateController::class)->name('admin.application.create');

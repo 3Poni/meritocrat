@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Application;
 use App\Models\CustomPage;
 use App\Models\Newsletter;
+use App\Models\Review;
 use App\Models\Service;
 use App\Models\User;
 use App\Models\Vacancy;
@@ -22,6 +23,7 @@ class IndexController extends Controller
         $data ['serviceCount'] = Service::all()->count();
         $data ['newsletterCount'] = Newsletter::all()->count();
         $data ['vacancyCount'] = Vacancy::all()->count();
+        $data ['reviewCount'] = Review::all()->count();
         $data ['applicationsCount'] = Application::all()->count();
         return view('admin.main.index', compact('data'));
     }
