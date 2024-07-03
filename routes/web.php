@@ -73,6 +73,15 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin\Newsletters', 'prefix' 
     Route::delete('/{newsletter}', DeleteController::class)->name('admin.newsletter.delete');
 });
 
+Route::group(['namespace' => 'App\Http\Controllers\Admin\Partners', 'prefix' => 'admin/partners'], function (){
+    Route::get('/', IndexController::class)->name('admin.partner.index');
+    Route::get('/create', CreateController::class)->name('admin.partner.create');
+    Route::post('/', StoreController::class)->name('admin.partner.store');
+    Route::get('/{partner}/edit', EditController::class)->name('admin.partner.edit');
+    Route::patch('/{partner}', UpdateController::class)->name('admin.partner.update');
+    Route::delete('/{partner}', DeleteController::class)->name('admin.partner.delete');
+});
+
 Route::group(['namespace' => 'App\Http\Controllers\Admin\Tags', 'prefix' => 'admin/tags'], function (){
     Route::get('/', IndexController::class)->name('admin.tag.index');
     Route::get('/create', CreateController::class)->name('admin.tag.create');

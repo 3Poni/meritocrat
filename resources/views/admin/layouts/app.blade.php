@@ -70,6 +70,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="{{ route('admin.partner.index') }}" class="nav-link">
+                        <i class="nav-icon fas fa-tags"></i>
+                        <p>Партнеры</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="{{ route('admin.service.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-list-alt"></i>
                         <p>Услуги</p>
