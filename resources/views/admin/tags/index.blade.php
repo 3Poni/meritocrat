@@ -44,7 +44,8 @@
                                                 <tr>
                                                     <td>{{ $tag->id  }}</td>
                                                     <td>{{ $tag->title  }}</td>
-                                                    <td>
+                                                    <td class="d-flex jc-center">
+                                                        <a href="{{ route('admin.tag.edit', $tag->id) }}"><i class="mr-4 fas fa-pencil-alt text-success"></i></a>
                                                         <form action="{{ route('admin.tag.delete', $tag->id)}}" method="POST">
                                                             @csrf
                                                             @method('DELETE')
@@ -52,6 +53,7 @@
                                                             <i class="fas fa-trash text-danger" role="button"></i>
                                                             </button>
                                                         </form>
+                                                    </td>
                                                 </tr>
                                                 @endforeach
                                                 </tbody>

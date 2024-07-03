@@ -12,6 +12,6 @@ class UpdateController extends BaseController
     {
             $data = $request->validated();
             $tag = $this->service->update($data, $tag);
-            return view ('admin.tags.show', compact('tag'));
+            return view ('admin.tags.index', compact('tag'));
     }
 }
