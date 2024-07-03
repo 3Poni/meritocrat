@@ -64,15 +64,21 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('admin.tag.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-tags"></i>
-                        <p>Слайдеры</p>
+                        <p>Тэги</p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('admin.service.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-list-alt"></i>
                         <p>Услуги</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin.direction.index') }}" class="nav-link">
+                        <i class="nav-icon fas fa-list-alt"></i>
+                        <p>Направления услуг</p>
                     </a>
                 </li>
                 <li class="nav-item">

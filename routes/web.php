@@ -43,6 +43,16 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin\Pages', 'prefix' => 'ad
     Route::delete('/{page}', DeleteController::class)->name('admin.page.delete');
 });
 
+Route::group(['namespace' => 'App\Http\Controllers\Admin\Directions', 'prefix' => 'admin/directions'], function (){
+    Route::get('/', IndexController::class)->name('admin.direction.index');
+    Route::get('/create', CreateController::class)->name('admin.direction.create');
+    Route::post('/', StoreController::class)->name('admin.direction.store');
+    Route::get('/{direction}', ShowController::class)->name('admin.direction.show');
+    Route::get('/{direction}/edit', EditController::class)->name('admin.direction.edit');
+    Route::patch('/{direction}', UpdateController::class)->name('admin.direction.update');
+    Route::delete('/{direction}', DeleteController::class)->name('admin.direction.delete');
+});
+
 Route::group(['namespace' => 'App\Http\Controllers\Admin\Services', 'prefix' => 'admin/services'], function (){
     Route::get('/', IndexController::class)->name('admin.service.index');
     Route::get('/create', CreateController::class)->name('admin.service.create');
@@ -61,6 +71,15 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin\Newsletters', 'prefix' 
     Route::get('/{newsletter}/edit', EditController::class)->name('admin.newsletter.edit');
     Route::patch('/{newsletter}', UpdateController::class)->name('admin.newsletter.update');
     Route::delete('/{newsletter}', DeleteController::class)->name('admin.newsletter.delete');
+});
+
+Route::group(['namespace' => 'App\Http\Controllers\Admin\Tags', 'prefix' => 'admin/tags'], function (){
+    Route::get('/', IndexController::class)->name('admin.tag.index');
+    Route::get('/create', CreateController::class)->name('admin.tag.create');
+    Route::post('/', StoreController::class)->name('admin.tag.store');
+    Route::get('/{tag}/edit', EditController::class)->name('admin.tag.edit');
+    Route::patch('/{tag}', UpdateController::class)->name('admin.tag.update');
+    Route::delete('/{tag}', DeleteController::class)->name('admin.tag.delete');
 });
 
 Route::group(['namespace' => 'App\Http\Controllers\Admin\Vacancies', 'prefix' => 'admin/vacancies'], function (){
@@ -107,6 +126,11 @@ Route::get('/about', function () {
 Route::get('/services', function () {
     return view('services');
 })->name('services');
+
+Route::get('/direction/{url}', function () {
+    // TODO make controller
+    return view('index');
+})->name('direction');
 
 Route::get('/projects', function () {
     return view('projects');
