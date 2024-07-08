@@ -13,6 +13,11 @@ class Direction extends Model
 
     protected $guarded = false;
 
+    public function service()
+    {
+        return $this->belongsTo(Service::class, 'service_id', 'id');
+    }
+
     protected function result(): Attribute
     {
         return Attribute::make(
@@ -22,14 +27,14 @@ class Direction extends Model
     protected function result2(): Attribute
     {
         return Attribute::make(
-            get: fn (string $value) => unserialize($value),
+            get: fn (string|null $value) =>  unserialize($value),
 
         );
     }
     protected function stages(): Attribute
     {
         return Attribute::make(
-            get: fn (string $value) => unserialize($value),
+            get: fn (string|null $value) => unserialize($value),
 
         );
     }
