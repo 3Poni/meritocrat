@@ -232,7 +232,7 @@
               <li><a href="">Аналитика</a></li>
               <li><a href="{{ route('projects') }}">Проекты</a></li>
               <li><a href="{{ route('partners') }}">Партнеры</a></li>
-              <li><a href="{{ route('vacancy') }}">Вакансии</a></li>
+              <li><a href="{{ route('vacancies') }}">Вакансии</a></li>
               <li><a href="#contacts">Контакты</a></li>
             </ul>
           </div>
