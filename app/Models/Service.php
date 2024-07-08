@@ -17,4 +17,10 @@ class Service extends Model
         'url',
         'img',
     ];
+
+    public function directions()
+    {
+        return $this->hasMany(Direction::class, 'service_id', 'id');
+    }
+
 }
