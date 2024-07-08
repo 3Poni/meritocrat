@@ -8,7 +8,7 @@
 @section('content')
 <section class="services">
     <div class="graph-services-page"><img src="../img/graph-services-page.png" alt=""></div>
-    <div class="container">
+    <div class="container"  style="flex-direction: column">
         <div class="links">
             <a href="../index.html"><span>Главная</span></a>
             <img src="../img/arrow.png" alt="">
@@ -18,6 +18,19 @@
             <h1>Услуги</h1>
         </div>
         <div class="services-items">
+            @foreach($services as $service)
+            <div class="item">
+                <div class="item-text">
+                    <span class="item-span">{{ $service->header }}</span>
+                    <img src="" alt="">
+                </div>
+                <div class="item-img">
+                    <img src="{{ $service->img }}" alt="Изображение 1" class="image">
+                </div>
+                <a href=""><button class="purple-button">Перейти</button></a>
+            </div>
+            @endforeach
+            @if(false)
             <div class="item">
                 <div class="item-text">
                     <span class="item-span">Бухгалтерский учет</span>
@@ -158,6 +171,7 @@
                 </div>
                 <a href=""><button class="purple-button">Перейти</button></a>
             </div>
+            @endif
             <div class="item">
                 <div class="item-text">
                     <h2 class="section-small-h1">Требуется эксклюзивная услуга?</h2>
