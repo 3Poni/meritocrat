@@ -16,19 +16,20 @@
         </h1>
         <div class="container-drop">
             <ul>
+              @foreach($vacancies as $vacancy)
               <li class="dropdown" id="dropdown">
-                <span class="dropdown-span">Название вакансии</span><img src="../img/icons/arrow-down-white-1.png" alt="">
+                <span class="dropdown-span">{{ $vacancy->title }}</span><img src="../img/icons/arrow-down-white-1.png" alt="">
               </li>
               <li class="dropdown-menu-vacancy" id="dropdown-menu">
                 <div >
                     <div class="first-row">
                       <div class="row-text">
                         <h1>Тип занятости</h1>
-                        <span>Удаленная работа</span>
+                        <span>{{ $vacancy->type }}</span>
                       </div>
                       <div class="row-text">
                         <h1>Зарплата</h1>
-                        <span>От 00 до 000 тыс. рублей</span>
+                        <span>{{ $vacancy->salary }}</span>
                       </div>
                     </div>
                     <div class="second-row">
@@ -38,12 +39,7 @@
                         </div>
                         <div class="right-column">
                           <span>
-                            1. Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque.<br><br>
-                            2. Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque.<br><br>
-                            3. Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque.<br><br>
-                            4. Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque.<br><br>
-                            5. Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque.<br><br>
-                            6. Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque.<br><br>
+                            {!! $vacancy->requirements !!}
                           </span>
                         </div>
                       </div>
@@ -53,9 +49,7 @@
                         </div>
                         <div class="right-column">
                           <span>
-                            1. Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque.<br><br>
-                            2. Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque.<br><br>
-                            3. Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque.<br><br>
+                           {!! $vacancy->description !!}
                             <button class="button-white">Отправить резюме</button>
                           </span>
                         </div>
@@ -63,78 +57,7 @@
                     </div>
                 </div>
               </li>
-              <li class="dropdown" id="dropdown">
-                <span class="dropdown-span">Название вакансии</span><img src="../img/icons/arrow-down-white-1.png" alt="">
-                <ul class="dropdown-menu">
-                  <!-- <li><a href="#">Налоговое консультирование</a></li> -->
-                </ul>
-              </li>
-              <li class="dropdown" id="dropdown">
-                <span class="dropdown-span">Название вакансии</span><img src="../img/icons/arrow-down-white-1.png" alt="">
-                <ul class="dropdown-menu">
-                  <!-- <li><a href="#">Налоговое консультирование</a></li> -->
-                </ul>
-              </li>
-              <li class="dropdown" id="dropdown">
-                <span class="dropdown-span">Название вакансии</span><img src="../img/icons/arrow-down-white-1.png" alt="">
-                <ul class="dropdown-menu">
-                  <!-- <li><a href="#">Налоговое консультирование</a></li> -->
-                </ul>
-              </li>
-              <li class="dropdown" id="dropdown">
-                <span class="dropdown-span">Название вакансии</span><img src="../img/icons/arrow-down-white-1.png" alt="">
-                <ul class="dropdown-menu">
-                  <!-- <li><a href="#">Налоговое консультирование</a></li> -->
-                </ul>
-              </li>
-              <li class="dropdown" id="dropdown">
-                <span class="dropdown-span">Название вакансии</span><img src="../img/icons/arrow-down-white-1.png" alt="">
-                <ul class="dropdown-menu">
-                  <!-- <li><a href="#">Налоговое консультирование</a></li> -->
-                </ul>
-              </li>
-              <li class="dropdown" id="dropdown">
-                <span class="dropdown-span">Название вакансии</span><img src="../img/icons/arrow-down-white-1.png" alt="">
-                <ul class="dropdown-menu">
-                  <!-- <li><a href="#">Налоговое консультирование</a></li> -->
-                </ul>
-              </li>
-              <li class="dropdown" id="dropdown">
-                <span class="dropdown-span">Название вакансии</span><img src="../img/icons/arrow-down-white-1.png" alt="">
-                <ul class="dropdown-menu">
-                  <!-- <li><a href="#">Налоговое консультирование</a></li> -->
-                </ul>
-              </li>
-              <li class="dropdown" id="dropdown">
-                <span class="dropdown-span">Название вакансии</span><img src="../img/icons/arrow-down-white-1.png" alt="">
-                <ul class="dropdown-menu">
-                  <!-- <li><a href="#">Налоговое консультирование</a></li> -->
-                </ul>
-              </li>
-              <li class="dropdown" id="dropdown">
-                <span class="dropdown-span">Название вакансии</span><img src="../img/icons/arrow-down-white-1.png" alt="">
-                <ul class="dropdown-menu">
-                  <!-- <li><a href="#">Налоговое консультирование</a></li> -->
-                </ul>
-              </li>
-              <li class="dropdown"id="dropdown">
-                <span class="dropdown-span">Название вакансии</span><img src="../img/icons/arrow-down-white-1.png" alt="">
-                <ul class="dropdown-menu">
-                  <!-- <li><a href="#">Налоговое консультирование</a></li> -->
-                </ul>
-              </li>
-              <li class="dropdown" id="dropdown">
-                <span class="dropdown-span">Название вакансии</span><img src="../img/icons/arrow-down-white-1.png" alt="">
-                <ul class="dropdown-menu">
-                  <!-- <li><a href="#">Налоговое консультирование</a></li> -->
-                </ul>
-              </li>
-              <li class="dropdown" id="dropdown">
-                <span class="dropdown-span">Название вакансии</span><img src="../img/icons/arrow-down-white-1.png" alt="">
-                <ul class="dropdown-menu">
-                  <!-- <li><a href="#">Налоговое консультирование</a></li> -->
-                </ul>
-              </li>
+              @endforeach
             </ul>
           </div>
     </div>
