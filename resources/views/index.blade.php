@@ -82,10 +82,14 @@
             <div class="right-side">
                 <div class="container-drop">
                     <ul>
+                        @foreach($services as $key => $service)
                         <li class="dropdown">
-                            <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">01</h1><span class="dropdown-span">Бухгалтерский учет</span><i class="icon-arrow open"></i></a>
-                            <ul class="dropdown-menu hide show">
-                                <li><a href="#">Налоговое консультирование</a></li>
+                            <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">{{ $key +1  }}</h1><span class="dropdown-span">{{ $service->title }}</span><i class="icon-arrow open"></i></a>
+                            <ul class="dropdown-menu hide">
+                                @foreach($service->directions as $direction)
+                                <li><a href="#">{{ $direction->title }}</a></li>
+                                @endforeach
+                                @if(false)
                                 <li><a href="#">Сокращение налоговых штрафов</a></li>
                                 <li><a href="#">Разработка правовых и налоговых схем деятельности</a></li>
                                 <li><a href="#">Составление и сдача налоговой отчетности</a></li>
@@ -101,8 +105,11 @@
                                 <li><a href="#">Экспертиза текущей системы налогового учета</a></li>
                                 <li><a href="#">Досудебное урегулирование налоговых споров</a></li>
                                 <li><a href="#">Консультационно-обучающие мероприятия для сотрудников</a></li>
+                                @endif
                             </ul>
                         </li>
+                        @endforeach
+                        @if(false)
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown"><h1 class="dropdown-h1">02</h1><span class="dropdown-span">Налогообложение</span><i class="icon-arrow"></i></a>
                             <ul class="dropdown-menu hide">
@@ -196,6 +203,7 @@
                                 <!-- <li><a href="#">Налоговое консультирование</a></li> -->
                             </ul>
                         </li>
+                        @endif
                     </ul>
                 </div>
             </div>
@@ -302,6 +310,9 @@
         <div class="container">
             <h1 class="partners-h1">Партнеры</h1>
             <div class="partners-sliders">
+                @foreach($partners as $partner)
+                    <div><img src="{{$partner->slider_img}}" alt="лого партнера" style="padding-top: 20px;"></div>
+                @endforeach
                 <div><img src="img/logo-kontur.png" alt="" style="padding-top: 20px;"></div>
                 <div><img src="img/tochka.png" alt="" style="padding-top: 20px;"></div>
                 <div><img src="img/alfa-bank.png" alt=""></div>
@@ -317,6 +328,21 @@
         <div class="container">
             <div class="reviews-h1">Отзывы</div>
             <div class="reviews-sliders">
+                @foreach($reviews as $review)
+                    @if($review->type == 0)
+                        <div class="reviews-slider_items">
+                            <div class="reviews-slider_item-img">
+                                <img src="{{ $review->img }}" alt="">
+                            </div>
+                            <div class="reviews-slider_item-text">
+                                <span class="reviews-name">{{ $review->fio }}</span>
+                                <span class="reviews-position">{{ $review->position }}</span>
+                                <span class="reviews-under-text">{{ $review->message }}</span>
+                            </div>
+                        </div>
+                    @endif
+                @endforeach
+                @if(false)
                 <div class="reviews-slider_items">
                     <div class="reviews-slider_item-img">
                         <img src="img/men-circle.png" alt="">
@@ -347,18 +373,24 @@
                         <span class="reviews-under-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione tenetur placeat sint sit quaerat repellendus.</span>
                     </div>
                 </div>
-                <div class="reviews-slider_items">
-                    <div class="reviews-slider_item-img">
-                        <img src="img/men-circle.png" alt="">
-                    </div>
-                    <div class="reviews-slider_item-text">
-                        <span class="reviews-name">Фамилия Имя Отчество</span>
-                        <span class="reviews-position">Должность</span>
-                        <span class="reviews-under-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione tenetur placeat sint sit quaerat repellendus.</span>
-                    </div>
-                </div>
+                @endif
             </div>
             <div class="reviews-sliders">
+                @foreach($reviews as $review)
+                    @if($review->type == 1)
+                    <div class="reviews-slider_items">
+                        <div class="reviews-slider_item-img">
+                            <img src="{{ $review->img }}" alt="">
+                        </div>
+                        <div class="reviews-slider_item-text">
+                            <span class="reviews-name">{{ $review->fio }}</span>
+                            <span class="reviews-position">{{ $review->position }}</span>
+                            <span class="reviews-under-text">{{ $review->message }}</span>
+                        </div>
+                    </div>
+                    @endif
+                @endforeach
+                @if(false)
                 <div class="reviews-slider_items">
                     <div class="reviews-slider_item-img">
                         <img src="img/men-circle.png" alt="">
@@ -389,19 +421,28 @@
                         <span class="reviews-under-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione tenetur placeat sint sit quaerat repellendus.</span>
                     </div>
                 </div>
-                <div class="reviews-slider_items">
-                    <div class="reviews-slider_item-img">
-                        <img src="img/men-circle.png" alt="">
-                    </div>
-                    <div class="reviews-slider_item-text">
-                        <span class="reviews-name">Фамилия Имя Отчество</span>
-                        <span class="reviews-position">Должность</span>
-                        <span class="reviews-under-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione tenetur placeat sint sit quaerat repellendus.</span>
-                    </div>
-                </div>
+                @endif
             </div>
             <div class="reviews-docs">
                 <div class="reviews-docs-slider">
+                    @foreach($reviews as $review)
+                        @if($review->type == 2)
+                        <div class="reviews-docs-item">
+                            <div class="reviews-docs-item_img">
+                                <img src="{{ $review->img }}" alt="">
+                            </div>
+                            <div class="reviews-docs-item_text">
+                                <span class="reviews-docs-item_name">{{ $review->fio }}</span>
+                                <span class="reviews-docs-item_position">{{ $review->position }}</span>
+                                <span class="reviews-docs-item_under-text">{{ $review->message }}</span>
+                            </div>
+                            <div class="reviews-docs_img-bottom">
+                                <img src="img/articule.png" alt="">
+                            </div>
+                        </div>
+                        @endif
+                    @endforeach
+                    @if(false)
                     <div class="reviews-docs-item">
                         <div class="reviews-docs-item_img">
                             <img src="img/doc.png" alt="">
@@ -454,19 +495,7 @@
                             <img src="img/articule.png" alt="">
                         </div>
                     </div>
-                    <div class="reviews-docs-item">
-                        <div class="reviews-docs-item_img">
-                            <img src="img/doc.png" alt="">
-                        </div>
-                        <div class="reviews-docs-item_text">
-                            <span class="reviews-docs-item_name">Фамилия Имя Отчество</span>
-                            <span class="reviews-docs-item_position">Должность</span>
-                            <span class="reviews-docs-item_under-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione tenetur placeat sint sit quaerat repellendus.</span>
-                        </div>
-                        <div class="reviews-docs_img-bottom">
-                            <img src="img/articule.png" alt="">
-                        </div>
-                    </div>
+                    @endif
                 </div>
             </div>
         </div>
