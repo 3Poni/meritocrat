@@ -267,7 +267,7 @@
         </div>
       </div>
     </footer>
-    @stack('scripts')
+    @stack('script')
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{ asset('js/slick.min.js') }}"></script>
     <script src="{{ asset('js/dropdown.js') }}"></script>
@@ -276,7 +276,7 @@
     <script src="{{ asset('js/dropdown-menu.js') }}"></script>
     <script src="{{ asset('js/scroll-header.js') }}"></script>
     <script src="{{ asset('js/mobile-slider-about.js') }}"></script>
-    <script src="{{ asset('js/burger-menu.js') }}"></script>
+{{--    <script src="{{ asset('js/burger-menu.js') }}"></script>--}}
     <script src="{{ asset('js/schems-works-slider.js') }}"></script>
     <script src="{{ asset('js/burger-test.js') }}"></script>
     <script src="{{ asset('js/dropdown-test.js') }}"></script>
