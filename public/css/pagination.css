@@ -27,3 +27,8 @@
 .pagination-items .arrow-next{
     cursor: pointer;
 }
+
+.pagination-items .arrow-previous{
+    margin-right: 30px;
+    cursor: pointer;
+}
