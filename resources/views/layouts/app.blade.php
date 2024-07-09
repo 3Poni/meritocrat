@@ -51,6 +51,10 @@
                   <div class="dropdown-list-items">
                     <div class="dropdown-item">
                       <ul>
+                          @foreach($allServices as $service)
+                              <li><a href="{{ route('service',empty($service->url_static) ? $service->url : $service->url_static ) }}">{{ $service->title }}</a></li>
+                          @endforeach
+                        @if(false)
                         <li><a href="{{ route('accounting-support') }}">Бухгалтерский учет</a></li>
                         <li><a href="{{ route('taxes') }}">Налогообложение</a></li>
                         <li><a href="">Юридический консалтинг</a></li>
@@ -65,6 +69,7 @@
                         <li><a href="">Политический консалтинг</a></li>
                         <li><a href="">Международный консалтинг</a></li>
                         <li><a href="">Лингвистический консалтинг</a></li>
+                          @endif
                       </ul>
                     </div>
                     <div class="dropdown-item">
