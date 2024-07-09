@@ -3,7 +3,7 @@
 @push('head')
     <link rel="stylesheet" href="{{ asset('css/taxes-page.css') }}">
 @endpush
-@section('title')Налогообложение@endsection
+@section('title'){{ $service->title }}@endsection
 @section('content')
 <section class="taxes-page">
         <div class="taxes-graph"><img src="../img/taxes-graph.png" alt=""></div>
@@ -11,14 +11,16 @@
         <div class="taxes-graph_2"><img src="../img/taxes-graph_2.png" alt=""></div>
         <div class="container">
             <div class="links">
-                <a href="../index.html"><span>Главная</span></a>
+                <a href="{{ route('index') }}"><span>Главная</span></a>
                 <img src="../img/arrow.png" alt="">
-                <a href="../index.html"><span>Услуги</span></a>
+                <a href="{{ route('services') }}"><span>Услуги</span></a>
                 <img src="../img/arrow.png" alt="">
-                <a href="../pages/taxes.html"><span class="active-link">Налогообложение</span></a>
+                <a href="#"><span class="active-link">{{ $service->header }}</span></a>
             </div>
             <div class="taxes-text">
-                <h1 class="section-h1">Налогообложение</h1>
+                <h1 class="section-h1">{{ $service->header }}</h1>
+                {{ $service->description }}
+                @if(false)
                 <span class="taxes-span">Мониторинг изменений в законодательстве позволяет нам своевременно предоставлять клиентам актуальные консультации и помогать в решении сложных вопросов, возникающих при ведении бизнеса. Мы изучаем различные методы эффективного распределения налоговой нагрузки клиентов и минимизации тех рисков, с которыми они могут столкнуться в будущем.
                 </span>
                 <span class="taxes-span">
@@ -39,15 +41,18 @@
                 <span class="taxes-span">
                     С нашей помощью вы получите в глазах контролирующих органов репутацию исполнительного налогоплательщика.
                 </span>
+                @endif
                 <h1 class="section-h1">Направления</h1>
                 <div class="taxes-items">
-
-                    <a href="">
-                        <div class="taxes-button">
-                            <span>Налоговое консультирование</span>
-                            <span class="taxes-svg"></span>
-                        </div>
-                    </a>
+                    @foreach($service->directions as $direction)
+                        <a href="">
+                            <div class="taxes-button">
+                                <span>{{ $direction->header }}</span>
+                                <span class="taxes-svg"></span>
+                            </div>
+                        </a>
+                    @endforeach
+                    @if(false)
                     <a href="">
                         <div class="taxes-button">
                             <span>Сокращение налоговых штрафов</span>
@@ -138,6 +143,7 @@
                             <span class="taxes-svg"></span>
                         </div>
                     </a>
+                    @endif
                 </div>
             </div>
         </div>
