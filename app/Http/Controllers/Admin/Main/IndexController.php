@@ -8,6 +8,7 @@ use App\Models\CustomPage;
 use App\Models\Direction;
 use App\Models\Newsletter;
 use App\Models\Partner;
+use App\Models\Project;
 use App\Models\Review;
 use App\Models\Service;
 use App\Models\Tag;
@@ -27,6 +28,7 @@ class IndexController extends Controller
         $data ['newsletterCount'] = Newsletter::all()->count();
         $data ['vacancyCount'] = Vacancy::all()->count();
         $data ['tagCount'] = Tag::all()->count();
+        $data ['projectCount'] = Project::all()->count();
         $data ['partnerCount'] = Partner::all()->count();
         $data ['directionCount'] = Direction::all()->count();
         $data ['reviewCount'] = Review::all()->count();
