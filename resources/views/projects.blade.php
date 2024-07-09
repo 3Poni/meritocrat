@@ -8,12 +8,12 @@
 @section('title')Проекты@endsection
 @section('content')
 <section class="project-page">
-        <section class="about-company">
+        <section class="about-company" style="background: transparent">
             <div class="container">
                 <div class="links">
-                    <a href="../index.html"><span>Главная</span></a>
+                    <a href="{{ route('index') }}"><span>Главная</span></a>
                     <img src="../img/arrow.png" alt="">
-                    <a href="../pages/about.html"><span class="active-link">Проекты</span></a>
+                    <a href="{{ route('projects') }}"><span class="active-link">Проекты</span></a>
                 </div>
             </div>
         </section>
@@ -26,48 +26,11 @@
                     <div class="project-item">
                         <input type="button" class="project-categories_button active" value="Все">
                     </div>
-                    <div class="project-item">
-                        <input type="button" class="project-categories_button" value="Бухгалтерский учет">
-                    </div>
-                    <div class="project-item">
-                        <input type="button" class="project-categories_button" value="Налогообложение">
-                    </div>
-                    <div class="project-item">
-                        <input type="button" class="project-categories_button" value="Юридический консалтинг">
-                    </div>
-                    <div class="project-item">
-                        <input type="button" class="project-categories_button" value="Стратегический консалтинг">
-                    </div>
-                    <div class="project-item">
-                        <input type="button" class="project-categories_button" value="Операционный консалтинг">
-                    </div>
-                    <div class="project-item">
-                        <input type="button" class="project-categories_button" value="Инвестиционный консалтинг">
-                    </div>
-                    <div class="project-item">
-                        <input type="button" class="project-categories_button" value="Финансовый консалтинг">
-                    </div>
-                    <div class="project-item">
-                        <input type="button" class="project-categories_button" value="Кадровый консалтинг">
-                    </div>
-                    <div class="project-item">
-                        <input type="button" class="project-categories_button" value="Внешние связи и GR">
-                    </div>
-                    <div class="project-item">
-                        <input type="button" class="project-categories_button" value="Маркетинг и реклама">
-                    </div>
-                    <div class="project-item">
-                        <input type="button" class="project-categories_button" value="Digital-услуги">
-                    </div>
-                    <div class="project-item">
-                        <input type="button" class="project-categories_button" value="Политический консалтинг">
-                    </div>
-                    <div class="project-item">
-                        <input type="button" class="project-categories_button" value="Международный консалтинг">
-                    </div>
-                    <div class="project-item">
-                        <input type="button" class="project-categories_button" value="Лингвистический консалтинг">
-                    </div>
+                    @foreach($services as $service)
+                        <div class="project-item">
+                            <input type="button" class="project-categories_button" value="{{ $service->title }}">
+                        </div>
+                    @endforeach
                 </div>
                 <div class="projects-row_items_categories-mobile">
                     <div class="project-item">
@@ -77,186 +40,28 @@
                       <div class="projects-list-mobile">
                         <ul>
                           <li>Все</li>
-                          <li>Бухгалтерский учет</li>
-                          <li>Налогообложение</li>
-                          <li>Юридический консалтинг</li>
-                          <li>Стратегический консалтинг</li>
-                          <li>Операционный консалтинг</li>
-                          <li>Инвестиционный консалтинг</li>
-                          <li>Финансовый консалтинг</li>
-                          <li>Внешние связи и GR</li>
-                          <li>Маркетинг и реклама</li>
-                          <li>Digital-услуги</li>
-                          <li>Политический консалтинг</li>
-                          <li>Международный консалтинг</li>
-                          <li>Лингвистический консалтинг</li>
+                          @foreach($services as $service)
+                             <li>{{ $service->title }}</li>
+                          @endforeach
                         </ul>
                       </div>
                     </div>
                   </div>
                 <div class="projects-items">
-                    <div class="project-slider-item">
-                        <div class="project-slider-item_img">
-                            <img src="../img/project_img-1.png" alt="">
+                    @foreach($projects as $project)
+                        <div class="project-slider-item">
+                            <div class="project-slider-item_img">
+                                <img src="{{ $project->img }}" alt="">
+                            </div>
+                            <div class="project-slider-item_text" style="margin-top: -10px;display: flex;min-height: 192px;flex-direction: column;justify-content: space-between;">
+                                <h1>{{ $project->header }}</h1>
+                                <p>{{ $project->description }}</p>
+                                <span>{{ $project->service->title }}</span>
+                            </div>
                         </div>
-                        <div class="project-slider-item_text">
-                            <h1>Название проекта</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque. </p>
-                            <span>Налогообложение</span>
-                        </div>
-                    </div>
-                    <div class="project-slider-item">
-                        <div class="project-slider-item_img">
-                            <img src="../img/project_img-1.png" alt="">
-                        </div>
-                        <div class="project-slider-item_text">
-                            <h1>Название проекта</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque. </p>
-                            <span>Налогообложение</span>
-                        </div>
-                    </div>
-                    <div class="project-slider-item">
-                        <div class="project-slider-item_img">
-                            <img src="../img/project_img-1.png" alt="">
-                        </div>
-                        <div class="project-slider-item_text">
-                            <h1>Название проекта</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque. </p>
-                            <span>Налогообложение</span>
-                        </div>
-                    </div>
-                    <div class="project-slider-item">
-                        <div class="project-slider-item_img">
-                            <img src="../img/project_img-1.png" alt="">
-                        </div>
-                        <div class="project-slider-item_text">
-                            <h1>Название проекта</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque. </p>
-                            <span>Налогообложение</span>
-                        </div>
-                    </div>
-                    <div class="project-slider-item">
-                        <div class="project-slider-item_img">
-                            <img src="../img/project_img-1.png" alt="">
-                        </div>
-                        <div class="project-slider-item_text">
-                            <h1>Название проекта</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque. </p>
-                            <span>Налогообложение</span>
-                        </div>
-                    </div>
-                    <div class="project-slider-item">
-                        <div class="project-slider-item_img">
-                            <img src="../img/project_img-1.png" alt="">
-                        </div>
-                        <div class="project-slider-item_text">
-                            <h1>Название проекта</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque. </p>
-                            <span>Налогообложение</span>
-                        </div>
-                    </div>
-                    <div class="project-slider-item">
-                        <div class="project-slider-item_img">
-                            <img src="../img/project_img-1.png" alt="">
-                        </div>
-                        <div class="project-slider-item_text">
-                            <h1>Название проекта</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque. </p>
-                            <span>Налогообложение</span>
-                        </div>
-                    </div>
-                    <div class="project-slider-item">
-                        <div class="project-slider-item_img">
-                            <img src="../img/project_img-1.png" alt="">
-                        </div>
-                        <div class="project-slider-item_text">
-                            <h1>Название проекта</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque. </p>
-                            <span>Налогообложение</span>
-                        </div>
-                    </div>
-                    <div class="project-slider-item">
-                        <div class="project-slider-item_img">
-                            <img src="../img/project_img-1.png" alt="">
-                        </div>
-                        <div class="project-slider-item_text">
-                            <h1>Название проекта</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque. </p>
-                            <span>Налогообложение</span>
-                        </div>
-                    </div>
-                    <div class="project-slider-item">
-                        <div class="project-slider-item_img">
-                            <img src="../img/project_img-1.png" alt="">
-                        </div>
-                        <div class="project-slider-item_text">
-                            <h1>Название проекта</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque. </p>
-                            <span>Налогообложение</span>
-                        </div>
-                    </div>
-                    <div class="project-slider-item">
-                        <div class="project-slider-item_img">
-                            <img src="../img/project_img-1.png" alt="">
-                        </div>
-                        <div class="project-slider-item_text">
-                            <h1>Название проекта</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque. </p>
-                            <span>Налогообложение</span>
-                        </div>
-                    </div>
-                    <div class="project-slider-item">
-                        <div class="project-slider-item_img">
-                            <img src="../img/project_img-1.png" alt="">
-                        </div>
-                        <div class="project-slider-item_text">
-                            <h1>Название проекта</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque. </p>
-                            <span>Налогообложение</span>
-                        </div>
-                    </div>
-                    <div class="project-slider-item">
-                        <div class="project-slider-item_img">
-                            <img src="../img/project_img-1.png" alt="">
-                        </div>
-                        <div class="project-slider-item_text">
-                            <h1>Название проекта</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque. </p>
-                            <span>Налогообложение</span>
-                        </div>
-                    </div>
-                    <div class="project-slider-item">
-                        <div class="project-slider-item_img">
-                            <img src="../img/project_img-1.png" alt="">
-                        </div>
-                        <div class="project-slider-item_text">
-                            <h1>Название проекта</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque. </p>
-                            <span>Налогообложение</span>
-                        </div>
-                    </div>
-                    <div class="project-slider-item">
-                        <div class="project-slider-item_img">
-                            <img src="../img/project_img-1.png" alt="">
-                        </div>
-                        <div class="project-slider-item_text">
-                            <h1>Название проекта</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Elementum eu tincidunt odio habitasse congue nibh neque praesent pellentesque. </p>
-                            <span>Налогообложение</span>
-                        </div>
-                    </div>
-
+                    @endforeach
                 </div>
-                <div class="pagination">
-                    <div class="pagination-items">
-                        <input type="button" value="01" class="active">
-                        <input type="button" value="02">
-                        <input type="button" value="03">
-                        <div class="arrow-next">
-                            <img src="../img/icons/right-arrow.png" alt="">
-                        </div>
-                    </div>
-                </div>
+                {{ $projects->links() }}
             </div>
         </section>
     </section>
