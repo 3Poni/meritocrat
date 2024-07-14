@@ -13,6 +13,6 @@ class UpdateController extends BaseController
             $data = $request->validated();
             $direction = $this->service->update($data, $direction);
 
-            return view ('admin.directions.show', compact('direction'));
+            return redirect()->route('admin.direction.index');
     }
 }

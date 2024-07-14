@@ -24,17 +24,27 @@ class UpdateRequest extends FormRequest
     public function rules()
     {
         return [
+            'service_id' => 'required|integer',
             'title' => 'required|string',
             'description' => 'required|string',
             'header' => 'required|string',
-            'url' => 'required|string',
-            'content' => 'text|required',
-            'service' => 'int|required',
+            'url' => 'nullable|string',
+            'url_static' => 'nullable|string',
+            'template' => 'nullable|int',
+            'content' => 'string|nullable',
+            'content2' => 'string|nullable',
+            'result' => 'array|nullable',
+            'result.*' => 'string|nullable',
+            'stages' => 'array|nullable',
+            'stages.*' => 'string|nullable',
+            'result2' => 'array|nullable',
+            'result2.*' => 'string|nullable',
         ];
     }
     public function messages()
     {
         return [
+            'service_id.required' => 'Необходимо выбрать услугу для направления',
             'title.required' => 'Необходимо ввести название META',
             'description.required' => 'Необходимо ввести описание META',
             'header.required' => 'Необходимо ввести заголовок',

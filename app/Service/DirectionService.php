@@ -12,7 +12,15 @@ class DirectionService
     {
         try {
             DB::beginTransaction();
-            $data['result'] = serialize(['result']);
+            if(!empty($data['result'])) {
+                $data['result'] = serialize($data['result']);
+            }
+            if(!empty($data['result2'])) {
+                $data['result2'] = serialize($data['result2']);
+            }
+            if(!empty($data['stages'])) {
+                $data['stages'] = serialize($data['stages']);
+            }
             Direction::firstOrcreate($data);
             DB::commit();
         } catch (\Exception $exception) {
@@ -26,6 +34,15 @@ class DirectionService
     {
         try {
             DB::beginTransaction();
+            if(!empty($data['result'])) {
+                $data['result'] = serialize($data['result']);
+            }
+            if(!empty($data['result2'])) {
+                $data['result2'] = serialize($data['result2']);
+            }
+            if(!empty($data['stages'])) {
+                $data['stages'] = serialize($data['stages']);
+            }
             $direction->update($data);
             DB::commit();
         } catch (\Exception $exception) {
