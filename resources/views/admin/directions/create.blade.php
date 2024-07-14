@@ -37,6 +37,7 @@
                                     @enderror
                                 </div>
                                 <div class="form-group w-25">
+                                    <h4>Название страницы META</h4>
                                     <label>
                                         <input type="text" class="form-control" name="title" placeholder="Название страницы META"
                                                value="{{ old('title') }}">
@@ -48,6 +49,7 @@
                                     @enderror
                                 </div>
                                 <div class="form-group w-25">
+                                    <h4>Описание страницы META</h4>
                                     <label>
                                         <input type="text" class="form-control" name="description" placeholder="Описание страницы META"
                                                value="{{ old('description') }}">
@@ -59,6 +61,7 @@
                                     @enderror
                                 </div>
                                 <div class="form-group w-25">
+                                    <h4>Заголовок страницы</h4>
                                     <label>
                                         <input type="text" class="form-control" name="header" placeholder="Заголовок страницы"
                                                value="{{ old('header') }}">
@@ -70,6 +73,7 @@
                                     @enderror
                                 </div>
                                 <div class="form-group w-25">
+                                    <h4>URL направления</h4>
                                     <label>
                                         <input type="text" class="form-control" name="url" placeholder="Ссылка направления"
                                                value="{{ old('url') }}">
@@ -107,33 +111,33 @@
         <script>
             let selected = 0;
             let template1 = `<div class="template show-tpl" id="template-1">
-                                    <div class="form-group w-25">
-                                        <label>
-                                            <input type="text" class="form-control" name="content" placeholder="Контент страницы 1-ый блок">
-                                        </label>
+                                    <div class="form-group w-75">
+                                            <h4>Контент страницы 1-ый блок</h4>
+                                            <label for="summernote"></label>
+                                            <textarea style="min-height: 300px;min-width: 850px;" name="content"></textarea>
                                     </div>
-                                    <div class="form-group w-25">
-                                        <label>
-                                            <input type="text" class="form-control" name="content2" placeholder="Контент страницы 2-ой блок">
-                                        </label>
+                                    <div class="form-group w-75">
+                                            <h4>Контент страницы 2-ой блок</h4>
+                                            <label for="summernote"></label>
+                                            <textarea style="min-height: 300px;min-width: 850px;" name="content2"></textarea>
                                     </div>
-                                    <div class="form-group w-25">
-                                        <label>
-                                            <input type="text" class="form-control" name="result[]" placeholder="Результат 1">
-                                        </label>
-                                    </div>
-                                    <button onclick="addField(event, this, 'result');">Добавить поле результата</button>
-                                </div>`
+                                <div class="form-group w-25">
+                                    <label>
+                                        <input type="text" class="form-control" name="result[]" placeholder="Результат 1">
+                                    </label>
+                                </div>
+                                <button onclick="addField(event, this, 'result');">Добавить поле результата</button>
+                            </div>`
             let template2 = `<div class="template show-tpl" id="template-2">
-                                    <div class="form-group w-25">
-                                        <label>
-                                            <input type="text" class="form-control" name="content" placeholder="Контент страницы 1-ый блок">
-                                        </label>
+                                    <div class="form-group w-75">
+                                            <h4>Контент страницы 1-ый блок</h4>
+                                            <label for="summernote"></label>
+                                            <textarea style="min-height: 300px;min-width: 850px;" name="content"></textarea>
                                     </div>
-                                    <div class="form-group w-25">
-                                        <label>
-                                            <input type="text" class="form-control" name="content2" placeholder="Контент страницы 2-ой блок">
-                                        </label>
+                                    <div class="form-group w-75">
+                                            <h4>Контент страницы 2-ой блок</h4>
+                                            <label for="summernote"></label>
+                                            <textarea style="min-height: 300px;min-width: 850px;" name="content2"></textarea>
                                     </div>
                                     <div class="form-group w-25">
                                         <label>
