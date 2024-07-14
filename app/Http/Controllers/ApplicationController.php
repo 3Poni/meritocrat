@@ -18,7 +18,7 @@ class ApplicationController extends Controller
     {
         $data = $request->validated();
         $this->service->store($data);
-
-        return view('index', compact('data'));
+        $popup = ['type' => 'success', 'message' => 'Application created!'];
+        return view('index', compact('data', $popup));
     }
 }
