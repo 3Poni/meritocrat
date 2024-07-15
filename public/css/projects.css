@@ -30,12 +30,10 @@
     border: none;
     outline: none;
     border-radius: 20px;
-    margin-right: 10px;
-    margin-bottom: 5px;
 }
 
 .projects .container .projects-row_items_categories .project-item:not(:first-child){
-    
+
     margin-right: 10px;
     border-radius: 20px;
     margin-bottom: 20px;
