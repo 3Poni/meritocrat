@@ -21,7 +21,7 @@ class Project extends Model
     public function scopeFilter($query, array $filters)
     {
         if($filters['service_id'] ?? false) {
-            $query->where('service_id', 'like', '%' . request('service_id') . '%');
+            $query->whereIn('service_id', explode(',', request('service_id')));
         }
     }
 
