@@ -79,8 +79,9 @@
                                 </div>
                                 <div class="form-group w-50">
                                     <h4>Контент страницы</h4>
-                                    <label for="summernote"></label><textarea id="summernote" name="content"
-                                                                              value="{{ old('content') }}">
+                                    <label for="summernote"></label>
+                                    <textarea id="summernote" name="content"
+                                    value="{{ old('content') }}">
                                     </textarea>
                                     @error('content')
                                     <div class="text-danger">
