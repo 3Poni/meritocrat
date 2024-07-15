@@ -45,7 +45,7 @@
                 <h1 class="section-h1">Направления</h1>
                 <div class="taxes-items">
                     @foreach($service->directions as $direction)
-                        <a href="">
+                        <a href="{{ route('direction',$direction->url) }}">
                             <div class="taxes-button">
                                 <span>{{ $direction->header }}</span>
                                 <span class="taxes-svg"></span>
