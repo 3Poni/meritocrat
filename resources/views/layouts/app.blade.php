@@ -147,6 +147,44 @@
                 </div>
             </div>
         </div>
+        @if(!empty($popup))
+            <div class="popup" style="
+    box-shadow: #00000017 0 0 13px;
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 12px;
+    background: white;
+    left: 36%;
+    position: fixed;
+    height: auto;
+    width: auto;"><img onclick="closePopup();" src="/img/cross.svg" style="
+    cursor: pointer;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    max-height: 14px;
+    color: black;"> <div style="
+    display: flex;
+    flex-direction: row;
+"><img src="/img/nalog-pic.png" style="
+    max-width: 156px;
+"><div style="
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+"><div style="
+    color: black;
+">Ваша заявка отправлена!</div><button onclick="closePopup();" style="
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    padding: 6px 60px;
+    background: linear-gradient(74.13deg, #C0A7E7 8.19%, #9CBEDE 78.01%);
+">Ок</button></div></div></div>
+        @endif
     </header>
     <main>
         <div class="container">
@@ -272,8 +310,7 @@
         </div>
       </div>
     </footer>
-    @stack('script')
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="{{ asset('js/slick.min.js') }}"></script>
     <script src="{{ asset('js/dropdown.js') }}"></script>
     <script src="{{ asset('js/slide-partners.js') }}"></script>
@@ -285,5 +322,11 @@
     <script src="{{ asset('js/schems-works-slider.js') }}"></script>
     <script src="{{ asset('js/burger-test.js') }}"></script>
     <script src="{{ asset('js/dropdown-test.js') }}"></script>
+    @stack('script')
+    <script>
+        function closePopup() {
+            $(".popup").css('display', 'none');
+        }
+    </script>
   </body>
 </html>
