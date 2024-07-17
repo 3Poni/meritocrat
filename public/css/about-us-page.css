@@ -34,6 +34,10 @@
     padding: 20px 40px;
 }
 
+.count {
+    font-size: inherit !important;
+}
+
 .discussion-items-mobile{
     display: none;
 }

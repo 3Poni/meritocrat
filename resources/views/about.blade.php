@@ -35,25 +35,25 @@
         <div class="about-numbers_items">
             <div class="about-numbers_items-row">
                 <div class="item">
-                    <h1>15+</h1>
+                    <h1><span class="count">15</span>+</h1>
                     <span>лет практики</span>
                 </div>
                 <div class="item">
-                    <h1>350+</h1>
+                    <h1><span class="count">350</span>+</h1>
                     <span>постоянных клиентов</span>
                 </div>
                 <div class="item">
-                    <h1 class="active">1400</h1>
+                    <h1><span class="count active">1400</span></h1>
                     <span>реализованных проектов</span>
                 </div>
             </div>
             <div class="about-numbers_items-row">
                 <div class="item">
-                    <h1>98%</h1>
+                    <h1><span  class="count">98</span>%</h1>
                     <span>клиентов рекомендуют нас</span>
                 </div>
                 <div class="item last-item">
-                    <h1>100+</h1>
+                    <h1><span class="count">100</span>+</h1>
                     <span>профессиональных услуг</span>
                 </div>
             </div>
@@ -450,5 +450,6 @@
     <script src="{{ asset('js/dropdown-projects.js') }}"></script>
     <script src="{{ asset('js/about-slider.js') }}"></script>
     <script src="{{ asset('js/discussian-slider.js') }}"></script>
+    <script src="{{ asset('js/odometer.js') }}"></script>
 @endpush
 
