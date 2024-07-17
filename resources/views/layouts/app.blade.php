@@ -44,7 +44,7 @@
                         <li><a href="#">Аналитика</a></li>
                         <li><a href="{{ route('projects') }}">Проекты</a></li>
                         <li><a href="{{ route('partners') }}">Партнеры</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="{{ route('contacts') }}">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="dropdown-list">
@@ -129,7 +129,7 @@
                       <li><a href="">Аналитика</a></li>
                       <li><a href="{{ route('projects') }}">Проекты</a></li>
                       <li><a href="{{ route('partners') }}">Партнеры</a></li>
-                      <li><a href="">Контакты</a></li>
+                      <li><a href="{{ route('contacts') }}">Контакты</a></li>
                       <li>Пресс-служба:</li>
                       <li><span class="burger-contact">pr@meritocratconsulting.ru</span></li>
                       <li>Партнерство:</li>
@@ -202,6 +202,7 @@
         </div>
     </main>
     @yield('content')
+    @if(Route::current()->getName() !== 'contacts')
     <section class="contacts" id="contacts">
         <div class="gradient-orange"></div>
         <div class="gradient-blue"></div>
@@ -252,6 +253,7 @@
             </div>
         </div>
     </section>
+    @endif
     <footer>
       <div class="container">
         <div class="footer-row">
@@ -276,7 +278,7 @@
               <li><a href="{{ route('projects') }}">Проекты</a></li>
               <li><a href="{{ route('partners') }}">Партнеры</a></li>
               <li><a href="{{ route('vacancies') }}">Вакансии</a></li>
-              <li><a href="#contacts">Контакты</a></li>
+              <li><a href="{{ route('contacts') }}">Контакты</a></li>
             </ul>
           </div>
           <div class="footer-column">

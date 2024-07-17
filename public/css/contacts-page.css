@@ -1,0 +1,318 @@
+.contacts-page{
+    display: flex;
+    justify-content: center;
+    background-color: #181924;
+    font-family: Montserrat;
+    padding-left: 66px;
+}
+
+.contacts-page .gradient-orange {
+    position: absolute;
+    border-radius: 517px;
+    background: #B79695;
+    filter: blur(190px);
+    width: 517px;
+    height: 423px;
+    right: 51%;
+    bottom: -137%;
+    z-index: 1;
+}
+.contacts-page .gradient-blue {
+    position: absolute;
+    border-radius: 517px;
+    background: #557391;
+    filter: blur(190px);
+    width: 517px;
+    height: 423px;
+    top: 215%;
+    right: 25%;
+    z-index: 1;
+}
+
+.contacts-page .contacts-modal {
+    display: none;
+    border-radius: 20px;
+    background: #181924;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 13%;
+    padding: 20px;
+    left: 13%;
+    z-index: 1000;
+}
+
+.contacts-page .contacts-modal .left-side .message{
+    width: 60%;
+}
+
+.right-column {
+    padding-right: 25px;
+    max-width: 80%;
+}
+
+.contacts-page .contacts-modal .contacts-forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-page .contacts-modal .contacts-forms textarea {
+    opacity: 0.20;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.contacts-page .right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.contacts-page .right-side svg{
+    cursor: pointer;
+}
+
+.text-data {
+    color: #ABABAB;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
+    text-align: left;
+    margin: 18px 0;
+}
+.text-data a {
+    font-size: inherit !important;
+}
+
+.contacts-page .contacts-modal .contacts-forms input {
+    border: none;
+    background-color: #fff;
+    opacity: 0.20;
+    border-radius: 15px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.form-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-btns .button-with-border {
+    background: transparent !important;
+    border: 2px solid white !important;
+    max-width: 165px;
+    color: white !important;
+    opacity: 1 !important;
+    border-radius: 25px !important;
+    padding: 15px 35px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    background: none;
+    z-index: 10 !important;
+}
+
+.form-btns .button-with-border:hover {
+    box-shadow: 0 0 10px 2px white;
+    color: white !important;
+    transition: ease-out 0.4s;
+}
+
+.contacts-page .contacts-modal .contacts-forms input:focus {
+    background-color: #fff;
+    color: #000;
+    opacity: 1;
+}
+
+.contacts-page .contacts-modal .contacts-forms textarea:focus {
+    background-color: #fff;
+    color: #000;
+    opacity: 1;
+    outline: none;
+}
+
+.contacts-modal img {
+    margin-left: -20px;
+    margin-bottom: -20px;
+    position: absolute;
+    top: 53%;
+    border-radius: 20px;
+}
+
+.contacts-page .button-white {
+    position: relative;
+    z-index: 100;
+    max-height: 51px;
+}
+
+
+
+.contacts-address p {
+    margin-bottom: 44px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.contacts-page .container {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.contacts-application {
+    margin-bottom: 120px;
+}
+
+.contacts-page .section-h1 {
+    background-color: #FEF8F2;
+    background-image: linear-gradient(to right, #FEF8F2, #A2C2DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contacts-page .active-link {
+    background-color: #FEF8F2;
+    background-image: linear-gradient(to right, #FEF8F2, #A2C2DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contacts-page .container .section-h1{
+    font-size: 80px;
+    margin-top: 50px;
+}
+
+.contacts-page .container h5{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+}
+
+.phone {
+    margin-bottom: 80px;
+}
+
+.contacts_list {
+    display: flex;
+    gap: 339px;
+}
+.contacts_list .contact_item {
+   margin-bottom: 38px;
+}
+
+.contacts-page .container a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.contacts-page .container .links img{
+    width: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.contacts-page .container-drop{
+    max-width: 100%;
+    color: #fff;
+}
+
+.contacts-page .container-drop .dropdown a span{
+    color: #fff;
+}
+
+.contacts-page .container-drop .dropdown .dropdown-menu{
+    display: flex;
+}
+
+.contacts-page .container-drop .dropdown .dropdown-menu span{
+    color: #fff;
+}
+
+.dropdown-menu-vacancy {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+.container-drop .dropdown{
+    border-top: 2px solid #000;
+    height: 150px;
+}
+
+.contacts-page ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts-page .container{
+    max-width: 100%;
+}
+
+.contacts-page .container .dropdown-span{
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+}
+
+.container-drop .dropdown{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1060px) {
+    .contacts-page .container .section-h1 {
+        font-size: 74px;
+    }
+    .contacts-page {
+        padding: 0 20px;
+    }
+    img {
+        max-width: 100%;
+    }
+    .contacts-page .contacts-modal {
+        flex-direction: column !important;
+        max-width: 78%;
+    }
+    .contacts-page .contacts-modal {
+        left: 9%;
+    }
+    .contacts-modal img {
+        display: none;
+    }
+    .contacts-modal .right-side svg {
+        position: absolute;
+        top: 19px;
+    }
+    .contacts-page .contacts-modal .left-side .message {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .contacts-modal .right-column {
+        padding-right: 25px;
+        max-width: 91%;
+    }
+
+}
