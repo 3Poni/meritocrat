@@ -3,6 +3,10 @@
 }
 
 .vacancy .container .section-h1{
+    font-size: 80px;
+    background: linear-gradient(to right, #FEF8F2, #A2C2DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-top: 0;
 }
 
