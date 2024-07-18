@@ -6,6 +6,7 @@ use App\Models\Direction;
 use App\Models\Partner;
 use App\Models\Review;
 use App\Models\Service;
+use Illuminate\Support\Facades\Session;
 
 class IndexController extends Controller
 {
@@ -14,6 +15,7 @@ class IndexController extends Controller
         $services = $service::with('directions')->get();
         $partners = $partner::all()->where('slider_img', '!=', '');
         $reviews = $review::all();
-        return view ('index', compact('services','partners','reviews'));
+        $popup = !empty(Session::get('popup')) ? Session::get('popup') : null;
+        return view ('index', compact('services','partners','reviews', 'popup'));
     }
 }

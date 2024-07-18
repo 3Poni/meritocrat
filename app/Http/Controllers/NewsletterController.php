@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Application\StoreRequest;
+use App\Http\Requests\Newsletter\StoreRequest;
 use App\Models\Partner;
 use App\Models\Review;
 use App\Models\Service;
-use App\Service\ApplicationService;
+use App\Service\NewsletterService;
 
-class ApplicationController extends Controller
+class NewsletterController extends Controller
 {
     public $service;
 
-    public function __construct(ApplicationService $service)
+    public function __construct(NewsletterService $service)
     {
         $this->service = $service;
     }
@@ -21,7 +21,7 @@ class ApplicationController extends Controller
     {
         $data = $request->validated();
         $this->service->store($data);
-        $popup = ['type' => 'success', 'message' => 'Ваша заявка отправлена!'];
+        $popup = ['type' => 'success', 'message' => 'Вы подписались на рассылку!'];
         return redirect('/')->with('popup',$popup);
     }
 }
