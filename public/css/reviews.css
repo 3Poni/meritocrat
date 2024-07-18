@@ -86,7 +86,7 @@
 
 
 .reviews .container .reviews-docs .reviews-docs-slider .slick-next{
-    right: 0%;
+    right: -3%;
     top: 50%;
 }
 
@@ -102,13 +102,13 @@
 
 
 @media (min-width:780px) {
-    
+
 }
 
 @media (max-width:780px) {
-    
+
 }
 
 @media (max-width:855px){
-    
+
 }

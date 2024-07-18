@@ -61,7 +61,7 @@
                         <li><a href="{{ route('strategic') }}">Стратегический консалтинг</a></li>
                         <li><a href="{{ route('effectivity') }}">Операционный консалтинг</a></li>
                         <li><a href="{{ route('due-diligence') }}">Инвестиционный консалтинг</a></li>
-                        <li><a href="{{ route('consulting') }}">Финансовый консалтинг</a></li>
+                        <li><a href="">Финансовый консалтинг</a></li>
                         <li><a href="{{ route('hr-audit') }}">Кадровый консалтинг</a></li>
                         <li><a href="">Внешние связи и GR</a></li>
                         <li><a href="">Маркетинг и реклама</a></li>
@@ -176,7 +176,7 @@
     justify-content: space-evenly;
 "><div style="
     color: black;
-">Ваша заявка отправлена!</div><button onclick="closePopup();" style="
+">{{ $popup['message'] }}</div><button onclick="closePopup();" style="
     color: white;
     cursor: pointer;
     border-radius: 20px;
@@ -245,7 +245,8 @@
                         <textarea name="comment" id="comment" cols="30" rows="10" class="contacts-comments" placeholder="Комментарии"></textarea>
                         <span class="text-data">*Нажимая кнопку «Отправить», я даю согласие на обработку <a>персональных данных</a></span>
                         <div class="row-buttons">
-                            <input type="file" class="button-with-border" name="file" value="Прикрепить файлы">
+                            <label for="file" class="button-with-border">Прикрепить файлы</label>
+                            <input type="file" class="button-with-border" name="file" id="file" style="display: none">
                             <input type="submit" class="button-white" value="Отправить">
                         </div>
                     </div>
@@ -292,10 +293,15 @@
             </ul>
           </div>
           <div class="footer-column">
+              <form action="{{ route('newsletter.store') }}" method="POST" id="newsletter">
+                  @csrf
+                  @method('POST')
+              </form>
             <span>Подпишитесь на рассылку
               Новости и спецпредложения</span>
-              <input type="text" placeholder="Email" class="footer-form">
-              <input type="button" class="button-white" value="Подписаться">
+              <input type="text" form="newsletter" placeholder="Email" class="footer-form" name="email" id="email">
+              <input type="submit" form="newsletter" class="button-white" value="Подписаться">
+
           </div>
         </div>
         <div class="footer-row-last">

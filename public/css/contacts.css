@@ -91,7 +91,7 @@
     border-radius: 25px;
     font-family: 'Montserrat', sans-serif;
     padding-top: 16px;
-    padding-left: 16px; 
+    padding-left: 16px;
 }
 
 .contacts .container .contacts-items .right-column .right-column_h1{
@@ -156,8 +156,4 @@
     color: #000;
     opacity: 1;
     outline: none;
-}
-
-.contacts .container .contacts-items .right-column .contacts-forms .button-white{
-    margin-top: 10px;
 }
