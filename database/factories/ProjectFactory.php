@@ -21,6 +21,7 @@ class ProjectFactory extends Factory
         return [
             'header' => 'Названи проекта',
             'description' => fake()->text(),
+            'ext_description' => fake()->text(200),
             'client' => fake()->company(),
             'service_id' => fake()->numberBetween(16, 29),
             'img' => '../img/project_img-1.png',
