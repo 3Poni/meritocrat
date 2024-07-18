@@ -23,7 +23,6 @@ class IndexController extends Controller
     {
         $data = [];
         $data ['usersCount'] = User::all()->count();
-        $data ['pagesCount'] = CustomPage::all()->count();
         $data ['serviceCount'] = Service::all()->count();
         $data ['newsletterCount'] = Newsletter::all()->count();
         $data ['vacancyCount'] = Vacancy::all()->count();

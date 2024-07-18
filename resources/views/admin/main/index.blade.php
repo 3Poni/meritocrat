@@ -75,19 +75,6 @@
                         <!-- small box -->
                         <div class="small-box bg-warning">
                             <div class="inner">
-                                <h3>{{ $data['pagesCount'] }}</h3>
-                                <p>Шаблонные страницы</p>
-                            </div>
-                            <div class="icon">
-                                <i class="nav-icon fas fa-list-alt"></i>
-                            </div>
-                            <a href="{{ route('admin.page.index') }}" class="small-box-footer">Подробнее<i class="fas fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6">
-                        <!-- small box -->
-                        <div class="small-box bg-warning">
-                            <div class="inner">
                                 <h3>{{ $data['serviceCount'] }}</h3>
                                 <p>Услуги</p>
                             </div>
