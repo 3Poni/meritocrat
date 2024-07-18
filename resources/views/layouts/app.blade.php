@@ -41,7 +41,7 @@
                     <ul>
                         <li><a href="{{ route('about') }}">О компании</a></li>
                         <li class="dropdown-hover"><a href="{{ route('services') }}">Услуги<i class="icon-arrow"></i><img src="img/icons/arrow-down-white.svg" alt=""></a></li>
-                        <li><a href="#">Аналитика</a></li>
+                        @if(false)<li><a href="#">Аналитика</a></li>@endif
                         <li><a href="{{ route('projects') }}">Проекты</a></li>
                         <li><a href="{{ route('partners') }}">Партнеры</a></li>
                         <li><a href="{{ route('contacts') }}">Контакты</a></li>
@@ -126,7 +126,7 @@
                         </ul>
                       </div>
 
-                      <li><a href="">Аналитика</a></li>
+                      @if(false)<li><a href="">Аналитика</a></li>@endif
                       <li><a href="{{ route('projects') }}">Проекты</a></li>
                       <li><a href="{{ route('partners') }}">Партнеры</a></li>
                       <li><a href="{{ route('contacts') }}">Контакты</a></li>
@@ -275,7 +275,7 @@
               <li><a href="{{ route('index') }}">Главная</a></li>
               <li><a href="{{ route('about') }}">О компании</a></li>
               <li><a href="{{ route('services') }}">Услуги</a></li>
-              <li><a href="">Аналитика</a></li>
+                @if(false)<li><a href="">Аналитика</a></li>@endif
               <li><a href="{{ route('projects') }}">Проекты</a></li>
               <li><a href="{{ route('partners') }}">Партнеры</a></li>
               <li><a href="{{ route('vacancies') }}">Вакансии</a></li>
