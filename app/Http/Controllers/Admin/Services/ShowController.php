@@ -8,7 +8,7 @@ use App\Models\Service;
 class ShowController extends Controller
 {
 
-    public function __invoke(Service $Service)
+    public function __invoke(Service $service)
     {
         return view ('admin.services.show', compact('service'));
     }

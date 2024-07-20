@@ -57,7 +57,7 @@
                             <li><a href="{{ route('strategic') }}">Стратегический консалтинг</a></li>
                             <li><a href="{{ route('effectivity') }}">Операционный консалтинг</a></li>
                             <li><a href="{{ route('due-diligence') }}">Инвестиционный консалтинг</a></li>
-                            <li><a href="{{ route('consulting') }}">Финансовый консалтинг</a></li>
+                            <li><a href="{{ route('direction', 'consulting') }}">Финансовый консалтинг</a></li>
                             <li><a href="{{ route('hr-audit') }}">Кадровый консалтинг</a></li>
                             <li><a href="">Внешние связи и GR</a></li>
                             <li><a href="">Маркетинг и реклама</a></li>
@@ -149,7 +149,7 @@
             <span class="main-logo animate__animated animate__fadeInUp">MERITOCRAT</span>
             <span class="main-underlogo_text">404 - Контент не найден</span>
             <div class="main-row_button">
-                <a><input type="button" value = "На главную" class="button-white"></a>
+                <a href="{{ route('index') }}"><input type="button" value = "На главную" class="button-white"></a>
             </div>
         </div>
         <div class="gradient-orange"></div>
@@ -200,7 +200,8 @@
                     <textarea name="comment" id="comment" cols="30" rows="10" class="contacts-comments" placeholder="Комментарии"></textarea>
                     <span class="text-data">*Нажимая кнопку «Отправить», я даю согласие на обработку <a>персональных данных</a></span>
                     <div class="row-buttons">
-                        <input type="file" class="button-with-border" name="file" value="Прикрепить файлы">
+                        <label for="file" class="button-with-border">Прикрепить файлы</label>
+                        <input type="file" class="button-with-border" name="file" style="display: none;">
                         <input type="submit" class="button-white" value="Отправить">
                     </div>
                 </div>

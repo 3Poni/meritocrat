@@ -126,7 +126,7 @@
                                         <input type="text" class="form-control" name="result[]" placeholder="Результат 1">
                                     </label>
                                 </div>
-                                <button onclick="addField(event, this, 'result');">Добавить поле результата</button>
+                                <button onclick="addField(event, this, 'result');" class="mb-5">Добавить поле результата</button>
                             </div>`
             let template2 = `<div class="template show-tpl" id="template-2">
                                     <div class="form-group w-75">
@@ -144,19 +144,19 @@
                                             <input type="text" class="form-control" name="result[]" placeholder="Услуга 1">
                                         </label>
                                     </div>
-                                    <button onclick="addField(event, this, 'result');">Добавить поле услуг</button>
+                                    <button onclick="addField(event, this, 'result');" class="mb-5">Добавить поле услуг</button>
                                     <div class="form-group w-25">
                                         <label>
                                             <input type="text" class="form-control" name="stages[]" placeholder="Этап 1">
                                         </label>
                                     </div>
-                                    <button onclick="addField(event, this, 'stages');">Добавить поле этапа</button>
+                                    <button onclick="addField(event, this, 'stages');" class="mb-5">Добавить поле этапа</button>
                                     <div class="form-group w-25">
                                         <label>
                                             <input type="text" class="form-control" name="result2[]" placeholder="Результат 1">
                                         </label>
                                     </div>
-                                    <button onclick="addField(event, this, 'result2');">Добавить поле результата</button>
+                                    <button onclick="addField(event, this, 'result2');" class="mb-5">Добавить поле результата</button>
                                 </div>`
 
             function showTemplate(id) {

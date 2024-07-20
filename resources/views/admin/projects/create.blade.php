@@ -58,12 +58,50 @@
                                     </div>
                                     @enderror
                                 </div>
+                                <div class="form-group w-75">
+                                    <h4>Описание для слайдера</h4>
+                                    <label for="description"></label>
+                                    <textarea style="min-height: 300px;min-width: 850px;" name="content2">{{ old('description') }}</textarea>
+                                    @error('description')
+                                    <div class="text-danger">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="form-group w-75">
+                                    <h4>Описание для модального окна</h4>
+                                    <label for="ext_description"></label>
+                                    <textarea style="min-height: 300px;min-width: 850px;" name="content2">{{ old('ext_description') }}</textarea>
+                                    @error('ext_description')
+                                    <div class="text-danger">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
                                 <div class="form-group w-25">
                                     <label>
                                         <input type="text" class="form-control" name="client" placeholder="Введите название клиента"
                                                value="{{ old('client') }}">
                                     </label>
                                     @error('client')
+                                    <div class="text-danger">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
+
+                                <div class="form-group col-4">
+                                    <label for="img">Добавить файл</label>
+                                    <div class="input-group">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="img" name="img">
+                                            <label class="custom-file-label" for="img">Выберите файл</label>
+                                        </div>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">Загрузить</span>
+                                        </div>
+                                    </div>
+                                    @error('img')
                                     <div class="text-danger">
                                         {{ $message }}
                                     </div>

@@ -21,8 +21,9 @@
                         <div class="col-12">
                             <form action="{{ route('admin.service.store') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
-                                <div class="form-group w-25">
+                                <div class="form-group w-75">
                                     <label>
+                                        <h4>Название страницы META</h4>
                                         <input type="text" class="form-control" name="title" placeholder="Название страницы META"
                                                value="{{ old('title') }}">
                                     </label>
@@ -32,8 +33,9 @@
                                     </div>
                                     @enderror
                                 </div>
-                                <div class="form-group w-25">
+                                <div class="form-group w-75">
                                     <label>
+                                        <h4>Описание страницы META</h4>
                                         <input type="text" class="form-control" name="description" placeholder="Описание страницы META"
                                                value="{{ old('description') }}">
                                     </label>
@@ -42,8 +44,9 @@
                                         {{ $message }}
                                     </div>
                                     @enderror
-                                </div><div class="form-group w-25">
+                                </div><div class="form-group w-75">
                                     <label>
+                                        <h4>Заголовок страницы</h4>
                                         <input type="text" class="form-control" name="header" placeholder="Заголовок страницы"
                                                value="{{ old('header') }}">
                                     </label>
@@ -53,9 +56,10 @@
                                     </div>
                                     @enderror
                                 </div>
-                                <div class="form-group w-25">
+                                <div class="form-group w-75">
                                     <label>
-                                        <input type="text" class="form-control" name="url" placeholder="Ссылка страницы"
+                                        <h4>URL страницы</h4>
+                                        <input type="text" class="form-control" name="url" placeholder="URL страницы"
                                                value="{{ old('url') }}">
                                     </label>
                                     @error('url')
@@ -65,14 +69,11 @@
                                     @enderror
                                 </div>
                                 <div class="form-group col-4">
-                                    <label for="img">Добавить файл</label>
+                                    <label for="img">Добавить изображение</label>
                                     <div class="input-group">
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="img" name="img">
                                             <label class="custom-file-label" for="img">Выберите файл</label>
-                                        </div>
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">Загрузить</span>
                                         </div>
                                     </div>
                                     @error('img')

@@ -21,8 +21,9 @@
                         <div class="col-12">
                             <form action="{{ route('admin.vacancy.store') }}" method="POST">
                                 @csrf
-                                <div class="form-group w-25">
+                                <div class="form-group w-75">
                                     <label>
+                                        <h4>Название вакансии</h4>
                                         <input type="text" class="form-control" name="title" placeholder="Название вакансии"
                                                value="{{ old('title') }}">
                                     </label>
@@ -32,8 +33,9 @@
                                     </div>
                                     @enderror
                                 </div>
-                                <div class="form-group w-25">
+                                <div class="form-group w-75">
                                     <label>
+                                        <h4>Тип занятости</h4>
                                         <input type="text" class="form-control" name="type" placeholder="Тип занятости"
                                                value="{{ old('type') }}">
                                     </label>
@@ -43,8 +45,9 @@
                                     </div>
                                     @enderror
                                 </div>
-                                <div class="form-group w-25">
+                                <div class="form-group w-75">
                                     <label>
+                                        <h4>Зарплата</h4>
                                         <input type="text" class="form-control" name="salary" placeholder="Заработная плата"
                                                value="{{ old('salary') }}">
                                     </label>
@@ -54,8 +57,9 @@
                                     </div>
                                     @enderror
                                 </div>
-                                <div class="form-group w-25">
+                                <div class="form-group w-75">
                                     <label>
+                                        <h4>Требования</h4>
                                         <input type="text" class="form-control" name="requirements" placeholder="Требования к кандидату"
                                                value="{{ old('requirements') }}">
                                     </label>
@@ -65,8 +69,9 @@
                                     </div>
                                     @enderror
                                 </div>
-                                <div class="form-group w-25">
+                                <div class="form-group w-75">
                                     <label>
+                                        <h4>Список задач</h4>
                                         <input type="text" class="form-control" name="description" placeholder="Чем предстоит заниматься"
                                                value="{{ old('description') }}">
                                     </label>

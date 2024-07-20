@@ -13,6 +13,6 @@ class UpdateController extends BaseController
             $data = $request->validated();
             $partner = $this->service->update($data, $partner);
 
-            return view ('admin.partners.show', compact('partner'));
+            return redirect()->route('admin.partner.edit', $partner->id);
     }
 }

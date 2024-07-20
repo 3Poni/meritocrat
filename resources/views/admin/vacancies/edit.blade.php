@@ -24,6 +24,7 @@
                                 @method('PATCH')
                                 <div class="form-group w-25">
                                     <label>
+                                        <h4>Название вакансии</h4>
                                         <input type="text" class="form-control" name="title" placeholder="Название вакансии"
                                                value="{{ $vacancy->title }}">
                                     </label>
@@ -35,6 +36,7 @@
                                 </div>
                                 <div class="form-group w-25">
                                     <label>
+                                        <h4>Тип занятости</h4>
                                         <input type="text" class="form-control" name="type" placeholder="Тип занятости"
                                                value="{{ $vacancy->type }}">
                                     </label>
@@ -46,6 +48,7 @@
                                 </div>
                                 <div class="form-group w-25">
                                     <label>
+                                        <h4>Зарплата</h4>
                                         <input type="text" class="form-control" name="salary" placeholder="Заработная плата"
                                                value="{{ $vacancy->salary }}">
                                     </label>
@@ -57,6 +60,7 @@
                                 </div>
                                 <div class="form-group w-25">
                                     <label>
+                                        <h4>Требования</h4>
                                         <input type="text" class="form-control" name="requirements" placeholder="Требования к кандидату"
                                                value="{{ $vacancy->requirements }}">
                                     </label>
@@ -68,6 +72,7 @@
                                 </div>
                                 <div class="form-group w-25">
                                     <label>
+                                        <h4>Список задач</h4>
                                         <input type="text" class="form-control" name="description" placeholder="Чем предстоит заниматься"
                                                value="{{ $vacancy->description }}">
                                     </label>

@@ -27,8 +27,8 @@ class StoreRequest extends FormRequest
             'fio' => 'required|string',
             'position' => 'required|string',
             'type' => 'integer|between:0,2',
-            'url' => 'string',
-            'message' => 'string',
+            'url' => 'nullable|string',
+            'message' => 'nullable|string',
             'img' => 'file|mimes:jpeg,png,jpg,gif,svg|max:4096',
         ];
     }

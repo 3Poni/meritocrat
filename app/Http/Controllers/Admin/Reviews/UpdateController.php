@@ -13,6 +13,6 @@ class UpdateController extends BaseController
             $data = $request->validated();
             $review = $this->service->update($data, $review);
 
-            return view ('admin.reviews.show', compact('review'));
+            return redirect()->route('admin.review.edit', $review->id);
     }
 }

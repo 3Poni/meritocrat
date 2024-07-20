@@ -121,7 +121,7 @@
                                         </div>
                                         @endforeach
                                         @endif
-                                        <button onclick="addField(event, this, 'result');">Добавить поле результата</button>
+                                        <button onclick="addField(event, this, 'result');" class="mb-5">Добавить поле результата</button>
                                     </div>
                                     @elseif($direction->template === 2)
                                     <div class="template show-tpl" id="template-2">
@@ -159,7 +159,7 @@
                                         </div>
                                         @endforeach
                                         @endif
-                                        <button onclick="addField(event, this, 'result');">Добавить поле услуг</button>
+                                        <button onclick="addField(event, this, 'result');" class="mb-5">Добавить поле услуг</button>
                                         @if(!empty($direction->stages))
                                             <h4>Список этапов</h4>
                                         @foreach($direction->stages as $key => $stage)
@@ -170,7 +170,7 @@
                                         </div>
                                         @endforeach
                                         @endif
-                                        <button onclick="addField(event, this, 'stages');">Добавить поле этапа</button>
+                                        <button onclick="addField(event, this, 'stages');" class="mb-5">Добавить поле этапа</button>
                                         @if(!empty($direction->result2))
                                             <h4>Список результатов</h4>
                                         @foreach($direction->result2 as $key => $result2)
@@ -181,7 +181,7 @@
                                         </div>
                                         @endforeach
                                         @endif
-                                        <button onclick="addField(event, this, 'result2');">Добавить поле результата</button>
+                                        <button onclick="addField(event, this, 'result2');" class="mb-5">Добавить поле результата</button>
                                     </div>
                                 @endif
 

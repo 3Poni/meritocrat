@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="row">
-                                <div class="col-6">
+                                <div class="col-12">
                                     <div class="card">
                                             <div class="card-tools">
                                                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -48,7 +48,6 @@
                                                     <td>{{ $vacancy->title  }}</td>
                                                     <td>{{ $vacancy->type  }}</td>
                                                     <td>{{ $vacancy->salary  }}</td>
-                                                    <td><a href="{{ route('admin.vacancy.show', $vacancy->id) }}"><i class="far fa-eye"></i></a></td>
                                                     <td><a href="{{ route('admin.vacancy.edit', $vacancy->id) }}"><i class="fas fa-pencil-alt text-success"></i></a></td>
                                                     <td>
                                                         <form action="{{ route('admin.vacancy.delete', $vacancy->id)}}" method="POST">

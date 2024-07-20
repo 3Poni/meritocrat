@@ -13,6 +13,6 @@ class UpdateController extends BaseController
             $data = $request->validated();
             $project = $this->service->update($data, $project);
 
-            return view ('admin.projects.show', compact('project'));
+            return redirect()->route('admin.project.edit', $project->id);
     }
 }

@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="row">
-                                <div class="col-6">
+                                <div class="col-12">
                                     <div class="card">
                                             <div class="card-tools">
                                                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -37,6 +37,7 @@
                                                     <th>ID</th>
                                                     <th>Название</th>
                                                     <th>Ссылка</th>
+                                                    <th>Картинка</th>
                                                     <th colspan="3">Действие</th>
                                                 </tr>
                                                 </thead>
@@ -46,7 +47,7 @@
                                                     <td>{{ $service->id  }}</td>
                                                     <td>{{ $service->title  }}</td>
                                                     <td><a href="{{ route('service', $service->url) }}" target="_blank">{{ $service->url  }}</a></td>
-                                                    <td><a href="{{ route('admin.service.show', $service->id) }}"><i class="far fa-eye"></i></a></td>
+                                                    <td><img src="{{ $service->img  }}" width="100px"></td>
                                                     <td><a href="{{ route('admin.service.edit', $service->id) }}"><i class="fas fa-pencil-alt text-success"></i></a></td>
                                                     <td>
                                                         <form action="{{ route('admin.service.delete', $service->id)}}" method="POST">

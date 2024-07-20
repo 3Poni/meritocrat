@@ -22,8 +22,9 @@
                             <form action="{{ route('admin.partner.update', $partner->id) }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 @method('PATCH')
-                                <div class="form-group w-25">
+                                <div class="form-group w-75">
                                     <label>
+                                        <h4>Название партнера</h4>
                                         <input type="text" class="form-control" name="title" placeholder="Название партнера"
                                                value="{{ $partner->title }}">
                                     </label>
@@ -33,8 +34,9 @@
                                     </div>
                                     @enderror
                                 </div>
-                                <div class="form-group w-25">
+                                <div class="form-group w-75">
                                     <label>
+                                        <h4>Заголовок партнера</h4>
                                         <input type="text" class="form-control" name="header" placeholder="Заголовок партнера"
                                                value="{{ $partner->header }}">
                                     </label>
@@ -45,25 +47,25 @@
                                     @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label>Тэги</label>
+                                    <h4>Тэги</h4>
                                     <select class="select2" name="tag_ids[]" multiple="multiple" data-placeholder="Выберите тэги" style="width: 100%;">
                                         @foreach ( $tags as $tag)
                                             <option {{ is_array( $partner->tags->pluck('id')->toArray()) && in_array($tag->id, $partner->tags->pluck('id')->toArray()) ? 'selected' : '' }} value="{{ $tag->id }}">{{ $tag->title }}</option>
                                         @endforeach
                                     </select>
                                 </div>
-                                <div class="form-group w-25">
-                                    <label>
-                                        <input type="text" class="form-control" name="content" placeholder="Текст партнера"
-                                               value="{{ $partner->content }}">
-                                    </label>
+                                <div class="form-group w-75">
+                                    <h4>Текстовый контент партнера</h4>
+                                    <label for="ext_description"></label>
+                                    <textarea style="min-height: 300px;min-width: 850px;" name="content">{{ $partner->content }}</textarea>
                                     @error('content')
                                     <div class="text-danger">
                                         {{ $message }}
                                     </div>
                                     @enderror
                                 </div>
-                                <div class="form-group w-25">
+                                <div class="form-group w-75">
+                                    <h4>URL партнера</h4>
                                     <label>
                                         <input type="text" class="form-control" name="url" placeholder="Ссылка партнера"
                                                value="{{ $partner->url }}">
@@ -74,7 +76,8 @@
                                     </div>
                                     @enderror
                                 </div>
-                                <div class="form-group w-25">
+                                <div class="form-group w-75">
+                                    <h4>Текст кнопки</h4>
                                     <label>
                                         <input type="text" class="form-control" name="btn" placeholder="Текст кнопки"
                                                value="{{ $partner->btn }}">
@@ -86,14 +89,14 @@
                                     @enderror
                                 </div>
                                 <div class="form-group col-4">
-                                    <label for="img">Добавить файл</label>
+                                    @if($partner->img)
+                                    <img src="{{ $partner->img }}" width="200px">
+                                    @endif
+                                    <h4>Изображение проекта</h4>
                                     <div class="input-group">
                                         <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="img" name="img" value="{{ $partner->img }}">
-                                            <label class="custom-file-label" for="img">Выберите файл</label>
-                                        </div>
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">Загрузить</span>
+                                            <input type="file" class="custom-file-input" id="img" name="img">
+                                            <label class="custom-file-label" for="img">{{ $partner->img }}</label>
                                         </div>
                                     </div>
                                     @error('img')
@@ -103,14 +106,14 @@
                                     @enderror
                                 </div>
                                 <div class="form-group col-4">
-                                    <label for="img">Добавить файл</label>
+                                    @if($partner->slider_img)
+                                        <img src="{{ $partner->slider_img }}" width="200px">
+                                    @endif
+                                    <h4>Изображение для слайдера</h4>
                                     <div class="input-group">
                                         <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="slider_img" name="slider_img" value="{{ $partner->slider_img }}">
-                                            <label class="custom-file-label" for="slider_img">Выберите файл</label>
-                                        </div>
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">Загрузить</span>
+                                            <input type="file" class="custom-file-input" id="slider_img" name="slider_img">
+                                            <label class="custom-file-label" for="slider_img">{{ $partner->slider_img }}</label>
                                         </div>
                                     </div>
                                     @error('slider_img')

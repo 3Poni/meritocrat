@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="row">
-                                <div class="col-6">
+                                <div class="col-12">
                                     <div class="card">
                                             <div class="card-tools">
                                                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -37,6 +37,7 @@
                                                     <th>ID</th>
                                                     <th>Название партнера</th>
                                                     <th>Должность клиента</th>
+                                                    <th>Картинка</th>
                                                     <th colspan="3">Действие</th>
                                                 </tr>
                                                 </thead>
@@ -46,6 +47,7 @@
                                                     <td>{{ $partner->id  }}</td>
                                                     <td>{{ $partner->title  }}</td>
                                                     <td><a href="{{ $partner->url }}" target="_blank">{{ $partner->url }}</a></td>
+                                                    <td><img src="{{ $partner->img  }}" width="100px"></td>
                                                     <td><a href="{{ route('admin.partner.edit', $partner->id) }}"><i class="fas fa-pencil-alt text-success"></i></a></td>
                                                     <td>
                                                         <form action="{{ route('admin.partner.delete', $partner->id)}}" method="POST">

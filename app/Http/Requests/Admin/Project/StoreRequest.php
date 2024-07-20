@@ -24,8 +24,9 @@ class StoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'service_id' => 'required|integer|exists:services,id',
+            'service_id' => 'required|integer',
             'description' => 'nullable|string',
+            'ext_description' => 'nullable|string',
             'header' => 'nullable|string',
             'client' => 'nullable|string',
             'img' => 'nullable|file|mimes:jpeg,png,jpg,gif,svg|max:4096',
@@ -34,6 +35,7 @@ class StoreRequest extends FormRequest
     public function messages()
     {
         return [
+            'service_id.required' => 'Привяжите услугу к проекту',
             'mimes' => 'Изображение должно быть формата: jpeg,png,jpg,gif,svg',
             'max' => 'Изображение должно весит не более 4МБ',
         ];
