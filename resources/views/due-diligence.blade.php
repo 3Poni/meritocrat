@@ -2,20 +2,12 @@
 @push('head')
     <link rel="stylesheet" href="{{ asset('css/due-diligence.css') }}">
 @endpush
-@section('title')Due-diligence@endsection
+@section('title')Due-diligence @endsection
 @section('content')
 <section class="due-diligence">
     <div class="due-graph"><img src="../img/due-graph.png" alt=""></div>
     <div class="container">
-        <div class="links">
-            <a href="../index.html"><span>Главная</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="../index.html"><span>Услуги</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="../index.html"><span>Инвестиционный консалтинг</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="../index.html"><span class="active-link">Due Diligence</span></a>
-        </div>
+        @include('layouts.breadcrumbs')
         <h1 class="section-h1">
             Due Diligence
         </h1>

@@ -7,15 +7,7 @@
 @section('content')
 <section class="government-support">
     <div class="container">
-        <div class="links">
-            <a href="../index.html"><span>Главная</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="../index.html"><span>Услуги</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="../index.html"><span>Инвестиционный консалтинг</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="../index.html"><span class="active-link">Применение мер господдержки </span></a>
-        </div>
+        @include('layouts.breadcrumbs')
         <h1 class="section-h1">
             Применение мер господдержки
         </h1>

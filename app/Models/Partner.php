@@ -17,4 +17,13 @@ class Partner extends Model
     {
         return $this->belongsToMany(Tag::class, 'partners_tags', 'partner_id', 'tag_id');
     }
+
+    public function scopeFilter($query, array $filters)
+    {
+        if($filters['tag_id'] ?? false) {
+            $query->whereHas('tags', function($q) {
+                $q->whereIn('tags.id',explode(',', request('tag_id')));
+            })->get();
+        }
+    }
 }

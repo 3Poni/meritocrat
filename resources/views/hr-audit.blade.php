@@ -8,15 +8,7 @@
 <section class="hr-audit">
     <div class="hr-graph"><img src="../img/hr-graph.png" alt=""></div>
     <div class="container">
-        <div class="links">
-            <a href="{{ route('index') }}"><span>Главная</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="{{ route('services') }}"><span>Услуги</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="{{ route('service',$direction->service->url) }}"><span>{{ $direction->service->header }}</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="{{ route('direction',$direction->url) }}"><span class="active-link">{{ $direction->header }}</span></a>
-        </div>
+        @include('layouts.breadcrumbs')
         <h1 class="section-h1">
             Кадровый аудит
         </h1>

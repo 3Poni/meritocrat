@@ -7,9 +7,9 @@
 <section class="vacancy">
     <div class="container">
         <div class="links">
-            <a href="../index.html"><span>Главная</span></a>
+            <a href="{{ route('index') }}"><span>Главная</span></a>
             <img src="../img/vacancy-arrow.png" alt="">
-            <a href="../pages/about.html"><span class="active-link">Вакансии</span></a>
+            <a href="{{ route('vacancies') }}"><span class="active-link">Вакансии</span></a>
         </div>
         <h1 class="section-h1">
             Вакансии
@@ -17,10 +17,10 @@
         <div class="container-drop">
             <ul>
               @foreach($vacancies as $vacancy)
-              <li class="dropdown" id="dropdown">
+              <li class="dropdown" id="dropdown-{{ $vacancy->id }}">
                 <span class="dropdown-span">{{ $vacancy->title }}</span><img src="../img/icons/arrow-down-white-1.png" alt="">
               </li>
-              <li class="dropdown-menu-vacancy" id="dropdown-menu">
+              <li class="dropdown-menu-vacancy" id="dropdown-menu-{{ $vacancy->id }}">
                 <div >
                     <div class="first-row">
                       <div class="row-text">

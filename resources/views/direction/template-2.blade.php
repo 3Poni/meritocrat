@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="{{ asset('css/outsourcing.css') }}">
 @endpush
 @section('title')
-    Проекты
+    {{ $direction->title }}
 @endsection
 @section('content')
     <section class="outsourcing-page">

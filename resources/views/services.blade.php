@@ -10,9 +10,9 @@
     <div class="graph-services-page"><img src="../img/graph-services-page.png" alt=""></div>
     <div class="container"  style="flex-direction: column">
         <div class="links">
-            <a href="../index.html"><span>Главная</span></a>
+            <a href="{{ route('index') }}"><span>Главная</span></a>
             <img src="../img/arrow.png" alt="">
-            <a href="../pages/services.html"><span class="acitve-link">Услуги</span></a>
+            <a href="{{ route('services') }}"><span class="acitve-link">Услуги</span></a>
         </div>
         <div class="services-h1">
             <h1>Услуги</h1>
@@ -27,7 +27,7 @@
                 <div class="item-img">
                     <img src="{{ $service->img }}" alt="Изображение 1" class="image">
                 </div>
-                <a href=""><button class="purple-button">Перейти</button></a>
+                <a href="{{ route('service', $service->url) }}"><button class="purple-button">Перейти</button></a>
             </div>
             @endforeach
             @if(false)

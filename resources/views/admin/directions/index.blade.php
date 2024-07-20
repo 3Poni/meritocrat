@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="row">
-                                <div class="col-6">
+                                <div class="col-12">
                                     <div class="card">
                                             <div class="card-tools">
                                                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -37,6 +37,7 @@
                                                     <th>ID</th>
                                                     <th>Название</th>
                                                     <th>Ссылка</th>
+                                                    <th>Тип</th>
                                                     <th colspan="3">Действие</th>
                                                 </tr>
                                                 </thead>
@@ -45,7 +46,8 @@
                                                 <tr>
                                                     <td>{{ $direction->id  }}</td>
                                                     <td>{{ $direction->title  }}</td>
-                                                    <td><a href="{{ route('direction', $direction->url) }}" target="_blank">{{ $direction->url  }}</a></td>
+                                                    <td><a href="{{ route('direction', !empty($direction->url) ? $direction->url : $direction->url_static) }}" target="_blank">{{ !empty($direction->url) ? $direction->url : $direction->url_static }}</a></td>
+                                                    <td>{{!empty($direction->url) ? "По шаблону" : "Статичная"}}</td>
                                                     <td><a href="{{ route('admin.direction.edit', $direction->id) }}"><i class="fas fa-pencil-alt text-success"></i></a></td>
                                                     <td>
                                                         <form action="{{ route('admin.direction.delete', $direction->id)}}" method="POST">

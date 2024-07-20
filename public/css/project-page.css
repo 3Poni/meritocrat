@@ -107,6 +107,13 @@
     border: 1px solid #C0A7E7 ;
 }
 
+.project-page .projects .container .projects-row_items_categories .project-item:first-child{
+    border: 1px solid #C0A7E7 ;
+    margin-right: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
 .projects  .container .projects-row_items_categories-mobile {
     display: none;
 }

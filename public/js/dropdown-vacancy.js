@@ -1,4 +1,4 @@
-document.getElementById('dropdown').addEventListener('click', function() {
-    var dropdownMenu = document.getElementById('dropdown-menu');
-    dropdownMenu.classList.toggle('show');
+$('.dropdown').on('click', function (event) {
+    var clickedBtn = $(this);
+    clickedBtn.next()[0].classList.toggle('show');
 });

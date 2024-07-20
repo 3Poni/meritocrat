@@ -6,15 +6,7 @@
 @section('content')
 <section class="strategic-page">
     <div class="container">
-        <div class="links">
-            <a href="../index.html"><span>Главная</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="../index.html"><span>Услуги</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="../index.html"><span>Стратегический консалтинг</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="../index.html"><span class="active-link">Стратегическое планирование</span></a>
-        </div>
+        @include('layouts.breadcrumbs')
         <h1 class="section-h1">
             Стратегическое планирование
         </h1>

@@ -12,9 +12,9 @@
     <div class="graph-about"><img src="../img/graph-about.png" alt=""></div>
     <div class="container">
         <div class="links">
-            <a href="../index.html"><span>Главная</span></a>
+            <a href="{{ route('index') }}"><span>Главная</span></a>
             <img src="../img/arrow.png" alt="">
-            <a href="../pages/about.html"><span class="active-link">О компании</span></a>
+            <a href="{{ route('about') }}"><span class="active-link">О компании</span></a>
         </div>
         <div class="about-text-items">
             <h1 class="about-h1">О компании</h1>

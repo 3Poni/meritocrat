@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Direction;
 use App\Models\Service;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -22,5 +23,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         View::share('allServices',Service::with('directions')->get());
+        View::share('staticDirections',Direction::whereNotNull('url_static')->get());
     }
 }

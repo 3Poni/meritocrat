@@ -46,6 +46,8 @@
                                     </div>
                                     @enderror
                                 </div>
+                                @if(!empty($direction->url_static))
+                                @else
                                 <div class="form-group w-75">
                                     <h4>Заголовок страницы</h4>
                                     <label>
@@ -184,7 +186,7 @@
                                         <button onclick="addField(event, this, 'result2');" class="mb-5">Добавить поле результата</button>
                                     </div>
                                 @endif
-
+                                @endif
                                 <div class="form-group">
                                     <input type="submit" class="btn btn-primary" value="Обновить">
                                 </div>

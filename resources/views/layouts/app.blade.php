@@ -74,15 +74,19 @@
                     </div>
                     <div class="dropdown-item">
                       <ul>
-                        <li><a href="{{ route('accounting-support') }}">Консультирование по вопросам бухгалтерского учета</a></li>
-                        <li><a href="{{ route('chief-accountant') }}">Бухгалтерское сопровождение</a></li>
-                        <li><a href="{{ route('chief-accountant') }}">Выполнение функции главного бухгалтера</a></li>
-                        <li><a href="">Составление и сдача бухгалтерской отчетности</a></li>
-                        <li><a href="">Постановка системы бухгалтерского учета</a></li>
-                        <li><a href="">Восстановление бухгалтерского учета</a></li>
-                        <li><a href="">Экспресс-аудит</a></li>
-                        <li><a href="">Разработка учетной политики</a></li>
-                        <li><a href="">Расчет зарплаты</a></li>
+                          @foreach($staticDirections as $direction)
+                              <li><a href="{{ route('direction', $direction->url_static) }}">{{ $direction->header }}</a></li>
+                          @endforeach
+                          @if(false)
+                            <li><a href="{{ route('chief-accountant') }}">Бухгалтерское сопровождение</a></li>
+                            <li><a href="{{ route('chief-accountant') }}">Выполнение функции главного бухгалтера</a></li>
+                            <li><a href="">Составление и сдача бухгалтерской отчетности</a></li>
+                            <li><a href="">Постановка системы бухгалтерского учета</a></li>
+                            <li><a href="">Восстановление бухгалтерского учета</a></li>
+                            <li><a href="">Экспресс-аудит</a></li>
+                            <li><a href="">Разработка учетной политики</a></li>
+                            <li><a href="">Расчет зарплаты</a></li>
+                           @endif
                       </ul>
                     </div>
                   </div>
@@ -101,8 +105,8 @@
                     </div>
                     <ul class="burger-head">
                       <li><span class="header-logo">MERITOCRAT</span></li>
-                      <li><span class="burger-contact">8 (800) 267-19-45</span></li>
-                      <li><span class="burger-contact">info@meritocratconsulting.ru</span></li>
+                      <li><a href="tel:88002671945" target="_blank"><span class="burger-contact">8 (800) 267-19-45</span></a></li>
+                      <li><a href="mailto:info@meritocratconsulting.ru" target="_blank"><span class="burger-contact">info@meritocratconsulting.ru</span></a></li>
                     </ul>
                     <ul>
                       <li><a href="{{ route('about') }}">О компании</a></li>
@@ -131,9 +135,9 @@
                       <li><a href="{{ route('partners') }}">Партнеры</a></li>
                       <li><a href="{{ route('contacts') }}">Контакты</a></li>
                       <li>Пресс-служба:</li>
-                      <li><span class="burger-contact">pr@meritocratconsulting.ru</span></li>
+                        <li><a href="mailto:pr@meritocratconsulting.ru" target="_blank"><span class="burger-contact">pr@meritocratconsulting.ru</span></a></li>
                       <li>Партнерство:</li>
-                      <li><span class="burger-contact">partner@meritocratconsulting.ru</span></li>
+                        <li><a href="mailto:partner@meritocratconsulting.ru" target="_blank"><span class="burger-contact">partner@meritocratconsulting.ru</span></a></li>
                       <li><input type="button" class="button-white" value="Связаться с нами"></li>
                       <div class="row-social">
                         <img src="img/wp.png" alt="">
@@ -210,23 +214,23 @@
             <h1 class="contacts-h1">Контакты</h1>
             <div class="contacts-items">
                 <div class="left-column">
-                    <span class="conctacts-phone">8 (800) 267-19-45 </span>
-                    <span class="conctacts-email">info@meritocratconsulting.ru</span>
+                    <a target="_blank" href="tel:88002671945"><span class="conctacts-phone">8 (800) 267-19-45 </span></a>
+                    <a target="_blank" href="mailto:info@meritocratconsulting.ru"><span class="conctacts-email">info@meritocratconsulting.ru</span></a>
                     <div class="social-items">
                         <div class="social">
-                            <img src="img/wp.png" alt="">
+                            <img src="/img/wp.png" alt="">
                             <span class="social-items_text">Чат с консультантом</span>
                         </div>
                         <div class="social">
-                            <img src="img/tg.png" alt="">
+                            <img src="/img/tg.png" alt="">
                             <span class="social-items_text">Новости и аналитика</span>
                         </div>
                         <div class="social">
-                            <img src="img/vk.png" alt="">
+                            <img src="/img/vk.png" alt="">
                             <span class="social-items_text">Новости и обсуждения</span>
                         </div>
                         <div class="social">
-                            <img src="img/inst.png" alt="">
+                            <img src="/img/inst.png" alt="">
                             <span class="social-items_text">Новости</span>
                         </div>
 
@@ -264,11 +268,11 @@
             </div>
             <span class="footer-phone">8 (800) 267-19-45</span>
             <span class="footer-text footer-under-text">Общие вопросы:</span>
-            <span class="footer-text">info@meritocratconsulting.ru</span>
+            <a href="mailto:info@meritocratconsulting.ru" target="_blank"><span class="footer-text">info@meritocratconsulting.ru</span></a>
             <span class="footer-text footer-under-text">Пресс-служба:</span>
-            <span class="footer-text">pr@meritocratconsulting.ru</span>
+              <a href="mailto:pr@meritocratconsulting.ru" target="_blank"><span class="footer-text">pr@meritocratconsulting.ru</span></a>
             <span class="footer-text footer-under-text">Партнерство:</span>
-            <span class="footer-text">partner@meritocratconsulting.ru</span>
+              <a href="mailto:partner@meritocratconsulting.ru" target="_blank"><span class="footer-text">partner@meritocratconsulting.ru</span></a>
           </div>
           <div class="footer-column">
             <ul>
@@ -307,10 +311,10 @@
         <div class="footer-row-last">
           <span> 2023 MERITOCRAT. Все права защищены</span>
           <div class="row-social">
-            <img src="img/wp.png" alt="">
-            <img src="img/tg.png" alt="">
-            <img src="img/vk.png" alt="">
-            <img src="img/inst.png" alt="">
+            <img src="/img/wp.png" alt="">
+            <img src="/img/tg.png" alt="">
+            <img src="/img/vk.png" alt="">
+            <img src="/img/inst.png" alt="">
           </div>
           <span>
             Разработано | DaT-Studio

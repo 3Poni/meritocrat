@@ -7,15 +7,7 @@
 <section class="effectivity-page">
     <div class="effect-graph"><img src="../img/effectivity-graph.png" alt=""></div>
     <div class="container">
-        <div class="links">
-            <a href="../index.html"><span>Главная</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="../index.html"><span>Услуги</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="../index.html"><span>Операционный консалтинг</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="../index.html"><span class="active-link">Операционная эффективность</span></a>
-        </div>
+        @include('layouts.breadcrumbs')
         <h1 class="section-h1">
             Операционная эффективность
         </h1>

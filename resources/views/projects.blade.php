@@ -24,7 +24,7 @@
                 <h1 class="projects_h1">Проекты</h1>
                 <div class="projects-row_items_categories">
                     <div class="project-item" style="margin-right: 14px">
-                        <input type="button" class="project-categories_button active" value="Все">
+                        <input type="button" onclick="selectService('all')" class="project-categories_button {{ !empty($service_ids) ? '' : 'active' }}" id="service_all" value="Все">
                     </div>
                     @foreach($services as $service)
                         <div class="project-item">
@@ -36,14 +36,14 @@
                 </div>
                 <div class="projects-row_items_categories-mobile">
                     <div class="project-item">
-                      <button type="button" class="active">Все <img src="../img/arrow-down.png" alt=""></button>
+                      <button type="button" class="active">Все <img src="../img/arrow-down.png" alt="все услуги"></button>
                     </div>
                     <div class="dropdown-mobile">
                       <div class="projects-list-mobile">
                         <ul>
                           <li>Все</li>
                           @foreach($services as $service)
-                             <li>{{ $service->title }}</li>
+                          <li>{{ $service->title }}</li>
                           @endforeach
                         </ul>
                       </div>
@@ -77,7 +77,18 @@
         function selectService(id) {
             myTimer = true;
             let clicked = $('#service_'+id)
-            let allSelected = $('.project-categories_button')
+            if(clicked.attr('value') === 'Все') {
+                $('.project-categories_button').each(function (item,k) {
+                    if(k.getAttribute('id') !== 'service_all') {
+                        k.classList.remove('active')
+                    }
+                })
+                clicked.addClass('active')
+                getData('')
+                return;
+            }else{
+                $('#service_all').removeClass('active')
+            }
             if(clicked.hasClass('active')) {
                 clicked.toggleClass('active');
                 const index = selectedIds.indexOf(id);
@@ -85,12 +96,10 @@
                     selectedIds.splice(index, 1); // 2nd parameter means remove one item only
                 }
                 initUrl = initUrl.includes(',') ? initUrl.split('=')[0] + '=' + selectedIds.join(',') : initUrl.split('?')[0]
-                console.log(initUrl)
             }else{
                 selectedIds.push(id);
                 clicked.toggleClass('active')
                 initUrl = initUrl.includes('service_id') ? initUrl + ',' + id : initUrl + '?service_id=' + id
-                console.log(initUrl)
             }
             setTimeout(redirect, 200)
             //
@@ -136,7 +145,7 @@
                                 if(item.label === "Next &raquo;") {
                                     linksRendered += `<a href="${item.url.replace('/api', '')}" rel="next" aria-label="Next &amp;raquo;">
                                         <div class="arrow-next">
-                                            <img src="../img/icons/right-arrow.png" alt="">
+                                            <img src="../img/icons/right-arrow.png" alt="проект">
                                         </div>
                                     </a>`
                                 }else{

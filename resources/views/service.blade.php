@@ -1,25 +1,26 @@
 @extends('layouts.app')
-
 @push('head')
     <link rel="stylesheet" href="{{ asset('css/taxes-page.css') }}">
 @endpush
 @section('title'){{ $service->title }}@endsection
 @section('content')
 <section class="taxes-page">
+        @if(false)
         <div class="taxes-graph"><img src="../img/taxes-graph.png" alt=""></div>
         <div class="taxes-graph_1"><img src="../img/taxes-graph_1.png" alt=""></div>
         <div class="taxes-graph_2"><img src="../img/taxes-graph_2.png" alt=""></div>
+        @endif
         <div class="container">
             <div class="links">
-                <a href="{{ route('index') }}"><span>Главная</span></a>
+                <a href="{{ route('index') }}" target="_self"><span>Главная</span></a>
                 <img src="../img/arrow.png" alt="">
-                <a href="{{ route('services') }}"><span>Услуги</span></a>
+                <a href="{{ route('services') }}" target="_self"><span>Услуги</span></a>
                 <img src="../img/arrow.png" alt="">
-                <a href="#"><span class="active-link">{{ $service->header }}</span></a>
+                <a href="{{ route('service', $service->url) }}"><span class="active-link">{{ $service->header }}</span></a>
             </div>
             <div class="taxes-text">
                 <h1 class="section-h1">{{ $service->header }}</h1>
-                {{ $service->description }}
+                {!! $service->description !!}
                 @if(false)
                 <span class="taxes-span">Мониторинг изменений в законодательстве позволяет нам своевременно предоставлять клиентам актуальные консультации и помогать в решении сложных вопросов, возникающих при ведении бизнеса. Мы изучаем различные методы эффективного распределения налоговой нагрузки клиентов и минимизации тех рисков, с которыми они могут столкнуться в будущем.
                 </span>
@@ -45,7 +46,7 @@
                 <h1 class="section-h1">Направления</h1>
                 <div class="taxes-items">
                     @foreach($service->directions as $direction)
-                        <a href="{{ route('direction',$direction->url) }}">
+                        <a href="{{ route('direction',!empty($direction->url) ? $direction->url : $direction->url_static) }}">
                             <div class="taxes-button">
                                 <span>{{ $direction->header }}</span>
                                 <span class="taxes-svg"></span>

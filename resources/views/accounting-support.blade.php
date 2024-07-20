@@ -2,20 +2,13 @@
 
 @push('head')
     <link rel="stylesheet" href="{{ asset('css/accounting-support.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/chief-accounting.css') }}">
 @endpush
 @section('title')Проекты@endsection
 @section('content')
     <section class="accounting-support">
         <div class="container">
-            <div class="links">
-                <a href="../index.html"><span>Главная</span></a>
-                <img src="../img/arrow.png" alt="">
-                <a href="../pages/services.html"><span>Услуги </span></a>
-                <img src="../img/arrow.png" alt="">
-                <a href=""><span>Бухгалтерский учет</span></a>
-                <img src="../img/arrow.png" alt="">
-                <a href=""><span class="active-link">Бухгалтерское сопровождение</span></a>
-            </div>
+            @include('layouts.breadcrumbs')
             <h1 class="section-h1">Бухгалтерское сопровождение</h1>
             <span class="section-span">Освободите время для бизнеса. Команда по цене штатного бухгалтера. Ведение бухгалтерии без ошибок.
         </span>
@@ -40,6 +33,49 @@
                 </div>
             </div>
             <h1 class="section-small-h1">Почему аутсорсинг это выгодно?</h1>
+            <div class="table-benefits">
+                <div class="item">
+                    <div class="column">
+                        <div class="row"><h1>Статья затрат</h1></div>
+                        <div class="row"><span>Заработная плата сотрудников HR-департамента (включая налоги, премию, социальные отчисления, материальную помощь и иные выплаты)</span></div>
+                        <div class="row">Страховые взносы с заработной платы</div>
+                        <div class="row">Затраты на учетную систему и ее поддержку</div>
+                        <div class="row">Накладные расходы на отдел кадров (аренда рабочих мест, офисные расходы, доступ к базам резюме, платные объявления и др)</div>
+                        <div class="row">Услуги аутсорсинга</div>
+                        <div class="row"><h1>Итого</h1></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="column">
+                        <div class="row"><h1>% от общих затрат на содержание бухгалтерии</h1></div>
+                        <div class="row"><span>55%</span></div>
+                        <div class="row"><span>30%</span></div>
+                        <div class="row"><span>10%</span></div>
+                        <div class="row"><span>5%</span></div>
+                        <div class="row"><span>0%</span></div>
+                        <div class="row"><h1>100%</h1></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="column">
+                        <div class="row"><h1>% эквивалент стоимость услуг аутсорсинга</h1></div>
+                        <div class="row"><span>0%</span></div>
+                        <div class="row"><span>0%</span></div>
+                        <div class="row"><span>0%</span></div>
+                        <div class="row"><span>0%</span></div>
+                        <div class="row"><span>70%</span></div>
+                        <div class="row"><h1>70%</h1></div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-ecomomy">
+                <h1>
+                    Экономия до 70%
+                </h1>
+            </div>
         </div>
     </section>
 @endsection
+@push('script')
+    <script src="{{ asset('js/chief-accounting.js') }}"></script>
+@endpush

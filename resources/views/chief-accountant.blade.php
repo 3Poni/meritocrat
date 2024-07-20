@@ -4,19 +4,11 @@
     <link rel="stylesheet" href="{{ asset('css/accounting-support.css') }}">
     <link rel="stylesheet" href="{{ asset('css/chief-accounting.css') }}">
 @endpush
-@section('title')Проекты@endsection
+@section('title')Выполнение функции главного бухгалтера@endsection
 @section('content')
 <section class="accounting-support">
     <div class="container">
-        <div class="links">
-            <a href="../index.html"><span>Главная</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href="../pages/services.html"><span>Услуги </span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href=""><span>Бухгалтерский учет</span></a>
-            <img src="../img/arrow.png" alt="">
-            <a href=""><span class="active-link">Выполнение функции главного бухгалтера</span></a>
-        </div>
+        @include('layouts.breadcrumbs')
         <h1 class="section-h1">Выполнение функции главного бухгалтера</h1>
         <span class="section-span">Функция главного бухгалтера поможет максимально быстро решить проблему нехватки кадров. Передайте решение своих проблем профессионалам. Функции главного бухгалтера берет себе или совместитель, или новый сотрудник, которого требуется обучить и ввести в курс дел. Но не всегда на это есть время. Кроме того, есть риск, что новый работник не справится с возложенными обязанностями, особенно если отсутствие главного бухгалтера совпадет с началом отчетного периода, когда нагрузка на бухгалтерию возрастает в разы. Без помощи опытного главбуха подготовить и вовремя сдать отчеты очень сложно, а значит, компании могут грозить штрафы от контролирующих органов.
         </span>

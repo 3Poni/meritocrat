@@ -20,13 +20,10 @@
             gap: 10px;
         }
         .auth-header {
-            /* Create the gradient. */
-            background-image: linear-gradient(45deg, #b4b4b4, #6f5af5);
-            font-weight: 900;
-            font-size: 32px;
-            /* Set the background size and repeat properties. */
-            background-size: 100%;
-            background-repeat: repeat;
+            font-family: 'Ledger', serif;
+            font-size: 44px;
+            text-shadow: 0 0 #0000000d;
+            background: linear-gradient(to right, #FEF8F2, #A2C2DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -77,15 +74,16 @@
             min-width: 170px;
             padding: 15px;
             font-weight: 700;
-            color: #3c3c3cde;
             letter-spacing: 4px;
             text-shadow: 0 1px 20px #2300ffbf;
             box-shadow: #2000fa69 0 5px 63px;
             border: none;
             font-family: Arial, sans-serif;
             font-size: 14px;
-            border-radius: 12px;
             background: #783dff30;
+            border-radius: 16px;
+            background: linear-gradient(74deg, #C0A7E7 8.19%, #9CBEDE 78.01%);
+            color: #fff;
         }
         .auth-action button:hover {
             cursor: pointer;

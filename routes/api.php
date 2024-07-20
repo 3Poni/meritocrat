@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/projects', 'App\Http\Controllers\Api\ProjectsController');
+Route::get('/partners', 'App\Http\Controllers\Api\PartnersController');
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();

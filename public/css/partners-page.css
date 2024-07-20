@@ -33,7 +33,6 @@
     transition: 0.2s;
     background: linear-gradient(to right, #C0A7E7,#9CBEDE );
     color: #fff;
-    
 }
 
 .partners-page .container .partners-buttons .partners-button{
@@ -45,6 +44,11 @@
     margin-bottom: 10px;
     border-radius: 30px;
     cursor: pointer;
+}
+.active{
+    transition: 0.2s;
+    background: linear-gradient(to right, #C0A7E7,#9CBEDE );
+    color: #fff !important;
 }
 
 .partners-page .container .partners-items{
