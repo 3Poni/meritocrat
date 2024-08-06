@@ -135,52 +135,8 @@ Route::post('/newsletter', ['App\Http\Controllers\NewsletterController', 'store'
 
 Route::get('/about', 'App\Http\Controllers\AboutController')->name('about');
 
-Route::get('/taxes', function () {
-    return view('taxes');
-})->name('taxes');
-
 Route::get('/contacts', function () {
     return view('contacts');
 })->name('contacts');
-
-Route::get('/chief-accountant', function () {
-    return view('chief-accountant');
-})->name('chief-accountant');
-
-Route::get('/accounting-support', function () {
-    return view('accounting-support');
-})->name('accounting-support');
-
-Route::get('/anticrysis', function () {
-    return view('anticrysis');
-})->name('anticrysis');
-
-Route::get('/due-diligence', function () {
-    return view('due-diligence');
-})->name('due-diligence');
-
-Route::get('/effectivity', function () {
-    return view('effectivity');
-})->name('effectivity');
-
-Route::get('/hr-audit', function () {
-    return view('hr-audit');
-})->name('hr-audit');
-
-Route::get('/motivation', function () {
-    return view('motivation');
-})->name('motivation');
-
-Route::get('/outsourcing', function () {
-    return view('outsourcing');
-})->name('outsourcing');
-
-Route::get('/strategic', function () {
-    return view('strategic');
-})->name('strategic');
-
-Route::get('/support', function () {
-    return view('support');
-})->name('support');
 
 Auth::routes(['verify' => true]);

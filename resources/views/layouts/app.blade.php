@@ -54,22 +54,7 @@
                           @foreach($allServices as $service)
                               <li><a href="{{ route('service',empty($service->url_static) ? $service->url : $service->url_static ) }}">{{ $service->title }}</a></li>
                           @endforeach
-                        @if(false)
-                        <li><a href="{{ route('accounting-support') }}">Бухгалтерский учет</a></li>
-                        <li><a href="{{ route('taxes') }}">Налогообложение</a></li>
-                        <li><a href="">Юридический консалтинг</a></li>
-                        <li><a href="{{ route('strategic') }}">Стратегический консалтинг</a></li>
-                        <li><a href="{{ route('effectivity') }}">Операционный консалтинг</a></li>
-                        <li><a href="{{ route('due-diligence') }}">Инвестиционный консалтинг</a></li>
-                        <li><a href="">Финансовый консалтинг</a></li>
-                        <li><a href="{{ route('hr-audit') }}">Кадровый консалтинг</a></li>
-                        <li><a href="">Внешние связи и GR</a></li>
-                        <li><a href="">Маркетинг и реклама</a></li>
-                        <li><a href="{{ route('services') }}">Digital-услуги</a></li>
-                        <li><a href="">Политический консалтинг</a></li>
-                        <li><a href="">Международный консалтинг</a></li>
-                        <li><a href="">Лингвистический консалтинг</a></li>
-                          @endif
+
                       </ul>
                     </div>
                     <div class="dropdown-item">
@@ -190,6 +175,8 @@
 ">Ок</button></div></div></div>
         @endif
     </header>
+    @yield('404')
+    @if(!isset($exception))
     <main>
         <div class="container">
             <div class="main-title">
@@ -205,6 +192,7 @@
             <div class="main-vector rotate"><img src="img/main-vector.png" alt=""></div>
         </div>
     </main>
+    @endif
     @yield('content')
     @if(Route::current()->getName() !== 'contacts')
     <section class="contacts" id="contacts">
