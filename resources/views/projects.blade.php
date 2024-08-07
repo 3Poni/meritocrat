@@ -69,6 +69,7 @@
     </section>
 @endsection
 @push('script')
+    <script src="{{ asset('js/dropdown-projects.js') }}"></script>
     <script>
         var initUrl = '';
         let selectedIds = [];
@@ -116,6 +117,7 @@
         }
 
         function getData(url) {
+            console.log(url)
             $.ajax({
                 url: "/api/projects?" + url,
                 type:"GET",
@@ -123,6 +125,7 @@
                     "_token": "{{ csrf_token() }}",
                 },
                 success:function(response){
+                    console.log(response);
                     let projectsRendered = '';
                     let linksRendered = '';
                     let projectsPoint = $('.projects-items');
@@ -164,5 +167,4 @@
             });
         }
     </script>
-<script src="{{ asset('js/dropdown-projects.js') }}"></script>
 @endpush

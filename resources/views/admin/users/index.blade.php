@@ -17,11 +17,11 @@
             <section class="content">
                 <div class="container-fluid">
                     <!-- Small boxes (Stat box) -->
-                    <div class="row">
-                        <div class="col-1 mb-3">
-                            <a href="{{ route('admin.user.create') }}" type="button" class="btn btn-block btn-default">Добавить</a>
-                        </div>
-                    </div>
+{{--                    <div class="row">--}}
+{{--                        <div class="col-1 mb-3">--}}
+{{--                            <a href="{{ route('admin.user.create') }}" type="button" class="btn btn-block btn-default">Добавить</a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                             <div class="row">
                                 <div class="col-6">
                                     <div class="card">

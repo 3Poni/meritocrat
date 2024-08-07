@@ -136,7 +136,7 @@
                             <a href="{{ route('admin.review.index') }}" class="small-box-footer">Подробнее<i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
-
+                    @if(false)
                     <!-- ./col -->
                     <div class="col-lg-3 col-6">
                         <!-- small box -->
@@ -152,6 +152,7 @@
                         </div>
                     </div>
                     <!-- ./col -->
+                    @endif
                 </div>
                 <!-- /.row -->
 

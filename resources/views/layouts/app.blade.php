@@ -183,7 +183,7 @@
                 <span class="main-logo animate__animated animate__fadeInUp">MERITOCRAT</span>
                 <span class="main-underlogo_text">КОМЛЕКСНОЕ ОБСЛУЖИВАНИЕ БИЗНЕСА</span>
                 <div class="main-row_button">
-                    <input type="button" value = "Связаться с нами" class="button-white">
+                    <a href="#contacts"><input type="button" value = "Связаться с нами" class="button-white"></a>
                     <input type="button" value = "Скачать презентацию" class="button-with-border">
                 </div>
             </div>

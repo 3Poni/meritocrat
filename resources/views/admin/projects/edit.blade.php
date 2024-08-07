@@ -19,7 +19,7 @@
                     <!-- Small boxes (Stat box) -->
                     <div class="row">
                         <div class="col-12">
-                            <form action="{{ route('admin.project.update', $project->id) }}" method="POST">
+                            <form action="{{ route('admin.project.update', $project->id) }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 @method('PATCH')
                                 <div class="form-group w-25">
